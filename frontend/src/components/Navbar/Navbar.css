@@ -1,0 +1,25 @@
+.navbar {
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-left p {
+    font-size: 50px;
+    color: tomato;
+    cursor: pointer;
+}
+
+.navbar-right ul {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar-right li {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}

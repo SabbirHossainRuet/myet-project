@@ -1,0 +1,9 @@
+.mission-contents {
+    width: 100%;
+    height: 34vw;
+}
+
+.mission-image img {
+    height: max(35vw, 100px);
+    width: max(100vw, 100px);
+}
