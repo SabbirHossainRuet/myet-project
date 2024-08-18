@@ -1,0 +1,113 @@
+.et-guides{
+    margin: 0px 0px;
+    position: relative;
+}
+
+.et-guides-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.et-guides-container .title{
+   text-align: center;
+   font-size: 40px;
+   font-weight: 500;
+   color: orange;
+}
+.et-list {
+    margin: 0px 150px;
+    padding: 10px 0px;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill,minmax(240px, 1fr)); */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 150px;
+}
+
+.et-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 25px;
+}
+
+
+.et-list-item h3, .description {
+    min-width: 400px;
+    text-align: center;
+}
+.et-list-item .price, button{
+    min-width: 100px;
+    text-align: center;
+}
+
+.et-list-item h3{
+    color: orange;
+}
+
+.et-guides-container hr {
+    border: 1px solid black; /* Add a border to make it visible */
+    width: 100%; /* Ensure it spans across the width of the container */
+}
+.et-list-item button{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 20px;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.et-list-item button:hover{
+    border: 1px solid orange;
+    border-radius: 20px;
+    height: 25px;
+    color: orange;
+    background-color: rgb(255, 244, 224);
+    animation: fadeIn 0.2s;
+    
+}
+
+.et-bundle {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 150px;
+}
+
+.et-bundle-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 25px;
+    gap: 20px;
+}
+
+
+.et-bundle-item button{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 20px;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.et-bundle-item button:hover{
+    border: 1px solid orange;
+    border-radius: 20px;
+    height: 25px;
+    color: orange;
+    background-color: rgb(255, 244, 224);
+    animation: fadeIn 0.2s;
+    
+}
+
+
