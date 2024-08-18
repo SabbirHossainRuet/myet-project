@@ -1,113 +1,157 @@
-.et-guides{
+.et-guides {
     margin: 0px 0px;
     position: relative;
 }
 
-.et-guides-container{
+.et-guides-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.et-guides-container .title{
-   text-align: center;
-   font-size: 40px;
-   font-weight: 500;
-   color: orange;
+.et-guides-container .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: orange;
 }
+
+.et-list-container {
+    background-color: palegoldenrod;
+    width: 100%;
+}
+
 .et-list {
-    margin: 0px 150px;
-    padding: 10px 0px;
+    margin: 10px 0px;
+    padding: 0px 0px;
     display: flex;
     /* grid-template-columns: repeat(auto-fill,minmax(240px, 1fr)); */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     min-height: 150px;
 }
 
-.et-list-item{
+.et-list-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    min-height: 25px;
+    min-height: 35px;
 }
 
 
-.et-list-item h3, .description {
+.et-list-item h3,
+.description {
     min-width: 400px;
     text-align: center;
 }
-.et-list-item .price, button{
+
+.et-list-item .price,
+button {
     min-width: 100px;
     text-align: center;
 }
 
-.et-list-item h3{
-    color: orange;
+.et-list-item .price {
+    font-size: 20px;
+    font-weight: 300;
+
 }
 
-.et-guides-container hr {
-    border: 1px solid black; /* Add a border to make it visible */
-    width: 100%; /* Ensure it spans across the width of the container */
-}
-.et-list-item button{
-    border: 1px solid black;
-    border-radius: 20px;
-    height: 20px;
-    background-color: rgb(235, 235, 235);
-    
+.et-list-item h3 {
+    color: black;
 }
 
-.et-list-item button:hover{
-    border: 1px solid orange;
+hr {
+    border: 1px solid rgb(177, 170, 170);
+    /* Add a border to make it visible */
+    width: 100%;
+    /* Ensure it spans across the width of the container */
+}
+
+.et-list-item button {
+    border: 1px solid rgb(5, 110, 68);
     border-radius: 20px;
-    height: 25px;
-    color: orange;
-    background-color: rgb(255, 244, 224);
-    animation: fadeIn 0.2s;
-    
+    min-height: 25px;
+    color: white;
+    background-color: rgb(5, 110, 68);
+
+}
+
+.et-list-item button:hover {
+    border: 1px solid rgb(5, 110, 68);
+    border-radius: 20px;
+    height: 30px;
+    color: rgb(5, 110, 68);
+    background-color: white;
+    animation: fadeIn 0.3s;
+    cursor: pointer;
+
+}
+
+.et-bundle-container {
+    margin: 20px 0px;
+    position: relative;
 }
 
 .et-bundle {
-    padding: 10px 0px;
+    border: 3px solid orange;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0px;
+    padding: 20px 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-height: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    min-height: 300px;
 }
 
-.et-bundle-item{
+.et-bundle-item {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+
+}
+
+.et-bundle-item h3,
+.price,
+.text,
+button,
+.description {
+    display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    min-height: 25px;
-    gap: 20px;
+    min-height: 35px;
 }
 
-
-.et-bundle-item button{
-    border: 1px solid black;
-    border-radius: 20px;
-    height: 20px;
-    background-color: rgb(235, 235, 235);
-    
-}
-
-.et-bundle-item button:hover{
-    border: 1px solid orange;
-    border-radius: 20px;
-    height: 25px;
+.et-bundle-item h3 {
     color: orange;
-    background-color: rgb(255, 244, 224);
-    animation: fadeIn 0.2s;
-    
+    font-size: 20px;
+}
+
+.et-bundle-item .price {
+    font-size: 30px;
 }
 
 
+
+.et-bundle-item button {
+    border: none;
+    border-radius: 20px;
+    margin: 0px 10px;
+    color: white;
+    background-color: orange;
+
+}
+
+.et-bundle-item button:hover {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(89, 218, 149);
+    cursor: pointer;
+    animation: fadeIn 0.6s;
+
+}
