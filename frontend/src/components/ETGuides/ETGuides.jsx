@@ -48,10 +48,6 @@ const ETGuides = () => {
 
             </div>
             <hr />
-
-
-
-
         </div >
     )
 }

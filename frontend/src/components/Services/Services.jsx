@@ -7,8 +7,6 @@ const Services = () => {
     return (
         <div className='services'>
             <p className='title'>Services</p>
-            <br />
-            <hr />
             <div className="services-container">
                 <div className="services-bundle">
                     {services.map((item, index) => (

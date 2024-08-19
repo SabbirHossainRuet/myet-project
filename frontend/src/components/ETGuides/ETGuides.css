@@ -43,21 +43,25 @@
 }
 
 
-.et-list-item h3,
-.description {
+.et-list-item h3 {
     min-width: 400px;
     text-align: center;
 }
 
-.et-list-item .price,
-button {
+.et-list-item .description{
+    min-width: 400px;
+    text-align: center;
+    
+}
+
+.et-list-item .price, button {
     min-width: 100px;
     text-align: center;
 }
 
 .et-list-item .price {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: bold;
 
 }
 
@@ -116,10 +120,10 @@ hr {
 }
 
 .et-bundle-item h3,
-.price,
-.text,
-button,
-.description {
+.et-bundle-item .price,
+.et-bundle-item .text,
+.et-bundle-item button,
+.et-bundle-item .description {
     display: flex;
     height: 100%;
     align-items: center;
@@ -134,6 +138,7 @@ button,
 
 .et-bundle-item .price {
     font-size: 30px;
+    font-weight: bolder;
 }
 
 
@@ -143,6 +148,7 @@ button,
     border-radius: 20px;
     margin: 0px 10px;
     color: white;
+    min-width: 400px;
     background-color: orange;
 
 }
