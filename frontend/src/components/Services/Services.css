@@ -19,9 +19,9 @@
 }
 
 .services-bundle-item {
-    background-color: #fff;
+    background-color: teal;
     /* Inner padding for each item */
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 10px;
     /* Center the text */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,9 +36,9 @@
 }
 
 .services-bundle-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     /* Slight lift on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
     /* Enhance shadow on hover */
 }
 
@@ -83,5 +83,5 @@
 
 .services-bundle-item .description {
     font-size: 1em;
-    color: #555;
+    color: white;
 }
