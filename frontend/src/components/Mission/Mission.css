@@ -1,7 +1,8 @@
-
 .mission-contents {
     width: 100%;
     min-height: 300px;
+    position: relative;
+    top: 50px;
 }
 
 .mission-image img {
@@ -9,7 +10,7 @@
     width: max(100vw, 100px);
 }
 
-.mission-texts{
+.mission-texts {
     margin: 30px 10vw;
     display: flex;
     flex-direction: column;
@@ -17,19 +18,19 @@
     gap: 20px;
 }
 
-.mission-texts .title{
+.mission-texts .title {
     color: black;
     font-size: 30px;
 }
 
-.mission-texts h2{
+.mission-texts h2 {
     color: orange;
     font-size: 60px;
     width: max(50vw, 100px);
     text-align: center;
 }
 
-.mission-texts-text{
+.mission-texts-text {
     border: 1px solid orange;
     border-radius: 25px;
     gap: 10px;
@@ -40,8 +41,25 @@
     align-items: center;
 }
 
-.mission-texts-text p{
+.mission-texts-text p {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .mission-texts h2 {
+        color: orange;
+        font-size: 30px;
+        width: max(90vw, 100px);
+        text-align: center;
+    }
 
+    .mission-contents {
+        position: relative;
+    }
+
+    .mission-image img {
+        position: absolute;
+        height: max(35vw, 100px);
+        width: max(100vw, 100px);
+    }
+}

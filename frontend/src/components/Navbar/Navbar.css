@@ -71,85 +71,46 @@
 } */
 
 /* Base Styles for Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: orange;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-  }
-  
-  .navbar-left p {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .menu-toggle {
-    display: none; /* Hidden by default, shown on mobile */
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    margin: 0 10px;
-    cursor: pointer;
-    color: orange;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  .nav-links.open li {
-    margin: 10px 0;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .navbar-right {
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-    }
-  
-    .menu-toggle {
-      display: block; /* Show the menu toggle button on mobile */
-    }
-  
-    .nav-links.close {
-      display: none; /* Hide nav links by default */
-      width: 100%;
-      background-color: #333;
-    }
-  
-    .nav-links.open {
-        position: absolute;
-      display: flex; /* Show nav links when menu is open */
-      flex-direction: column;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: orange;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
 
-    }
-  
-    .nav-links a {
-      font-size: 1.2rem;
-    }
-  
-    .nav-links li {
-      margin: 15px 0;
-    }
+nav h3 {
+  font-size: 40px;
+}
+
+.navbar-menu-container {
+  display: none;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 20px;
+  color: orange;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-links-container .li:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none;
   }
-  
+
+  .navbar-menu-container {
+    display: flex;
+  }
+}
