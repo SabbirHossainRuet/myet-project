@@ -5,7 +5,7 @@ import { StoreContext } from '../Context/StoreContext'
 const ETGuides = () => {
     const { et_list, et_bundle } = useContext(StoreContext)
     return (
-        <div className='et-guides'>
+        <div className='et-guides' id='et-guides'>
             <div className="et-guides-container">
                 <p className='title'>ET1 Guides</p>
                 <br />

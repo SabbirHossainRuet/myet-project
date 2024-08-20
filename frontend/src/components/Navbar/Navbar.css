@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     padding-left: 60px;
     padding-right: 60px;
     height: 80px;
@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .navbar-right ul {
     display: flex;
     gap: 35px;
@@ -29,3 +33,123 @@
     cursor: pointer;
     color: black;
 }
+
+@media (max-width:768px) {
+    .navbar-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 10px 10px;
+        margin-left: 100px;
+    }
+
+    .nav-links {
+        display: none!important;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        text-align: right;
+        padding: 20px;
+    }
+
+    .nav-links.open {
+        display: flex!important;
+    }
+
+    .nav-links li {
+        font-size: 18px;
+    }
+} */
+
+/* Base Styles for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: orange;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  }
+  
+  .navbar-left p {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .menu-toggle {
+    display: none; /* Hidden by default, shown on mobile */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+    cursor: pointer;
+    color: orange;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .nav-links.open li {
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-right {
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show the menu toggle button on mobile */
+    }
+  
+    .nav-links.close {
+      display: none; /* Hide nav links by default */
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .nav-links.open {
+        position: absolute;
+      display: flex; /* Show nav links when menu is open */
+      flex-direction: column;
+
+    }
+  
+    .nav-links a {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links li {
+      margin: 15px 0;
+    }
+  }
+  

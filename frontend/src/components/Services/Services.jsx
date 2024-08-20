@@ -5,7 +5,7 @@ import { StoreContext } from '../Context/StoreContext'
 const Services = () => {
     const { services } = useContext(StoreContext)
     return (
-        <div className='services'>
+        <div className='services' id='services'>
             <p className='title'>Services</p>
             <div className="services-container">
                 <div className="services-bundle">
