@@ -2,7 +2,8 @@
     width: 100%;
     min-height: 300px;
     position: relative;
-    top: 50px;
+    top: 30px;
+    margin-bottom: 100px;
 }
 
 .mission-image img {
@@ -46,20 +47,16 @@
 }
 
 @media (max-width: 768px) {
+    .mission-contents {
+        width: 100%;
+        top: 70px;
+        margin-bottom: 100px;
+    }
+
     .mission-texts h2 {
         color: orange;
-        font-size: 30px;
-        width: max(90vw, 100px);
+        font-size: 35px;
+        width: max(80vw, 100px);
         text-align: center;
-    }
-
-    .mission-contents {
-        position: relative;
-    }
-
-    .mission-image img {
-        position: absolute;
-        height: max(35vw, 100px);
-        width: max(100vw, 100px);
     }
 }

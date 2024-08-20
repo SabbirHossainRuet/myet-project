@@ -45,30 +45,44 @@ export const services = [
     {
         _id: "1",
         name: "Option 1",
-        price: 79.99,
-        text: "One Hour of Tailored Advice and Support.",
-        description: "Don' t worry if we run over slightly, or if we need to explain or clarify things again, we won't charge you anymore."
+        price: 0,
+        text: "30 Minute Appointment",
+        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a FREE 30 minute appointment using the calendar link."
     },
     {
         _id: "2",
         name: "Option 2",
-        price: 299,
-        text: "We offer 3 x 1 hour Coaching Support Service.",
-        description: "Helping you write your own ET1 with our expert Coaching Advice and Support Service by your side."
+        price: 79,
+        text: "One Hour of\nTailored Advice and Support",
+        description: "Don' t worry if we run over slightly, or if we need to clarify things again, we won't charge you anymore."
     },
     {
         _id: "3",
         name: "Option 3",
-        price: 699,
-        text: "ET1 Completion Service.",
-        description: "If you'd like us to write your ET1 for you, we're happy to do that also."
+        price: 189,
+        text: "Strengths and Weaknesses Assessment",
+        description: "We'll give you an honest and frank assessment of the pros and cons of your case. This includes looking at upto 150 pages of your documents."
     },
     {
         _id: "4",
         name: "Option 4",
-        price: 899,
-        text: "Commission an Employment Lawyer through us.",
-        description: "As we instruct on multiple ET1s every week, we get the best rates for you."
+        price: 299,
+        text: "We offer 3 x 1 hour Coaching Support Service",
+        description: "Helping you write your own ET1 with our expert Coaching Support Service."
+    },
+    {
+        _id: "5",
+        name: "Option 5",
+        price: 699,
+        text: "ET1 Completion Service",
+        description: "If you'd like us to write your ET1 for you, we're happy to do that also."
+    },
+    {
+        _id: "6",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "As we instruct on multiple ET1s every week, we'll get the best rate for you."
     },
 
 ]

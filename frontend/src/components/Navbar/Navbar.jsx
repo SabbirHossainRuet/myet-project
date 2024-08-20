@@ -81,9 +81,9 @@ const Navbar = () => {
             <div className="navbar-menu-container">
                 <HiOutlineBars3 style={iconStyle} onClick={() => setOpenMenu(true)} />
             </div>
-            <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+            <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right" >
                 <Box
-                    sx={{ width: 250 }}
+                    sx={{ width: 250, backgroundColor: 'orange', height: '100%', color: 'black' }}
                     role="presentation"
                     onClick={() => setOpenMenu(false)}
                     onKeyDown={() => setOpenMenu(false)}
@@ -106,7 +106,7 @@ const Navbar = () => {
                     <Divider />
                 </Box>
             </Drawer>
-        </nav>
+        </nav >
     );
 };
 
