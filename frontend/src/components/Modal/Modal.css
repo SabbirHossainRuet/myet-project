@@ -1,0 +1,113 @@
+/* src/Modal.css */
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal open state */
+.modal-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+/* Modal content sliding in */
+.modal-overlay.open .modal-content {
+    transform: translateY(0);
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f4c425;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Close button hover effect */
+.modal-close:hover {
+    background: #f5be32;
+}
+
+/* Modal Title */
+.modal-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Modal Text */
+.modal-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Confirmation Checkbox Label */
+.modal-content label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Confirmation Checkbox */
+.modal-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Confirmation Button */
+.modal-content button {
+    background: #f4c425;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Confirmation Button Hover */
+.modal-content button:hover {
+    background: #f5be32;
+}
+
+/* Confirmation Button Disabled */
+.modal-content button:disabled {
+    background: #d3d3d3;
+    cursor: not-allowed;
+}

@@ -1,0 +1,98 @@
+.newsletter {
+
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.news-container {
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.news-container .left {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+
+.news-container .right {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.alt {
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width:768px) {
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .alt {
+        font-size: 20px;
+    }
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-container .left,
+    .news-container .right {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        /* Stack fields vertically on smaller screens */
+        align-items: stretch;
+        /* Ensure full width for each element */
+    }
+
+    .form-group {
+        width: 100%;
+        /* Full width for input fields */
+        margin-bottom: 10px;
+        /* Add spacing between fields */
+    }
+}
