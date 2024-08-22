@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import './ETGuides.css'
 import { StoreContext } from '../Context/StoreContext'
-import {loadStripe} from '@stripe/stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 
 const ETGuides = () => {
     const { et_list, et_bundle } = useContext(StoreContext)
@@ -43,7 +43,7 @@ const ETGuides = () => {
             const body = { products: [item] };
 
             const headers = { "Content-Type": "application/json" };
-            const response = await fetch("http://localhost:7000/", {
+            const response = await fetch("https://myet-project.onrender.com", {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify(body)
@@ -64,7 +64,7 @@ const ETGuides = () => {
             console.error("Error during payment process:", error.message);
         }
     };
-    
+
     return (
         <div className='et-guides' id='et-guides'>
             <div className="et-guides-container">
