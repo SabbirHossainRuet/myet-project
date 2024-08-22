@@ -1,9 +1,70 @@
 import React, { useContext } from 'react'
 import './ETGuides.css'
 import { StoreContext } from '../Context/StoreContext'
+import {loadStripe} from '@stripe/stripe-js';
 
 const ETGuides = () => {
     const { et_list, et_bundle } = useContext(StoreContext)
+    // const makePayment = async()=>{
+    //     const stripe = await loadStripe("pk_test_51PqTJAJjhtr0rQfL7WUODYXVcoXd7bAOZQHDyi8vQ7mocFrX9oyQkOAPb5goUzIMHz5sWTLIQhmPZvxmtoJ65A6000QBDduzST");
+    //     const body = {
+    //         products: et_list
+    //     }
+
+    //     const headers = {
+    //         "Content-Type":"application/json"
+    //     }
+
+    //     const response = await fetch("http://localhost:7000/", {
+    //         method:"POST",
+    //         headers: headers,
+    //         body:JSON.stringify(body)
+    //     });
+
+    //     const session = await response.json();
+
+    //     const result = stripe.redirectToCheckout({
+    //         sessionId:session.id
+    //     })
+
+    //     if(result.error){
+    //         console.log(result.error);
+    //     }
+
+    // }
+
+    const makePayment = async (item) => {
+        if (item.price === 0) {
+            // Handle free items differently if needed
+            return;
+        }
+        try {
+            const stripe = await loadStripe("pk_test_51PqTJAJjhtr0rQfL7WUODYXVcoXd7bAOZQHDyi8vQ7mocFrX9oyQkOAPb5goUzIMHz5sWTLIQhmPZvxmtoJ65A6000QBDduzST");
+            const body = { products: [item] };
+
+            const headers = { "Content-Type": "application/json" };
+            const response = await fetch("http://localhost:7000/", {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(body)
+            });
+
+            if (!response.ok) {
+                const errorResponse = await response.json();
+                throw new Error(errorResponse.message || "Failed to initiate payment");
+            }
+
+            const session = await response.json();
+            const result = await stripe.redirectToCheckout({ sessionId: session.id });
+
+            if (result.error) {
+                console.log(result.error.message);
+            }
+        } catch (error) {
+            console.error("Error during payment process:", error.message);
+        }
+    };
+    
     return (
         <div className='et-guides' id='et-guides'>
             <div className="et-guides-container">
@@ -17,7 +78,7 @@ const ETGuides = () => {
                                 <div className="et-list-item" key={index}>
                                     <h3>{item.name}</h3>
                                     <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
-                                    <button>{item.price === 0 ? "Download" : "Buy"}</button>
+                                    <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
                                     <p className='description'>{item.description}</p>
 
                                 </div>
@@ -34,7 +95,7 @@ const ETGuides = () => {
                                 <h3>{item.name}</h3>
                                 <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
                                 <p className='text'>{item.text}</p>
-                                <button>{item.price === 0 ? "Download" : "Buy"}</button>
+                                <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
 
                                 <p className='description'>{item.description}</p>
 

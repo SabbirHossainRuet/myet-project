@@ -5,6 +5,7 @@ import ETGuides from './components/ETGuides/ETGuides'
 import Services from './components/Services/Services'
 import Contact from './components/Contact/Contact'
 import NewsLetter from './components/Newsletter/Newsletter'
+import Clients from './components/Clients/Clients'
 
 const App = () => {
   return (
@@ -14,7 +15,11 @@ const App = () => {
       <ETGuides />
       <Services />
       <Contact />
+      <hr />
       <NewsLetter />
+      <hr />
+      <Clients />
+
 
     </div>
   )
