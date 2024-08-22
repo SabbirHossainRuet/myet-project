@@ -1,6 +1,6 @@
 .newsletter {
     max-width: 70%;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .news-container {
@@ -35,6 +35,13 @@
     text-align: center;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
 .form-group input[type="text"],
 .form-group input[type="email"] {
     width: 100%;
@@ -43,6 +50,7 @@
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
+    gap: 10px;
 }
 
 button[type="submit"] {
@@ -64,6 +72,10 @@ button[type="submit"]:hover {
 
 @media (max-width:768px) {
 
+    .newsletter {
+        margin: 0 auto;
+    }
+
     .alt {
         font-size: 20px;
     }
@@ -81,9 +93,6 @@ button[type="submit"]:hover {
 
     .contact-form {
         flex-direction: column;
-        /* Stack fields vertically on smaller screens */
-        align-items: stretch;
-        /* Ensure full width for each element */
     }
 
     .form-group {

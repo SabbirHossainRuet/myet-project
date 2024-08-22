@@ -70,12 +70,13 @@ const Navbar = () => {
     return (
         <nav>
             <h3 onClick={handleTitleClick} style={{ cursor: 'pointer' }}>MyET1.com</h3>
+            <button>Request a Callback</button>
             <div className="navbar-links-container">
                 <Link className="li" to="mission" duration={500} offset={-100}>Mission</Link>
                 <Link className="li" to="et-guides" duration={500} offset={-100}>ET1 Guides</Link>
                 <Link className="li" to="services" duration={500} offset={-100}>Services</Link>
-                <Link className="li" to="contact" duration={500} offset={-100}>Contact us</Link>
-                <Link className="li" to="newsletter" duration={500} offset={-100}>Newsletter</Link>
+                <Link className="li" to="contact" duration={500} offset={-150}>Contact us</Link>
+                <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
                 <Link className="li" to="clients" duration={500} offset={-100}>Clients</Link>
             </div>
             <div className="navbar-menu-container">
@@ -111,3 +112,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

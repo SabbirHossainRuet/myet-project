@@ -43,7 +43,6 @@ const NewsLetter = () => {
                     <p style={{ textAlign: "center" }}>
                         Stay up to date with MyET1.com, and how we're supporting UK workers to resolve their employment disputes.
                     </p>
-                    <br />
                 </div>
                 <div className="right">
                     {!isSubmitted ? (
@@ -62,7 +61,7 @@ const NewsLetter = () => {
                             <button type="submit">Sign up</button>
                         </form>
                     ) : (
-                        <p style={{ fontSize: "20px", color: "orange", marginLeft: "150px", marginTop: "10px" }}>Thank you for signing up!<br /> We'll be in touch soon.</p>
+                        <p style={{ fontSize: "20px", color: "orange", marginLeft: "50px", marginTop: "10px", textAlign: 'center' }}>Thank you for signing up!<br /> We'll be in touch soon.</p>
                     )}
                 </div>
             </div>
