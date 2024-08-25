@@ -38,6 +38,7 @@
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+import Logo from "../../assets/logo.jpg";
 import './Navbar.css'
 import { Link, scroller } from 'react-scroll';
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -71,11 +72,10 @@ const Navbar = () => {
     return (
         <nav>
             <div className="navbar-top">
-                <h3 onClick={handleTitleClick} style={{ cursor: 'pointer' }}>MyET1.com</h3>
+                <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
                 <div className="buttons">
-                    <button>No Win No Fee</button>
-                    <button>Make An Enquiry</button>
-                    <button>Request A Callback</button>
+                    <button style={{ backgroundColor: '#00AF6C' }}>Make An Enquiry</button>
+                    <button style={{ backgroundColor: '#006DB2' }}>Request A Callback</button>
                 </div>
                 <div className="search-container">
                     <CiSearch style={{ fontSize: '18px' }} />
