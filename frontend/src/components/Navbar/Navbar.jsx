@@ -41,6 +41,7 @@ import React, { useState } from "react";
 import './Navbar.css'
 import { Link, scroller } from 'react-scroll';
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { CiSearch } from "react-icons/ci";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -69,15 +70,28 @@ const Navbar = () => {
 
     return (
         <nav>
-            <h3 onClick={handleTitleClick} style={{ cursor: 'pointer' }}>MyET1.com</h3>
-            <button>Request a Callback</button>
-            <div className="navbar-links-container">
-                <Link className="li" to="mission" duration={500} offset={-100}>Mission</Link>
-                <Link className="li" to="et-guides" duration={500} offset={-100}>ET1 Guides</Link>
-                <Link className="li" to="services" duration={500} offset={-100}>Services</Link>
-                <Link className="li" to="contact" duration={500} offset={-150}>Contact us</Link>
-                <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
-                <Link className="li" to="clients" duration={500} offset={-100}>Clients</Link>
+            <div className="navbar-top">
+                <h3 onClick={handleTitleClick} style={{ cursor: 'pointer' }}>MyET1.com</h3>
+                <div className="buttons">
+                    <button>No Win No Fee</button>
+                    <button>Make An Enquiry</button>
+                    <button>Request A Callback</button>
+                </div>
+                <div className="search-container">
+                    <CiSearch style={{ fontSize: '18px' }} />
+                    <input type="text" className="search-box" placeholder="Search..." />
+                </div>
+
+            </div>
+            <div className="navbar-bottom">
+                <div className="navbar-links-container">
+                    <Link className="li" to="mission" duration={500} offset={-100}>Mission</Link>
+                    <Link className="li" to="et-guides" duration={500} offset={-100}>ET1 Guides</Link>
+                    <Link className="li" to="services" duration={500} offset={-100}>Services</Link>
+                    <Link className="li" to="contact" duration={500} offset={-150}>Contact us</Link>
+                    <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
+                    <Link className="li" to="clients" duration={500} offset={-100}>Clients</Link>
+                </div>
             </div>
             <div className="navbar-menu-container">
                 <HiOutlineBars3 style={iconStyle} onClick={() => setOpenMenu(true)} />
