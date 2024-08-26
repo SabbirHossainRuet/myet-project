@@ -47,11 +47,12 @@ const CallbackForm = ({ handleTitleClick }) => {
                         />
                     </label>
                     <div>
-                        <label>Best time to call:</label>
+                        <br />
+                        <label><b>Best time to call:</b></label>
 
                         {/* Best day (Today or Tomorrow) */}
                         <div className="best-day-call">
-                            <p style={{ color: "blue" }}>(Select Day Below)</p>
+                            <p style={{ color: "blue" }}>(Select a Day)</p>
                             <label>
                                 <span>Today</span>
                                 <input
@@ -78,7 +79,7 @@ const CallbackForm = ({ handleTitleClick }) => {
 
                         {/* Best time (Morning, Lunch, Afternoon, Early Evening) */}
                         <div className="best-time-call">
-                            <p style={{ color: "blue" }}>(Select Time Below)</p>
+                            <p style={{ color: "blue" }}>(Select a Time)</p>
                             <label>
                                 <span>Morning</span>
                                 <span>9.00AM - 12 Noon</span>
@@ -110,7 +111,7 @@ const CallbackForm = ({ handleTitleClick }) => {
                                     type="radio"
                                     name="bestTime"
                                     value="Afternoon 2.00PM - 5.00PM"
-                                    checked={callbackFormData.bestTime === 'Afternoon 2.00 - 5.00PM'}
+                                    checked={callbackFormData.bestTime === 'Afternoon 2.00PM - 5.00PM'}
                                     onChange={handleFormChange}
                                     required
                                 />
@@ -121,8 +122,8 @@ const CallbackForm = ({ handleTitleClick }) => {
                                 <input
                                     type="radio"
                                     name="bestTime"
-                                    value="Early Evening 5.00PM - 7.00 PM"
-                                    checked={callbackFormData.bestTime === 'Early Evening 5.00PM - 7.00 PM'}
+                                    value="Early Evening 5.00PM - 7.00PM"
+                                    checked={callbackFormData.bestTime === 'Early Evening 5.00PM - 7.00PM'}
                                     onChange={handleFormChange}
                                     required
                                 />
