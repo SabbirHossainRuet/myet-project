@@ -1,0 +1,95 @@
+/*Request A Callback Form Styling */
+.callback-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: 75%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.callback-form-container-right {
+    width: 60%;
+}
+
+.callback-form-container-left {
+    width: 40%;
+}
+
+.callback-form-container-left img {
+    width: 60%;
+    margin: 10px;
+}
+
+.best-time-call {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8px;
+}
+
+.best-time-call label {
+    display: flex;
+}
+
+.best-time-call span {
+    font-size: 14px;
+    width: 220px;
+}
+
+.best-time-call input {
+    width: 14px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.callback-form-container-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.required {
+    color: red;
+    /* Makes the star red */
+    margin-left: 5px;
+}
+
+
+
+.callback-form-container-right label {
+    margin-bottom: 4px;
+}
+
+.callback-form-container-right input,
+.callback-form-container-right textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.callback-form-container-right textarea {
+    height: 100px;
+}
+
+.callback-form-container-right button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(215, 97, 97) !important;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.callback-form-container-right button[type="submit"] {
+    background-color: rgb(30, 136, 179) !important;
+}

@@ -51,14 +51,12 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { StoreContext } from "../Context/StoreContext";
+import CallbackForm from "../Callbackform/CallbackForm";
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const { isCallbackFormVisible,
-        callbackFormData,
-        toggleCallbackForm,
-        handleFormChange,
-        handleFormSubmit
+        toggleCallbackForm
     } = useContext(StoreContext);
 
     const iconStyle = { fontSize: '40px' };
@@ -130,116 +128,7 @@ const Navbar = () => {
                 </Box>
             </Drawer>
             {/* Callback Form */}
-            {isCallbackFormVisible && (
-                <div className="callback-form-container">
-                    <div className="callback-form-container-left">
-                        <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
-                    </div>
-                    <div className="callback-form-container-right">
-                        <form onSubmit={handleFormSubmit}>
-                            <label>
-                                Name:
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={callbackFormData.name || ''}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                Email:
-                                <input
-                                    type="email"
-                                    name="email"
-                                    value={callbackFormData.email || ''}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                Phone:
-                                <input
-                                    type="text"
-                                    name="phone"
-                                    value={callbackFormData.phone || ''}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <div>
-                                <label>Best time for call:</label>
-                                <div className="best-time-call">
-                                    <label>
-                                        AM
-                                        <input
-                                            type="radio"
-                                            name="bestTime"
-                                            value="AM"
-                                            checked={callbackFormData.bestTime === 'AM'}
-                                            onChange={handleFormChange}
-                                            required
-                                        />
-                                    </label>
-                                    <label>
-                                        PM
-                                        <input
-                                            type="radio"
-                                            name="bestTime"
-                                            value="PM"
-                                            checked={callbackFormData.bestTime === 'PM'}
-                                            onChange={handleFormChange}
-                                            required
-                                        />
-                                    </label>
-                                </div>
-                            </div>
-                            <label>
-                                Subject:
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    value={callbackFormData.subject || ''}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                Message:
-                                <textarea
-                                    name="message"
-                                    value={callbackFormData.message || ''}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                How did you hear about us?
-                                <select
-                                    name="source"
-                                    value={callbackFormData.source || ''}
-                                    onChange={handleFormChange}
-                                    required
-                                >
-                                    <option value="" disabled>Select an option</option>
-                                    <option value="Facebook">Facebook</option>
-                                    <option value="Google Search">Google Search</option>
-                                    <option value="Linked In">Linked In</option>
-                                    <option value="Twitter">Twitter</option>
-                                    <option value="Instagram">Instagram</option>
-                                    <option value="Law Society Website">Law Society Website</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </label>
-
-                            <button type="submit">Send</button>
-                            <button type="button" onClick={toggleCallbackForm}>Cancel</button>
-                        </form>
-
-                    </div>
-
-                </div>
-            )}
+            {isCallbackFormVisible && <CallbackForm />}
         </nav >
     );
 };

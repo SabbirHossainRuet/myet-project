@@ -129,7 +129,7 @@ nav {
 }
 
 .navbar-bottom {
-  background-color: skyblue;
+  background-color: rgb(83, 164, 196);
   height: 50px;
   display: flex;
   align-items: center;
@@ -178,78 +178,6 @@ nav img {
   cursor: pointer;
 }
 
-/*Request A Callback Form Styling */
-.callback-form-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: auto;
-  background-color: white;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.callback-form-container-right {
-  width: 60%;
-}
-
-.callback-form-container-left {
-  width: 40%;
-}
-
-.callback-form-container-left img {
-  width: 60%;
-  margin: 10px;
-}
-
-.best-time-call {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.best-time-call label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-
-}
-
-.callback-form-container-right form {
-  display: flex;
-  flex-direction: column;
-}
-
-.callback-form-container-right label {
-  margin-bottom: 4px;
-}
-
-.callback-form-container-right input,
-.callback-form-container-right textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-}
-
-.callback-form-container-right textarea {
-  height: 100px;
-}
-
-.callback-form-container-right button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: rgb(231, 97, 97);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
 
 
 /* Responsive Styles */
