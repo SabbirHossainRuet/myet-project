@@ -5,20 +5,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 850px;
-    height: 75%;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     padding: 30px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     z-index: 1000;
     overflow-y: auto;
-    max-height: 80vh;
+    max-height: 75vh;
 }
 
 .callback-form-container-right {
     width: 60%;
+    margin-bottom: 20px;
 }
 
 .callback-form-container-left {
@@ -30,27 +31,43 @@
     margin: 10px;
 }
 
+.best-day-call {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.best-day-call label {
+    display: flex;
+}
+
+.best-day-call span {
+    width: 40%;
+}
+
+.best-day-call input {
+    width: 10% !important;
+}
+
 .best-time-call {
     margin: 10px 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
 .best-time-call label {
     display: flex;
+    width: 90%;
 }
 
 .best-time-call span {
     font-size: 14px;
-    width: 220px;
+    width: 30%;
 }
 
 .best-time-call input {
-    width: 14px !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: 5% !important;
 }
 
 .callback-form-container-right form {
@@ -83,6 +100,7 @@
 
 .callback-form-container-right button {
     margin-top: 10px;
+    border-radius: 5px;
     padding: 10px;
     background-color: rgb(215, 97, 97) !important;
     color: white;
