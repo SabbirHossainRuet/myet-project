@@ -6,7 +6,7 @@ import { VscCallIncoming } from "react-icons/vsc";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { StoreContext } from "../Context/StoreContext";
 import CallbackForm from '../Callbackform/CallbackForm';
-import InfoIcon from "../../assets/info.jpg";
+import InfoIcon from "../../assets/infoicon.jpg";
 
 const Contact = () => {
     const iconStyle = { fontSize: '40px' };
