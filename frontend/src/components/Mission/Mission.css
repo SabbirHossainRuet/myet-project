@@ -1,9 +1,16 @@
 .mission-contents {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     position: relative;
     top: 50px;
     margin-bottom: 100px;
+}
+
+.mission-contents h3 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(44, 131, 165);
 }
 
 .mission-image img {
@@ -16,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
 }
 
 .mission-texts .title {
@@ -27,7 +34,7 @@
 .mission-texts h2 {
     color: orange;
     font-size: 60px;
-    width: max(50vw, 100px);
+    width: max(60vw, 100px);
     text-align: center;
 }
 
@@ -43,6 +50,25 @@
 }
 
 .mission-texts-text p {
+    text-align: center;
+    font-size: 19px;
+}
+
+.get-started-now {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    margin: 30px 200px;
+    gap: 50px;
+}
+
+.get-started-now-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid orange;
+    padding: 20px 10px;
+    gap: 10px;
     text-align: center;
 }
 

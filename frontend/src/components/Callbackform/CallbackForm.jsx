@@ -52,7 +52,7 @@ const CallbackForm = ({ handleTitleClick }) => {
 
                         {/* Best day (Today or Tomorrow) */}
                         <div className="best-day-call">
-                            <p style={{ color: "blue" }}>(Select a Day)</p>
+                            <p style={{ color: "blue" }}>(Select a day)</p>
                             <label>
                                 <span>Today</span>
                                 <input
@@ -79,7 +79,7 @@ const CallbackForm = ({ handleTitleClick }) => {
 
                         {/* Best time (Morning, Lunch, Afternoon, Early Evening) */}
                         <div className="best-time-call">
-                            <p style={{ color: "blue" }}>(Select a Time)</p>
+                            <p style={{ color: "blue" }}>(Select a time)</p>
                             <label>
                                 <span>Morning</span>
                                 <span>9.00AM - 12 Noon</span>
@@ -106,7 +106,7 @@ const CallbackForm = ({ handleTitleClick }) => {
                             </label>
                             <label>
                                 <span>Afternoon</span>
-                                <span>2.00 - 5.00PM</span>
+                                <span>2.00PM - 5.00PM</span>
                                 <input
                                     type="radio"
                                     name="bestTime"

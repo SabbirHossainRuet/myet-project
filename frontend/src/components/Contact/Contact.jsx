@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import './Contact.css';
-import { BsHeadsetVr } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
 import { VscCallIncoming } from "react-icons/vsc";
 import { PiPhoneCallFill } from "react-icons/pi";
