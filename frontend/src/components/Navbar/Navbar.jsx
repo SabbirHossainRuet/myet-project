@@ -52,12 +52,21 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { StoreContext } from "../Context/StoreContext";
 import CallbackForm from "../Callbackform/CallbackForm";
-
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const { isCallbackFormVisible,
-        toggleCallbackForm
+        toggleCallbackForm, setShowDateTime,
     } = useContext(StoreContext);
+
+    const handleCallbackClick = () => {
+        setShowDateTime(true);
+        toggleCallbackForm();
+    };
+
+    const handleEnquiryClick = () => {
+        setShowDateTime(false); // Hide date and time fields
+        toggleCallbackForm();
+    };
 
     const iconStyle = { fontSize: '40px' };
     const menuOptions = [
@@ -80,8 +89,8 @@ const Navbar = () => {
             <div className="navbar-top">
                 <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
                 <div className="buttons">
-                    <button style={{ backgroundColor: '#00AF6C' }}>Make An Enquiry</button>
-                    <button style={{ backgroundColor: '#006DB2' }} onClick={toggleCallbackForm}>Request A Callback</button>
+                    <button style={{ backgroundColor: '#00AF6C' }} onClick={handleEnquiryClick}>Make An Enquiry</button>
+                    <button style={{ backgroundColor: '#006DB2' }} onClick={handleCallbackClick}>Request A Callback</button>
                 </div>
                 <div className="search-container">
                     <CiSearch style={{ fontSize: '18px' }} />

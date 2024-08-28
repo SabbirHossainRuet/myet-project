@@ -1,15 +1,25 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './Contact.css';
 import { AiTwotoneMail } from "react-icons/ai";
 import { VscCallIncoming } from "react-icons/vsc";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { StoreContext } from "../Context/StoreContext";
-import CallbackForm from '../Callbackform/CallbackForm';
 import InfoIcon from "../../assets/infoicon.jpg";
+import CallbackForm from '../Callbackform/CallbackForm';
 
 const Contact = () => {
     const iconStyle = { fontSize: '40px' };
-    const { toggleCallbackForm, isCallbackFormVisible } = useContext(StoreContext);
+    const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, } = useContext(StoreContext);
+
+    const handleCallbackClick = () => {
+        setShowDateTime(true);
+        toggleCallbackForm();
+    };
+
+    const handleEnquiryClick = () => {
+        setShowDateTime(false);
+        toggleCallbackForm();
+    };
 
     return (
         <div className='contact' id='contact'>
@@ -18,16 +28,12 @@ const Contact = () => {
                 <div className="contact-container-grid">
                     <div className="contact-item">
                         <PiPhoneCallFill style={iconStyle} />
-                        <p onClick={toggleCallbackForm} style={{ cursor: 'pointer' }}>
-                            Request a Callback
-                        </p>
+                        <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }}>Request a Callback</p>
                     </div>
                     <div className="contact-item">
                         <img src={InfoIcon} alt="" />
-                        <p>
-                            <a style={{ textDecoration: 'none', color: 'inherit' }}>
-                                Make an Enquiry
-                            </a>
+                        <p onClick={handleEnquiryClick} style={{ cursor: 'pointer' }}>
+                            Make an Enquiry
                         </p>
                     </div>
                     <div className="contact-item">
@@ -51,7 +57,7 @@ const Contact = () => {
 
             {/* Callback Form */}
             {isCallbackFormVisible && <CallbackForm />}
-        </div>
+        </div >
     );
 };
 

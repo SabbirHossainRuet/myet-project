@@ -4,7 +4,9 @@ import Logo from "../../assets/logo.jpg";
 import './CallbackForm.css';
 
 const CallbackForm = ({ handleTitleClick }) => {
-    const { callbackFormData, handleFormChange, handleFormSubmit, toggleCallbackForm } = useContext(StoreContext);
+    const { callbackFormData, handleFormChange, handleFormSubmit, toggleCallbackForm, showDateTime, } = useContext(StoreContext);
+
+    console.log(showDateTime);
 
     return (
         <div className="callback-form-container">
@@ -46,90 +48,92 @@ const CallbackForm = ({ handleTitleClick }) => {
                             required
                         />
                     </label>
-                    <div>
-                        <br />
-                        <label><b>Best time to call:</b></label>
+                    {showDateTime && (
+                        <div>
+                            <br />
+                            <label><b>Best time to call:</b></label>
 
-                        {/* Best day (Today or Tomorrow) */}
-                        <div className="best-day-call">
-                            <p style={{ color: "blue" }}>(Select a day)</p>
-                            <label>
-                                <span>Today</span>
-                                <input
-                                    type="radio"
-                                    name="bestDay"
-                                    value="Today"
-                                    checked={callbackFormData.bestDay === 'Today'}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                <span>Tomorrow</span>
-                                <input
-                                    type="radio"
-                                    name="bestDay"
-                                    value="Tomorrow"
-                                    checked={callbackFormData.bestDay === 'Tomorrow'}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                        </div>
+                            {/* Best day (Today or Tomorrow) */}
+                            <div className="best-day-call">
+                                <p style={{ color: "blue" }}>(Select a day)</p>
+                                <label>
+                                    <span>Today</span>
+                                    <input
+                                        type="radio"
+                                        name="bestDay"
+                                        value="Today"
+                                        checked={callbackFormData.bestDay === 'Today'}
+                                        onChange={handleFormChange}
+                                        required
+                                    />
+                                </label>
+                                <label>
+                                    <span>Tomorrow</span>
+                                    <input
+                                        type="radio"
+                                        name="bestDay"
+                                        value="Tomorrow"
+                                        checked={callbackFormData.bestDay === 'Tomorrow'}
+                                        onChange={handleFormChange}
+                                        required
+                                    />
+                                </label>
+                            </div>
 
-                        {/* Best time (Morning, Lunch, Afternoon, Early Evening) */}
-                        <div className="best-time-call">
-                            <p style={{ color: "blue" }}>(Select a time)</p>
-                            <label>
-                                <span>Morning</span>
-                                <span>9.00AM - 12 Noon</span>
-                                <input
-                                    type="radio"
-                                    name="bestTime"
-                                    value="Morning 9.00AM - 12 Noon"
-                                    checked={callbackFormData.bestTime === 'Morning 9.00AM - 12 Noon'}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                <span>Lunch time</span>
-                                <span>12 Noon - 2PM</span>
-                                <input
-                                    type="radio"
-                                    name="bestTime"
-                                    value="Lunch time 12 Noon - 2PM"
-                                    checked={callbackFormData.bestTime === 'Lunch time 12 Noon - 2PM'}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                <span>Afternoon</span>
-                                <span>2.00PM - 5.00PM</span>
-                                <input
-                                    type="radio"
-                                    name="bestTime"
-                                    value="Afternoon 2.00PM - 5.00PM"
-                                    checked={callbackFormData.bestTime === 'Afternoon 2.00PM - 5.00PM'}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
-                            <label>
-                                <span>Early Evening</span>
-                                <span>5.00PM - 7.00 PM</span>
-                                <input
-                                    type="radio"
-                                    name="bestTime"
-                                    value="Early Evening 5.00PM - 7.00PM"
-                                    checked={callbackFormData.bestTime === 'Early Evening 5.00PM - 7.00PM'}
-                                    onChange={handleFormChange}
-                                    required
-                                />
-                            </label>
+                            {/* Best time (Morning, Lunch, Afternoon, Early Evening) */}
+                            <div className="best-time-call">
+                                <p style={{ color: "blue" }}>(Select a time)</p>
+                                <label>
+                                    <span>Morning</span>
+                                    <span>9.00AM - 12 Noon</span>
+                                    <input
+                                        type="radio"
+                                        name="bestTime"
+                                        value="Morning 9.00AM - 12 Noon"
+                                        checked={callbackFormData.bestTime === 'Morning 9.00AM - 12 Noon'}
+                                        onChange={handleFormChange}
+                                        required
+                                    />
+                                </label>
+                                <label>
+                                    <span>Lunch time</span>
+                                    <span>12 Noon - 2.00PM</span>
+                                    <input
+                                        type="radio"
+                                        name="bestTime"
+                                        value="Lunch time 12 Noon - 2.00PM"
+                                        checked={callbackFormData.bestTime === 'Lunch time 12 Noon - 2.00PM'}
+                                        onChange={handleFormChange}
+                                        required
+                                    />
+                                </label>
+                                <label>
+                                    <span>Afternoon</span>
+                                    <span>2.00PM - 5.00PM</span>
+                                    <input
+                                        type="radio"
+                                        name="bestTime"
+                                        value="Afternoon 2.00PM - 5.00PM"
+                                        checked={callbackFormData.bestTime === 'Afternoon 2.00PM - 5.00PM'}
+                                        onChange={handleFormChange}
+                                        required
+                                    />
+                                </label>
+                                <label>
+                                    <span>Early Evening</span>
+                                    <span>5.00PM - 7.00 PM</span>
+                                    <input
+                                        type="radio"
+                                        name="bestTime"
+                                        value="Early Evening 5.00PM - 7.00PM"
+                                        checked={callbackFormData.bestTime === 'Early Evening 5.00PM - 7.00PM'}
+                                        onChange={handleFormChange}
+                                        required
+                                    />
+                                </label>
+                            </div>
                         </div>
-                    </div>
+                    )}
 
                     <label>
                         Subject:
