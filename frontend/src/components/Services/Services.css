@@ -1,5 +1,5 @@
 .services {
-    background-color: dimgray;
+    background-color: rgb(73, 159, 193);
 }
 
 .services-bundle {
@@ -69,7 +69,7 @@
 
 .services-bundle-item h3 {
     border: 1px solid orange;
-    background-color: rgb(255, 233, 191);
+    background-color: yellow;
     margin: 10px 50px;
     border-radius: 10px;
     color: black;

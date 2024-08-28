@@ -12,8 +12,8 @@ const App = () => {
     <div className='app'>
       <Navbar />
       <Mission />
-      <ETGuides />
       <Services />
+      <ETGuides />
       <Contact />
       <hr />
       <NewsLetter />

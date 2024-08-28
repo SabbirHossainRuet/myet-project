@@ -3,11 +3,12 @@ import "./Mission.css";
 import { assets } from "../../assets/assets";
 import { TiTick } from "react-icons/ti";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
-import { PiPhoneCallFill } from "react-icons/pi";
+import { VscCallIncoming } from "react-icons/vsc";
 import { GrServices } from "react-icons/gr";
+import { RxDotFilled } from "react-icons/rx";
 
 const Mission = () => {
-    const iconStyle = { fontSize: '40px' };
+    const iconStyle = { fontSize: '35px' };
     return (
         <div className="mission" id="mission">
             <div className="mission-contents">
@@ -38,9 +39,22 @@ const Mission = () => {
                         <p>For one to one advice and support click on any of our tailored Services packages.</p>
                     </div>
                     <div className="get-started-now-item">
-                        <PiPhoneCallFill style={iconStyle} />
+                        <VscCallIncoming style={iconStyle} />
                         <p>Use the Request a Callback or Contact form to get in touch with us if you have any questions.</p>
                     </div>
+                </div>
+                <div className="bottom-text">
+                    <div className="bottom-text-up">
+                        <p>Low Cost</p>
+                        <RxDotFilled style={iconStyle} />
+                        <p>Affordable</p>
+                        <RxDotFilled style={iconStyle} />
+                        <p>Accesible</p>
+                    </div>
+                    <div className="bottom-text-down">
+                        <p>Expert employment support for UK Workers</p>
+                    </div>
+
                 </div>
             </div>
         </div>

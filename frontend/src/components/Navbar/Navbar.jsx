@@ -100,12 +100,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-bottom">
                 <div className="navbar-links-container">
-                    <Link className="li" to="mission" duration={500} offset={-100}>Mission</Link>
-                    <Link className="li" to="et-guides" duration={500} offset={-100}>ET1 Guides</Link>
-                    <Link className="li" to="services" duration={500} offset={-100}>Services</Link>
-                    <Link className="li" to="contact" duration={500} offset={-150}>Contact us</Link>
+                    <Link className="li" to="mission" duration={500} offset={-200}>Mission</Link>
+                    <Link className="li" to="et-guides" duration={500} offset={-200}>ET1 Guides</Link>
+                    <Link className="li" to="services" duration={500} offset={-200}>Services</Link>
+                    <Link className="li" to="contact" duration={500} offset={-200}>Contact us</Link>
                     <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
-                    <Link className="li" to="clients" duration={500} offset={-100}>Clients</Link>
+                    <Link className="li" to="clients" duration={500} offset={-200}>Clients</Link>
                 </div>
             </div>
             <div className="navbar-menu-container">

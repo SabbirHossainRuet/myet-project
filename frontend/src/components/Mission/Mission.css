@@ -72,6 +72,28 @@
     text-align: center;
 }
 
+.bottom-text {
+    background-color: rgb(52, 149, 187);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-text p {
+    font-size: 25px;
+    color: yellow;
+}
+
+.bottom-text-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 @media (max-width: 768px) {
     .mission-contents {
         width: 100%;
