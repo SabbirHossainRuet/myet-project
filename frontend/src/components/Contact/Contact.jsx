@@ -27,7 +27,8 @@ const Contact = () => {
                 <h3>Ways to contact us</h3>
                 <div className="contact-container-grid">
                     <div className="contact-item">
-                        <VscCallIncoming style={iconStyle} />
+
+                        <PiPhoneCallFill style={iconStyle} />
                         <p>
                             <a style={{ textDecoration: 'none', color: 'inherit' }}>
                                 Phone
@@ -42,7 +43,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-item">
 
-                        <PiPhoneCallFill style={iconStyle} />
+                        <VscCallIncoming style={iconStyle} />
                         <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }}>Request a Callback</p>
                     </div>
                     <div className="contact-item">
