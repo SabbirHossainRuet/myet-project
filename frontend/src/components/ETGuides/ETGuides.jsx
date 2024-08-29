@@ -8,6 +8,23 @@ const ETGuides = () => {
     const { et_list, et_bundle } = useContext(StoreContext)
     const iconStyle = { fontSize: '40px' };
 
+    const downloadPDF = (pdfUrl) => {
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = pdfUrl.split('/').pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const handleButtonClick = (item) => {
+        if (item.price === 0) {
+            downloadPDF(item.pdfUrl);
+        } else {
+            makePayment(item);
+        }
+    };
+
     const makePayment = async (item) => {
         if (item.price === 0) {
             // Handle free items differently if needed
@@ -43,7 +60,7 @@ const ETGuides = () => {
     return (
         <div className='et-guides' id='et-guides'>
             <div className="et-guides-container">
-                <p className='title'>ET1 Guides</p>
+                <p className='title'>Information Leaflets</p>
                 <br />
                 <hr />
                 <div className="et-list-container">
@@ -58,7 +75,7 @@ const ETGuides = () => {
                                 }}>
                                     <h3>{item.name}</h3>
                                     <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
-                                    <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
+                                    <button onClick={() => handleButtonClick(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
                                     <p className='description'>{item.description}</p>
                                     <div className="learn-more">
                                         <p>Learn more</p>

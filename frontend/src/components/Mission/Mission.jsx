@@ -32,7 +32,7 @@ const Mission = () => {
                     </div>
                     <div className="get-started-now-item">
                         <BsFillCloudDownloadFill style={iconStyle} />
-                        <p>Download one of our helpful ET1 Information leaflets</p>
+                        <p>Download one of our helpful Information leaflets</p>
                     </div>
                     <div className="get-started-now-item">
                         <GrServices style={iconStyle} />

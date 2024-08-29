@@ -33,33 +33,47 @@
 .et-list-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 20px 20px;
+    gap: 10px;
+    width: 230px;
+    height: 320px;
+}
+
+.et-list-item h3,
+.et-list-item .price,
+.et-list-item .text,
+.et-list-item button,
+.et-list-item .description {
+    display: flex;
+    height: 100%;
+    align-items: start;
+    text-align: center;
     justify-content: center;
-    height: 300px;
-    gap: 20px;
-    width: 220px;
+    min-height: 35px;
 }
 
 
 .et-list-item h3 {
-    min-width: 400px;
-    text-align: center;
+    font-size: 20px;
+    min-height: 50px;
 }
 
 .et-list-item .description {
-    min-width: 400px;
+    min-width: 100px;
     text-align: center;
 
 }
 
 .et-list-item .price,
-button {
-    min-width: 100px;
-    text-align: center;
+.et-list-item button {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .et-list-item .price {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 
 }
@@ -75,8 +89,7 @@ hr {
 
 .et-list-item button {
     border: 1px solid rgb(5, 110, 68);
-    border-radius: 20px;
-    min-height: 30px;
+    height: 15px;
     color: white;
     background-color: rgb(5, 110, 68);
 
@@ -84,10 +97,8 @@ hr {
 
 .et-list-item button:hover {
     border: 1px solid rgb(5, 110, 68);
-    border-radius: 20px;
-    height: 30px;
     color: rgb(5, 110, 68);
-    background-color: white;
+    background-color: yellow;
     animation: fadeIn 0.3s;
     cursor: pointer;
 
