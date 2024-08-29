@@ -1,4 +1,4 @@
-.et-guides {
+/* .et-guides {
     margin: 0px 0px;
     position: relative;
 }
@@ -26,7 +26,6 @@
     margin: 10px 0px;
     padding: 0px 0px;
     display: flex;
-    /* grid-template-columns: repeat(auto-fill,minmax(240px, 1fr)); */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -72,9 +71,7 @@ button {
 
 hr {
     border: 1px solid rgb(177, 170, 170);
-    /* Add a border to make it visible */
     width: 100%;
-    /* Ensure it spans across the width of the container */
 }
 
 .et-list-item button {
@@ -240,4 +237,128 @@ hr {
         min-width: 300px;
 
     }
+} */
+
+/* NEW DESIGN PATTERNS */
+
+/* General Styles for ET Guides */
+.et-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+}
+
+.et-list-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fef6f0; /* Warm background color */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+    scroll-snap-align: start;
+    padding: 20px;
+}
+
+.et-list-item.active {
+    transform: scale(1.2); /* Increase the size when active */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for active card */
+}
+
+
+.et-list-item h3 {
+    margin: 0;
+    color: #d97b77; /* Warm accent color */
+}
+
+.et-list-item .price {
+    font-size: 1.2rem;
+    color: #6a4c4c;
+}
+
+.et-list-item button {
+    background: #d97b77; /* Warm button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.et-list-item button:hover {
+    background: #b06c6c; /* Darker button color on hover */
+}
+
+.et-list-item .description {
+    color: #6a4c4c;
+    margin-top: 10px;
+}
+.bubble-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bubble {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d97b77; /* Warm bubble color */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bubble.active {
+    background: #b06c6c; /* Darker bubble color when active */
+}
+
+.et-bundle {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.et-bundle-item {
+    background: #fef6f0; /* Warm background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.et-bundle-item h3 {
+    margin: 0;
+    color: #d97b77; /* Warm accent color */
+}
+
+.et-bundle-item .price {
+    font-size: 1.2rem;
+    color: #6a4c4c;
+}
+
+.et-bundle-item .text {
+    color: #6a4c4c;
+}
+
+.et-bundle-item button {
+    background: #d97b77; /* Warm button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.et-bundle-item button:hover {
+    background: #b06c6c; /* Darker button color on hover */
+}
+
+.et-bundle-item .description {
+    color: #6a4c4c;
+    margin-top: 10px;
 }

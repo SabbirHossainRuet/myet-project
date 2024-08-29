@@ -28,6 +28,18 @@ export const et_list = [
         name: "Questions and Answers",
         price: 39.99,
         description: "Example Text"
+    },
+    {
+        _id: "5",
+        name: "Questions and Answers",
+        price: 39.99,
+        description: "Example Text"
+    },
+    {
+        _id: "6",
+        name: "Questions and Answers",
+        price: 39.99,
+        description: "Example Text"
     }
 ]
 
