@@ -76,7 +76,7 @@ const ETGuides = () => {
                                     <h3>{item.name}</h3>
                                     <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
                                     <button onClick={() => handleButtonClick(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
-                                    <p className='description'>{item.description}</p>
+                                    <h2 className='description'>{item.description}</h2>
                                     <div className="learn-more">
                                         <p>Learn more</p>
                                         <FaGreaterThan style={iconStyle} />
