@@ -157,7 +157,9 @@ const ETGuides = () => {
         <div className='et-guides'>
             <div className="et-guides-container">
                 <p className='title'>ET1 Guides</p>
-                <div className="et-list-container" ref={listRef} onScroll={handleScroll}>
+                <br />
+                <hr />
+                <div className="et-list-container">
                     <div className="et-list">
                         {et_list.map((item, index) => (
                             <div className={`et-list-item ${activeBubble === index ? 'active' : ''}`} key={index}>

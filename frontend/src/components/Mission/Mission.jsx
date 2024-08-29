@@ -20,7 +20,7 @@ const Mission = () => {
                     <h2>Welcome to the</h2>
                     <h2>Employment Rights Network</h2>
                     <div className="mission-texts-text">
-                        <p>{`We're on a mission to help UK workers take cost effective control of their employment tribunal disputes.`}</p>
+                        <p>{`We're on a mission to help UK workers take cost effective control of their employment disputes.`}</p>
                         <p>{`We're here to provide support and practical employment advice for everyone - that's affordable and accessible - no matter what their financial circumstances.`}</p>
                     </div>
                 </div>
