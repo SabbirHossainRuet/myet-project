@@ -88,17 +88,17 @@ hr {
 }
 
 .et-list-item button {
-    border: 1px solid rgb(5, 110, 68);
+    border: none;
     height: 15px;
-    color: white;
-    background-color: rgb(5, 110, 68);
+    color: black;
+    background-color: #FFDE13;
 
 }
 
 .et-list-item button:hover {
-    border: 1px solid rgb(5, 110, 68);
-    color: rgb(5, 110, 68);
-    background-color: yellow;
+    border: none;
+    color: white;
+    background-color: #006DB2;
     animation: fadeIn 0.3s;
     cursor: pointer;
 

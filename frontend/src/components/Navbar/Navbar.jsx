@@ -102,7 +102,7 @@ const Navbar = () => {
                 <div className="navbar-links-container">
                     <Link className="li" to="mission" duration={500} offset={-200}>Mission</Link>
                     <Link className="li" to="services" duration={500} offset={-200}>Services</Link>
-                    <Link className="li" to="et-guides" duration={500} offset={-200}>Information Leaflets</Link>
+                    <Link className="li" to="et-guides" duration={500} offset={-200}>InfoBriefs</Link>
                     <Link className="li" to="contact" duration={500} offset={-200}>Contact us</Link>
                     <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
                     <Link className="li" to="clients" duration={500} offset={-200}>Clients</Link>

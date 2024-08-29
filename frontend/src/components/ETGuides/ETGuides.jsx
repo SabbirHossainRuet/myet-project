@@ -60,7 +60,7 @@ const ETGuides = () => {
     return (
         <div className='et-guides' id='et-guides'>
             <div className="et-guides-container">
-                <p className='title'>Information Leaflets</p>
+                <p className='title'>InfoBriefs</p>
                 <br />
                 <hr />
                 <div className="et-list-container">

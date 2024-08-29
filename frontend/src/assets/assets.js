@@ -7,9 +7,9 @@ export const assets = {
 export const et_list = [
     {
         _id: "1",
-        name: "Applying for an ACAS Certificate",
+        name: "InfoBrief",
         price: 0,
-        description: "Example Text",
+        description: "Applying for an ACAS Certificate",
         pdfUrl: "/ACAS.pdf"
     },
     {
