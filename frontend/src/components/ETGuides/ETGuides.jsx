@@ -3,6 +3,7 @@ import './ETGuides.css'
 import { StoreContext } from '../Context/StoreContext'
 import { loadStripe } from '@stripe/stripe-js';
 import { FaGreaterThan, FaLessThan } from 'react-icons/fa';
+import download from '../../assets/download.png'
 
 
 
@@ -120,11 +121,17 @@ const ETGuides = () => {
                                 }}>
                                     <h3>{item.name}</h3>
                                     <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
-                                    <button onClick={() => handleButtonClick(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
+                                    {item.price === 0 ? (
+                                        <img src={download} alt="" />
+                                    ) : (
+                                        <button onClick={() => handleButtonClick(item)}>
+                                            Buy
+                                        </button>
+                                    )}
 
-                                    <h2 className='description'>
+                                    <h2 className='description' onClick={() => handleButtonClick(item)}><u>
                                         {item.description}
-                                    </h2>
+                                    </u></h2>
 
                                     <div className="learn-more">
                                         <p>Learn more</p>

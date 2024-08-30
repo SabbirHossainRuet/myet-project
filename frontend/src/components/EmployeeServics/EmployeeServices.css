@@ -1,3 +1,8 @@
+.employee-services {
+    margin: 50px 0px;
+}
+
+
 .employee-bundle {
     margin: 10px 200px;
     display: grid;
@@ -8,7 +13,7 @@
 
 .employee-bundle-item {
     height: 100px;
-    background-color: #f9f9f9;
+    background-color: rgb(209, 115, 209);
     padding: 15px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,8 +23,18 @@
     justify-content: center;
 }
 
+.employee-services .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: orange;
+}
+
 .employee-bundle-item .description {
     display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
 }
 
 .employee-bundle-item:hover {

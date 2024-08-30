@@ -41,21 +41,21 @@ export const et_list = [
         pdfUrl: "/ACAS.pdf"
     },
     {
-        _id: "6",
+        _id: "PremiumBrief 6",
         name: "6",
         price: 19.99,
         description: "Preparing your ET1 and Particulars of Claim",
         pdfUrl: "/ACAS.pdf"
     },
     {
-        _id: "7",
+        _id: "PremiumBrief 7",
         name: "7",
         price: 29.99,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
-        _id: "8",
+        _id: "PremiumBrief 8",
         name: "8",
         price: 39.99,
         description: "Questions and Answers Session (Valid for 1 month)",
@@ -67,7 +67,7 @@ export const et_list = [
 export const et_bundle = [
     {
         _id: "1",
-        name: "Buy Bundle 2-4",
+        name: "Buy Premium Trio Bundle 6, 7 and 8 for:",
         price: 69.99,
         text: "(Saving £20.00)",
         description: "Example Text"
@@ -126,126 +126,126 @@ export const employeeservices = [
         name: "Option 1",
         price: 0,
         text: "30 Minute Appointment",
-        description: "Example Text"
+        description: "Grievance and Grievance Appeals"
     },
     {
         _id: "2",
         name: "Option 2",
         price: 79,
         text: "One Hour of\nTailored Advice and Support",
-        description: "Example Text"
+        description: "Disciplinary - Suspension and Workplace Investigations"
     },
     {
         _id: "3",
         name: "Option 3",
         price: 189,
         text: "Strengths and Weaknesses Assessment",
-        description: "Example Text"
+        description: "Unfair Dismissal"
     },
     {
         _id: "4",
         name: "Option 4",
         price: 299,
         text: "We offer 3 x 1 hour Coaching Support Service",
-        description: "Example Text"
+        description: "Wrongful Dismissal"
     },
     {
         _id: "5",
         name: "Option 5",
         price: 699,
         text: "ET1 Completion Service",
-        description: "Example Text"
+        description: "Constructive Unfair Dismissal"
     },
     {
         _id: "6",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Whistleblowing Claims"
     },
     {
         _id: "7",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Disability Discrimination Claims"
     },
     {
         _id: "8",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Victimisation Claims"
     },
     {
         _id: "9",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "TUPE/Business Transfers"
     },
     {
         _id: "10",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Redundancy Claims"
     },
     {
         _id: "11",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Failure to make Reasonable Adjustments "
     },
     {
         _id: "12",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Part Time Worker Discrimination "
     },
     {
         _id: "13",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Pregnancy or Maternity Discrimination"
     },
     {
         _id: "14",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Race, Age, Sex, Gender, Religion/ Belief or Sexual Orientarion Discrimination"
     },
     {
         _id: "15",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Unpaid Holiday Pay Claims"
     },
     {
         _id: "16",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Unpaid Wages Claims"
     },
     {
         _id: "17",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Failure to renew Fixed Term Contracts"
     },
     {
         _id: "18",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Contracts, Policies and Staff Handbooks"
     },
     {
         _id: "19",
