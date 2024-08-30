@@ -42,21 +42,21 @@ export const et_list = [
     },
     {
         _id: "6",
-        name: "Questions and Answers",
+        name: "6",
         price: 19.99,
         description: "Preparing your ET1 and Particulars of Claim",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "7",
-        name: "Questions and Answers",
+        name: "7",
         price: 29.99,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "8",
-        name: "Questions and Answers",
+        name: "8",
         price: 39.99,
         description: "Questions and Answers Session (Valid for 1 month)",
         pdfUrl: "/ACAS.pdf"
@@ -116,6 +116,150 @@ export const services = [
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
         description: "As we instruct on multiple ET1s every week, we'll get the best rate for you."
+    },
+
+]
+
+export const employeeservices = [
+    {
+        _id: "1",
+        name: "Option 1",
+        price: 0,
+        text: "30 Minute Appointment",
+        description: "Example Text"
+    },
+    {
+        _id: "2",
+        name: "Option 2",
+        price: 79,
+        text: "One Hour of\nTailored Advice and Support",
+        description: "Example Text"
+    },
+    {
+        _id: "3",
+        name: "Option 3",
+        price: 189,
+        text: "Strengths and Weaknesses Assessment",
+        description: "Example Text"
+    },
+    {
+        _id: "4",
+        name: "Option 4",
+        price: 299,
+        text: "We offer 3 x 1 hour Coaching Support Service",
+        description: "Example Text"
+    },
+    {
+        _id: "5",
+        name: "Option 5",
+        price: 699,
+        text: "ET1 Completion Service",
+        description: "Example Text"
+    },
+    {
+        _id: "6",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "7",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "8",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "9",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "10",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "11",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "12",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "13",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "14",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "15",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "16",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "17",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "18",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "19",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
+    },
+    {
+        _id: "20",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Example Text"
     },
 
 ]

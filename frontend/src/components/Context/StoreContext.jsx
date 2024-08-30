@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 import { et_list } from "../../assets/assets";
 import { et_bundle } from "../../assets/assets";
 import { services } from "../../assets/assets";
+import { employeeservices } from "../../assets/assets";
 
 
 export const StoreContext = createContext(null);
@@ -29,6 +30,7 @@ const StoreContextProvider = (props) => {
         et_list,
         et_bundle,
         services,
+        employeeservices,
         isCallbackFormVisible,
         callbackFormData,
         showDateTime,

@@ -8,6 +8,7 @@ import { GrServices } from "react-icons/gr";
 import { RxDotFilled } from "react-icons/rx";
 import videoCall from '../../assets/videocall.png';
 import shuttle from '../../assets/shuttle.png';
+import download from '../../assets/download.png'
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
     return (
@@ -32,7 +33,7 @@ const Mission = () => {
                         <p>Book a FREE 30 MINUTE appointment</p>
                     </div>
                     <div className="get-started-now-item">
-                        <BsFillCloudDownloadFill style={iconStyle} />
+                        <img src={download} alt="" />
                         <p>Download one of our helpful Information leaflets</p>
                     </div>
                     <div className="get-started-now-item">

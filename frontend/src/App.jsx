@@ -6,6 +6,7 @@ import Services from './components/Services/Services'
 import Contact from './components/Contact/Contact'
 import NewsLetter from './components/Newsletter/Newsletter'
 import Clients from './components/Clients/Clients'
+import EmployeeServices from './components/EmployeeServics/EmployeeServices'
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
       <Contact />
       <hr />
       <NewsLetter />
+      <hr />
+      <EmployeeServices />
       <hr />
       <Clients />
 

@@ -91,11 +91,13 @@
 
 .et-list-item .description {
     margin: 15px 0px;
-    font-size: 20px;
+    font-size: 21px;
     min-width: 100px;
     min-height: 130px;
     text-align: center;
-    color: rgb(36, 59, 59);
+    color: black;
+    font-weight: bold;
+
 
 }
 
@@ -108,6 +110,7 @@
 }
 
 .et-list-item .price {
+    color: rgb(36, 59, 59);
     font-size: 30px;
     font-weight: bold;
     min-height: 50px;
