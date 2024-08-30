@@ -4,7 +4,32 @@ import { StoreContext } from '../Context/StoreContext'
 import { loadStripe } from '@stripe/stripe-js';
 import { FaGreaterThan } from "react-icons/fa6";
 
+
+
 const ETGuides = () => {
+
+    const formatTextWithACAS = (text) => {
+        if (text.includes('ACAS')) {
+            const parts = text.split('ACAS');
+            return (
+                <div className="text-container">
+                    <div className="text-row">
+                        {parts[0]}
+                    </div>
+                    <div className="text-row second-row">
+                        <span className="acas-highlight">ACAS</span>
+                        {parts[1]}
+                    </div>
+                </div>
+            );
+        } else {
+            // If "ACAS" is not present, return text as-is
+            return text;
+        }
+    };
+
+
+
     const { et_list, et_bundle } = useContext(StoreContext)
     const iconStyle = { fontSize: '40px' };
 
@@ -27,7 +52,6 @@ const ETGuides = () => {
 
     const makePayment = async (item) => {
         if (item.price === 0) {
-            // Handle free items differently if needed
             return;
         }
         try {
@@ -76,7 +100,17 @@ const ETGuides = () => {
                                     <h3>{item.name}</h3>
                                     <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
                                     <button onClick={() => handleButtonClick(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
-                                    <h2 className='description'>{item.description}</h2>
+                                    {/* <h2 className='description'>{item.description.split('ACAS').map((part, index, array) => (
+                                        <>
+                                            {part}
+                                            {index !== array.length - 1 && <span className='acas-highlight'>ACAS</span>}
+                                        </>
+                                    ))}</h2> */}
+
+                                    <h2 className='description'>
+                                        {formatTextWithACAS(item.description)}
+                                    </h2>
+
                                     <div className="learn-more">
                                         <p>Learn more</p>
                                         <FaGreaterThan style={iconStyle} />

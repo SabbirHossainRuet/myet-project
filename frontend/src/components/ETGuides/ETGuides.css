@@ -35,8 +35,8 @@
     flex-direction: column;
     padding: 20px 20px;
     gap: 10px;
-    width: 230px;
-    height: 320px;
+    width: 200px;
+    height: 420px;
 }
 
 .et-list-item h3,
@@ -111,6 +111,30 @@ hr {
     gap: 5px;
     align-items: center;
 }
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.text-row {
+    display: flex;
+    align-items: center;
+}
+
+.second-row {
+    display: flex;
+    gap: 5px;
+}
+
+.acas-highlight {
+    font-weight: bold;
+    color: white;
+}
+
+
 
 .et-bundle-container {
     margin: 20px 0px;

@@ -7,7 +7,7 @@ export const assets = {
 export const et_list = [
     {
         _id: "1",
-        name: "InfoBrief",
+        name: "InfoBrief 1",
         price: 0,
         description: "Applying for an ACAS Certificate",
         pdfUrl: "/ACAS.pdf"
@@ -15,38 +15,46 @@ export const et_list = [
     {
         _id: "2",
         name: "Guide 2",
-        price: 19.99,
+        price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "3",
         name: "Guide 3",
-        price: 29.99,
+        price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "4",
-        name: "Questions and Answers",
-        price: 39.99,
+        name: "Guide 4",
+        price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "5",
         name: "Questions and Answers",
-        price: 39.99,
+        price: 19.99,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "6",
         name: "Questions and Answers",
+        price: 29.99,
+        description: "Example Text",
+        pdfUrl: "/ACAS.pdf"
+    },
+    {
+        _id: "7",
+        name: "Questions and Answers",
         price: 39.99,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
-    }
+    },
+
 ]
 
 export const et_bundle = [

@@ -6,7 +6,7 @@ import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { VscCallIncoming } from "react-icons/vsc";
 import { GrServices } from "react-icons/gr";
 import { RxDotFilled } from "react-icons/rx";
-
+import videoCall from '../../assets/videocall.png';
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
     return (
@@ -27,7 +27,7 @@ const Mission = () => {
                 <h3><u>Get started now</u></h3>
                 <div className="get-started-now">
                     <div className="get-started-now-item">
-                        <TiTick style={iconStyle} />
+                        <img src={videoCall} alt="" />
                         <p>Book a FREE 30 MINUTE appointment</p>
                     </div>
                     <div className="get-started-now-item">
