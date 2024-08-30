@@ -18,8 +18,7 @@
 }
 
 .et-list-container {
-    position: relative;
-    width: 99%;
+    width: 75.5%;
     margin: 0 auto;
 }
 
@@ -31,7 +30,7 @@
 
 .scroll-button {
     position: absolute;
-    top: 50%;
+    top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -44,12 +43,23 @@
 }
 
 .scroll-button.left {
-    left: 5px;
+    left: 50px;
+
 }
 
 .scroll-button.right {
-    right: 5px;
+    right: 50px;
 }
+
+.et-list::-webkit-scrollbar {
+    display: none;
+}
+
+.et-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 
 
 .et-list-item {
@@ -57,8 +67,8 @@
     flex-direction: column;
     padding: 20px 20px;
     gap: 10px;
-    min-width: 250px;
-    height: 420px;
+    min-width: 230px;
+    height: 450px;
 }
 
 .et-list-item h3,
@@ -80,11 +90,12 @@
 }
 
 .et-list-item .description {
+    margin: 15px 0px;
     font-size: 20px;
     min-width: 100px;
-    min-height: 150px;
+    min-height: 130px;
     text-align: center;
-    color: rgb(8, 12, 116);
+    color: rgb(36, 59, 59);
 
 }
 

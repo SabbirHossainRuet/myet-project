@@ -31,9 +31,17 @@ const ETGuides = () => {
     const scrollRef = useRef(null);
 
     const scroll = (direction) => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({
-                left: direction === 'left' ? -300 : 300,
+        const container = scrollRef.current;
+        const scrollAmount = 300;
+
+        if (direction === 'left') {
+            container.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth',
+            });
+        } else if (direction === 'right') {
+            container.scrollBy({
+                left: scrollAmount,
                 behavior: 'smooth',
             });
         }

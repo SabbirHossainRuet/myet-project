@@ -35,20 +35,27 @@ export const et_list = [
     },
     {
         _id: "5",
-        name: "Questions and Answers",
-        price: 19.99,
+        name: "InfoBrief 5",
+        price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "6",
         name: "Questions and Answers",
-        price: 29.99,
+        price: 19.99,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "7",
+        name: "Questions and Answers",
+        price: 29.99,
+        description: "Example Text",
+        pdfUrl: "/ACAS.pdf"
+    },
+    {
+        _id: "8",
         name: "Questions and Answers",
         price: 39.99,
         description: "Example Text",
