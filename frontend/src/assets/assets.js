@@ -41,22 +41,22 @@ export const et_list = [
         pdfUrl: "/ACAS.pdf"
     },
     {
-        _id: "PremiumBrief 6",
-        name: "6",
+        _id: "6",
+        name: "PremiumBrief 6",
         price: 19.99,
         description: "Preparing your ET1 and Particulars of Claim",
         pdfUrl: "/ACAS.pdf"
     },
     {
-        _id: "PremiumBrief 7",
-        name: "7",
+        _id: "7",
+        name: "PremiumBrief 7",
         price: 29.99,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
-        _id: "PremiumBrief 8",
-        name: "8",
+        _id: "8",
+        name: "PremiumBrief 8",
         price: 39.99,
         description: "Questions and Answers Session (Valid for 1 month)",
         pdfUrl: "/ACAS.pdf"
