@@ -7,6 +7,7 @@ import { VscCallIncoming } from "react-icons/vsc";
 import { GrServices } from "react-icons/gr";
 import { RxDotFilled } from "react-icons/rx";
 import videoCall from '../../assets/videocall.png';
+import shuttle from '../../assets/shuttle.png';
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
     return (
@@ -35,7 +36,7 @@ const Mission = () => {
                         <p>Download one of our helpful Information leaflets</p>
                     </div>
                     <div className="get-started-now-item">
-                        <GrServices style={iconStyle} />
+                        <img src={shuttle} alt="" />
                         <p>For one to one advice and support click on any of our tailored Services packages.</p>
                     </div>
                     <div className="get-started-now-item">

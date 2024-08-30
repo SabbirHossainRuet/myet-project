@@ -14,21 +14,21 @@ export const et_list = [
     },
     {
         _id: "2",
-        name: "Guide 2",
+        name: "InfoBrief 2",
         price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "3",
-        name: "Guide 3",
+        name: "InfoBrief 3",
         price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "4",
-        name: "Guide 4",
+        name: "InfoBrief 4",
         price: 0,
         description: "Example Text",
         pdfUrl: "/ACAS.pdf"

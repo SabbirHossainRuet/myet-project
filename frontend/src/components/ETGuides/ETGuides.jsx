@@ -1,30 +1,41 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import './ETGuides.css'
 import { StoreContext } from '../Context/StoreContext'
 import { loadStripe } from '@stripe/stripe-js';
-import { FaGreaterThan } from "react-icons/fa6";
+import { FaGreaterThan, FaLessThan } from 'react-icons/fa';
 
 
 
 const ETGuides = () => {
 
-    const formatTextWithACAS = (text) => {
-        if (text.includes('ACAS')) {
-            const parts = text.split('ACAS');
-            return (
-                <div className="text-container">
-                    <div className="text-row">
-                        {parts[0]}
-                    </div>
-                    <div className="text-row second-row">
-                        <span className="acas-highlight">ACAS</span>
-                        {parts[1]}
-                    </div>
-                </div>
-            );
-        } else {
-            // If "ACAS" is not present, return text as-is
-            return text;
+    // const formatTextWithACAS = (text) => {
+    //     if (text.includes('ACAS')) {
+    //         const parts = text.split('ACAS');
+    //         return (
+    //             <div className="text-container">
+    //                 <div className="text-row">
+    //                     {parts[0]}
+    //                 </div>
+    //                 <div className="text-row second-row">
+    //                     <span className="acas-highlight">ACAS</span>
+    //                     {parts[1]}
+    //                 </div>
+    //             </div>
+    //         );
+    //     } else {
+    //         // If "ACAS" is not present, return text as-is
+    //         return text;
+    //     }
+    // };
+
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({
+                left: direction === 'left' ? -300 : 300,
+                behavior: 'smooth',
+            });
         }
     };
 
@@ -88,10 +99,13 @@ const ETGuides = () => {
                 <br />
                 <hr />
                 <div className="et-list-container">
-                    <div className="et-list">
+                    <button className="scroll-button left" onClick={() => scroll('left')}>
+                        <FaLessThan />
+                    </button>
+                    <div className="et-list" ref={scrollRef}>
                         {et_list.map((item, index) => (
                             <>
-                                <div className="et-list-item" key={index} style={{
+                                <div className="et-list-item" key={item._id} style={{
                                     backgroundColor: index % 4 === 0 ? '#D5C183' :
                                         index % 4 === 1 ? '#D2A953' :
                                             index % 4 === 2 ? '#DC9344' :
@@ -100,15 +114,9 @@ const ETGuides = () => {
                                     <h3>{item.name}</h3>
                                     <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
                                     <button onClick={() => handleButtonClick(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
-                                    {/* <h2 className='description'>{item.description.split('ACAS').map((part, index, array) => (
-                                        <>
-                                            {part}
-                                            {index !== array.length - 1 && <span className='acas-highlight'>ACAS</span>}
-                                        </>
-                                    ))}</h2> */}
 
                                     <h2 className='description'>
-                                        {formatTextWithACAS(item.description)}
+                                        {item.description}
                                     </h2>
 
                                     <div className="learn-more">
@@ -122,6 +130,9 @@ const ETGuides = () => {
                         ))
                         }
                     </div>
+                    <button className="scroll-button right" onClick={() => scroll('right')}>
+                        <FaGreaterThan />
+                    </button>
                 </div>
                 <hr />
                 <div className="et-bundle-container">
