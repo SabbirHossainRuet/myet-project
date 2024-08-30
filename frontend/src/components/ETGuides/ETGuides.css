@@ -31,8 +31,8 @@
 .scroll-button {
     position: absolute;
     top: 30%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: #D5C183;
+    color: black;
     border: none;
     cursor: pointer;
     border-radius: 50%;
@@ -86,7 +86,7 @@
 
 .et-list-item h3 {
     font-size: 20px;
-    min-height: 45px;
+    min-height: 55px;
 }
 
 .et-list-item .description {

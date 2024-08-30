@@ -32,7 +32,7 @@ const ETGuides = () => {
 
     const scroll = (direction) => {
         const container = scrollRef.current;
-        const scrollAmount = 300;
+        const scrollAmount = 232;
 
         if (direction === 'left') {
             container.scrollBy({
@@ -105,7 +105,6 @@ const ETGuides = () => {
             <div className="et-guides-container">
                 <p className='title'>InfoBriefs</p>
                 <br />
-                <hr />
                 <div className="et-list-container">
                     <button className="scroll-button left" onClick={() => scroll('left')}>
                         <FaLessThan />
@@ -142,7 +141,6 @@ const ETGuides = () => {
                         <FaGreaterThan />
                     </button>
                 </div>
-                <hr />
                 <div className="et-bundle-container">
                     <div className="et-bundle">
                         {et_bundle.map((item, index) => (
