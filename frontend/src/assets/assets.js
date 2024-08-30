@@ -16,35 +16,35 @@ export const et_list = [
         _id: "2",
         name: "InfoBrief 2",
         price: 0,
-        description: "Example Text",
+        description: "Key Points for Unfair Dismissal",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "3",
         name: "InfoBrief 3",
         price: 0,
-        description: "Example Text",
+        description: "What is Constructive Unfair Dismissal?",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "4",
         name: "InfoBrief 4",
         price: 0,
-        description: "Example Text",
+        description: "What is Wrongful Dismissal?",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "5",
         name: "InfoBrief 5",
         price: 0,
-        description: "Example Text",
+        description: "Understanding Redundancy Dismissals",
         pdfUrl: "/ACAS.pdf"
     },
     {
         _id: "6",
         name: "Questions and Answers",
         price: 19.99,
-        description: "Example Text",
+        description: "Preparing your ET1 and Particulars of Claim",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -58,7 +58,7 @@ export const et_list = [
         _id: "8",
         name: "Questions and Answers",
         price: 39.99,
-        description: "Example Text",
+        description: "Questions and Answers Session (Valid for 1 month)",
         pdfUrl: "/ACAS.pdf"
     },
 
