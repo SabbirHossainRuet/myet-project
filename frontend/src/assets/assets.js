@@ -94,7 +94,7 @@ export const services = [
         name: "Option 3",
         price: 0,
         text: "Dismissal Paperwork Review \nand Next Steps",
-        description: "If you've facing dismissal or recently been dismissed, we'll review your dismissal letters to recommend the best steps you can take."
+        description: "If you're facing dismissal or recently been dismissed, we'll review your dismissal letters to recommend the best steps you can take."
     },
     {
         _id: "4",
