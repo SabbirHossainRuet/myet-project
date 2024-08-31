@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
 import './Contact.css';
-import { AiTwotoneMail } from "react-icons/ai";
 import { VscCallIncoming } from "react-icons/vsc";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { StoreContext } from "../Context/StoreContext";
 import InfoIcon from "../../assets/infoicon.jpg";
 import CallbackForm from '../Callbackform/CallbackForm';
+import Email from '../../assets/email.png';
+import About from '../../assets/about.png';
 
 const Contact = () => {
     const iconStyle = { fontSize: '40px' };
@@ -29,7 +30,6 @@ const Contact = () => {
                 <h3>Ways to contact us</h3>
                 <div className="contact-container-grid">
                     <div className="contact-item">
-
                         <PiPhoneCallFill style={iconStyle} />
                         <p>
                             <a style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -38,18 +38,27 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="contact-item">
-                        <img src={InfoIcon} alt="" />
-                        <p onClick={handleEnquiryClick} style={{ cursor: 'pointer' }}>
+                        <img src={About} alt="" />
+                        <p onClick={handleEnquiryClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
+                            e.target.style.textDecoration = 'underline';
+                        }}
+                            onMouseLeave={(e) => {
+                                e.target.style.textDecoration = 'none';
+                            }}>
                             Make an Enquiry
                         </p>
                     </div>
                     <div className="contact-item">
                         <VscCallIncoming style={iconStyle} />
-
-                        <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }}>Request a Callback</p>
+                        <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
+                            e.target.style.textDecoration = 'underline';
+                        }}
+                            onMouseLeave={(e) => {
+                                e.target.style.textDecoration = 'none';
+                            }}>Request a Callback</p>
                     </div>
                     <div className="contact-item">
-                        <AiTwotoneMail style={iconStyle} />
+                        <img src={Email} alt="" />
                         <p>
                             <a style={{ textDecoration: 'none', color: 'inherit' }}>
                                 Email

@@ -80,7 +80,7 @@ export const services = [
         name: "Option 1",
         price: 0,
         text: "30 Minute Appointment",
-        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a FREE 30 minute appointment using the calendar link."
+        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a FREE 30 minute appointment using the link."
     },
     {
         _id: "2",
