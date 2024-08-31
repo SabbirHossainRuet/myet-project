@@ -107,7 +107,7 @@ const Navbar = () => {
                     <Link className="li" to="et-guides" duration={500} offset={-180}>InfoBriefs</Link>
                     <Link className="li" to="contact" duration={500} offset={-200}>Contact us</Link>
                     <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
-                    <Link className="li" to="clients" duration={500} offset={-200}>Clients</Link>
+                    <Link className="li" to="clients" duration={500} offset={-200}>Customers</Link>
                 </div>
             </div>
             <div className="navbar-menu-container">
