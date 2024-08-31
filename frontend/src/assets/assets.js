@@ -93,7 +93,7 @@ export const services = [
         _id: "3",
         name: "Option 3",
         price: 0,
-        text: "Dismissal Letters",
+        text: "Dismissal Paperwork Review and Next Steps",
         description: "If you've facing dismissal or recently been dismissed, we'll review your dismissal letters to recommend the best steps you can take."
     },
     {
@@ -130,6 +130,13 @@ export const services = [
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
         description: "As we instruct on multiple ET1s every week, we'll get the best rate for you."
+    },
+    {
+        _id: "9",
+        name: "Option 9",
+        price: 949,
+        text: "Example Text",
+        description: "Example Text"
     },
 
 ]

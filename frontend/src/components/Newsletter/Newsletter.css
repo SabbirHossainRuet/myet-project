@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 .newsletter {
     max-width: 70%;
     margin: 40px auto;
@@ -17,7 +19,7 @@
 .news-container .left {
     display: inline-block;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     box-sizing: border-box;
     padding-right: 10px;
 }
@@ -27,7 +29,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     box-sizing: border-box;
     gap: 10px;
 }
@@ -36,7 +38,15 @@
     color: orange;
     font-size: 30px;
     text-align: center;
+    font-family: "Kalam";
 }
+
+.alt2 {
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+}
+
 
 .contact-form {
     display: flex;
