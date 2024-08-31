@@ -80,39 +80,53 @@ export const services = [
         name: "Option 1",
         price: 0,
         text: "30 Minute Appointment",
-        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a FREE 30 minute appointment using the link."
+        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a FREE 30 minute appointment using the links."
     },
     {
         _id: "2",
         name: "Option 2",
+        price: 0,
+        text: "Grievance/Appeal Review",
+        description: "We'll review your grievance paperwork for free, this includes your grievance letter, employer's response or any appeal paperwork."
+    },
+    {
+        _id: "3",
+        name: "Option 3",
+        price: 0,
+        text: "Dismissal Letters",
+        description: "If you've facing dismissal or recently been dismissed, we'll review your dismissal letters to recommend the best steps you can take."
+    },
+    {
+        _id: "4",
+        name: "Option 4",
         price: 79,
         text: "One Hour of\nTailored Advice and Support",
         description: "Don' t worry if we run over slightly, or if we need to clarify things again, we won't charge you anymore."
     },
     {
-        _id: "3",
-        name: "Option 3",
+        _id: "5",
+        name: "Option 5",
         price: 189,
         text: "Strengths and Weaknesses Assessment",
         description: "We'll give you an honest and frank assessment of the pros and cons of your case. This includes looking at upto 150 pages of your documents."
     },
     {
-        _id: "4",
-        name: "Option 4",
+        _id: "6",
+        name: "Option 6",
         price: 299,
         text: "We offer 3 x 1 hour Coaching Support Service",
         description: "Helping you write your ET1 Form/Particulars of Claim or providing you with help to run your own Tribunal Claim, with our expert Coaching Support Service."
     },
     {
-        _id: "5",
-        name: "Option 5",
+        _id: "7",
+        name: "Option 7",
         price: 699,
         text: "ET1 Completion Service",
         description: "If you'd like us to write your ET1 for you, we're happy to do that also."
     },
     {
-        _id: "6",
-        name: "Option 6",
+        _id: "8",
+        name: "Option 8",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
         description: "As we instruct on multiple ET1s every week, we'll get the best rate for you."

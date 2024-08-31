@@ -10,6 +10,7 @@ import shuttle from '../../assets/shuttle.png';
 import download from '../../assets/download.png'
 import { StoreContext } from "../Context/StoreContext";
 import CallbackForm from "../Callbackform/CallbackForm";
+import { Link } from 'react-scroll';
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
     const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, setFormTitle, formTitle } = useContext(StoreContext);
@@ -42,11 +43,11 @@ const Mission = () => {
                     </div>
                     <div className="get-started-now-item">
                         <img src={download} alt="" />
-                        <p>Download one of our helpful InfoBriefs/PremiumBriefs.</p>
+                        <p>Download one of our helpful <Link className="link-services" to="et-guides" duration={500} offset={-200}>InfoBriefs/PremiumBriefs</Link>.</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={shuttle} alt="" />
-                        <p>For one to one advice and support click on any of our tailored Services packages.</p>
+                        <p>For one to one advice and support click on any of our tailored <Link className="link-services" to="services" duration={500} offset={-200}>Services</Link> packages.</p>
                     </div>
                     <div className="get-started-now-item">
                         <VscCallIncoming style={iconStyle} />

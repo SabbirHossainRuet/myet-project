@@ -142,6 +142,17 @@
     /* Larger dots to fit with bigger font */
 }
 
+.link-services {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.link-services:hover {
+    text-decoration: underline;
+}
+
+
 
 
 @media (max-width: 768px) {

@@ -8,7 +8,8 @@ const EmployeeServices = () => {
     const { employeeservices } = useContext(StoreContext);
     return (
         <div className='employee-services' id='employee-services'>
-            <p className='title'>Employment law is the only thing we do <br />Here everyday for everyone who needs us</p>
+            <p className='title'>Employment law is the only thing we do.</p>
+            <p className='title2'>Here everyday for everyone who needs us.</p>
             <div className="employee-container">
                 <div className="employee-bundle">
                     {/* {employeeservices.map((employeeservices, index) => (

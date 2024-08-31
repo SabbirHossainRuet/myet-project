@@ -6,7 +6,7 @@ import { StoreContext } from "../Context/StoreContext";
 import InfoIcon from "../../assets/infoicon.jpg";
 import CallbackForm from '../Callbackform/CallbackForm';
 import Email from '../../assets/email.png';
-import About from '../../assets/about.png';
+import Enquiry from '../../assets/enquiry.png';
 
 const Contact = () => {
     const iconStyle = { fontSize: '40px' };
@@ -38,7 +38,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="contact-item">
-                        <img src={About} alt="" />
+                        <img src={Enquiry} alt="" />
                         <p onClick={handleEnquiryClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
                             e.target.style.textDecoration = 'underline';
                         }}

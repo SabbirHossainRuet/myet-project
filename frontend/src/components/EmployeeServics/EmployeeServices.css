@@ -27,7 +27,7 @@
 
 .employee-services .title {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     color: orange;
     font-family: "Kalam";
@@ -45,10 +45,12 @@
     transform: translateY(-5px);
 }
 
-.title {
+.employee-services .title2 {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    color: orange;
+    font-family: "Kalam";
 }
 
 /* Responsive Design */
