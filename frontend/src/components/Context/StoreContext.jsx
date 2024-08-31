@@ -11,6 +11,7 @@ const StoreContextProvider = (props) => {
     const [isCallbackFormVisible, setIsCallbackFormVisible] = useState(false);
     const [callbackFormData, setCallbackFormData] = useState({});
     const [showDateTime, setShowDateTime] = useState(true);
+    const [formTitle, setFormTitle] = useState('');
 
     const toggleCallbackForm = () => {
         setIsCallbackFormVisible(!isCallbackFormVisible);
@@ -35,6 +36,8 @@ const StoreContextProvider = (props) => {
         callbackFormData,
         showDateTime,
         setShowDateTime,
+        formTitle,
+        setFormTitle,
         toggleCallbackForm,
         handleFormChange,
         handleFormSubmit

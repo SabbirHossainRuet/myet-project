@@ -41,7 +41,7 @@ const NewsLetter = () => {
                 <div className="left">
                     <h2 className="alt">Sign up to our monthly Newsletter</h2>
                     <p style={{ textAlign: "center" }}>
-                        Stay up to date with MyET1.com, and how we're supporting UK workers to resolve their employment disputes.
+                        Stay up to date with us, and how we're supporting UK workers to resolve their employment disputes.
                     </p>
                 </div>
                 <div className="right">

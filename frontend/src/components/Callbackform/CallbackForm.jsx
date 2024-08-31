@@ -3,15 +3,14 @@ import { StoreContext } from "../Context/StoreContext";
 import Logo from "../../assets/logo.jpg";
 import './CallbackForm.css';
 
-const CallbackForm = ({ handleTitleClick }) => {
+const CallbackForm = ({ handleTitleClick, titleText }) => {
     const { callbackFormData, handleFormChange, handleFormSubmit, toggleCallbackForm, showDateTime, } = useContext(StoreContext);
-
-    console.log(showDateTime);
 
     return (
         <div className="callback-form-container">
             <div className="callback-form-container-left">
                 <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
+                <h2 className="callback-form-title">{titleText}</h2>
             </div>
             <div className="callback-form-container-right">
                 <form onSubmit={handleFormSubmit}>

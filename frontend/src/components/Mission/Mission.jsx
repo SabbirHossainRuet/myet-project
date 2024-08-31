@@ -4,8 +4,7 @@ import { assets } from "../../assets/assets";
 import { TiTick } from "react-icons/ti";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { VscCallIncoming } from "react-icons/vsc";
-import { GrServices } from "react-icons/gr";
-import { RxDotFilled } from "react-icons/rx";
+import { MdOutlineStar } from "react-icons/md";
 import videoCall from '../../assets/videocall.png';
 import shuttle from '../../assets/shuttle.png';
 import download from '../../assets/download.png'
@@ -13,10 +12,11 @@ import { StoreContext } from "../Context/StoreContext";
 import CallbackForm from "../Callbackform/CallbackForm";
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
-    const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, } = useContext(StoreContext);
+    const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, setFormTitle, formTitle } = useContext(StoreContext);
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
+        setFormTitle('Callback Form');
         toggleCallbackForm();
     };
     return (
@@ -38,7 +38,7 @@ const Mission = () => {
                 <div className="get-started-now">
                     <div className="get-started-now-item">
                         <img src={videoCall} alt="" />
-                        <p>Book a FREE 30 MINUTE Online Appointment (or by Phone)</p>
+                        <p>Book a FREE 30 MINUTE Online Appointment <br />(or by Phone)</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={download} alt="" />
@@ -64,10 +64,10 @@ const Mission = () => {
                 <div className="bottom-text">
                     <div className="bottom-text-up">
                         <p>Low Cost</p>
-                        <RxDotFilled style={iconStyle} />
+                        <MdOutlineStar style={iconStyle} />
                         <p>Affordable</p>
-                        <RxDotFilled style={iconStyle} />
-                        <p>Accesible</p>
+                        <MdOutlineStar style={iconStyle} />
+                        <p>Accessible</p>
                     </div>
                     <div className="bottom-text-down">
                         <p>Expert employment support for UK Workers</p>
@@ -75,7 +75,7 @@ const Mission = () => {
 
                 </div>
             </div>
-            {isCallbackFormVisible && <CallbackForm />}
+            {isCallbackFormVisible && <CallbackForm titleText={formTitle} />}
         </div >
     );
 };

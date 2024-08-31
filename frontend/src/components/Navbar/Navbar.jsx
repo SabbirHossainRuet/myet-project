@@ -55,16 +55,18 @@ import CallbackForm from "../Callbackform/CallbackForm";
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const { isCallbackFormVisible,
-        toggleCallbackForm, setShowDateTime,
+        toggleCallbackForm, setShowDateTime, setFormTitle, formTitle,
     } = useContext(StoreContext);
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
+        setFormTitle('Callback Form');
         toggleCallbackForm();
     };
 
     const handleEnquiryClick = () => {
-        setShowDateTime(false); // Hide date and time fields
+        setShowDateTime(false);
+        setFormTitle('Enquiry Form');
         toggleCallbackForm();
     };
 
@@ -137,7 +139,7 @@ const Navbar = () => {
                 </Box>
             </Drawer>
             {/* Callback Form */}
-            {isCallbackFormVisible && <CallbackForm />}
+            {isCallbackFormVisible && <CallbackForm titleText={formTitle} />}
         </nav >
     );
 };

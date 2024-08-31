@@ -31,6 +31,10 @@
     margin: 10px;
 }
 
+.callback-form-title {
+    color: blue !important;
+}
+
 .best-day-call {
     display: flex;
     flex-direction: column;

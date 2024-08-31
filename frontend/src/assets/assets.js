@@ -101,7 +101,7 @@ export const services = [
         name: "Option 4",
         price: 299,
         text: "We offer 3 x 1 hour Coaching Support Service",
-        description: "Helping you write your own ET1 with our expert Coaching Support Service."
+        description: "Helping you write your ET1 Form/Particulars of Claim or providing you with help to run your own Tribunal Claim, with our expert Coaching Support Service"
     },
     {
         _id: "5",

@@ -9,15 +9,17 @@ import CallbackForm from '../Callbackform/CallbackForm';
 
 const Contact = () => {
     const iconStyle = { fontSize: '40px' };
-    const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, } = useContext(StoreContext);
+    const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, setFormTitle, formTitle } = useContext(StoreContext);
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
+        setFormTitle('Callback Form');
         toggleCallbackForm();
     };
 
     const handleEnquiryClick = () => {
         setShowDateTime(false);
+        setFormTitle('Enquiry Form');
         toggleCallbackForm();
     };
 
@@ -58,7 +60,7 @@ const Contact = () => {
             </div>
 
             {/* Callback Form */}
-            {isCallbackFormVisible && <CallbackForm />}
+            {isCallbackFormVisible && <CallbackForm titleText={formTitle} />}
         </div >
     );
 };

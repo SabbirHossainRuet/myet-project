@@ -20,7 +20,6 @@ const App = () => {
       <NewsLetter />
       <hr />
       <EmployeeServices />
-      <hr />
       <Clients />
 
 
