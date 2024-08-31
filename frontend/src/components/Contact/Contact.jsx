@@ -42,8 +42,8 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="contact-item">
-
                         <VscCallIncoming style={iconStyle} />
+
                         <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }}>Request a Callback</p>
                     </div>
                     <div className="contact-item">

@@ -79,51 +79,69 @@
 }
 
 .bottom-text {
-    background-color: #e3f2fd;
-    /* Light pastel blue for a calming background */
-    padding: 30px 0px;
+    background-color: #FE6601;
+    /* Bold dark blue for a strong visual impact */
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    border-radius: 10px;
-    /* Rounded corners for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for a smooth feel */
-}
-
-.bottom-text p {
-    font-size: 18px;
-    color: #333;
-    /* Soft, dark gray for text for good readability */
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    /* Choose a calming, clean font */
+    gap: 25px;
+    border-radius: 15px;
+    /* Slightly rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow for depth */
+    max-width: 80%;
+    /* Ensure it doesn't stretch too wide */
+    margin: auto;
 }
 
 .bottom-text-up {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    font-weight: 500;
+    gap: 15px;
+    font-weight: bold;
+    /* Strong, bold text for emphasis */
 }
 
-.bottom-text-down {
-    font-size: 16px;
-    color: #555;
-    font-style: italic;
+.bottom-text p {
+    font-size: 28px;
+    /* Larger text for better readability */
+    color: #ffffff;
+    /* White text for high contrast against the dark background */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* Use a bold, clean sans-serif font */
+    text-transform: uppercase;
+    /* Uppercase for stronger visual impact */
+    letter-spacing: 1.5px;
+    /* Slightly spaced-out letters for modern look */
 }
 
-.bottom-text-up p,
 .bottom-text-down p {
-    transition: color 0.3s ease;
+    font-size: 20px;
+    color: #ffeb3b;
+    /* Bold yellow for striking contrast */
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .bottom-text-up p:hover {
-    color: #00796b;
+    color: black;
+    /* Same yellow color on hover to match the secondary text */
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
+
+.bottom-text-up svg {
+    color: #ffeb3b;
+    /* Matching yellow for the dots between words */
+    font-size: 24px;
+    /* Larger dots to fit with bigger font */
+}
+
 
 
 @media (max-width: 768px) {

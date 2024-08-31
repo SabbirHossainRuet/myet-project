@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Mission.css";
 import { assets } from "../../assets/assets";
 import { TiTick } from "react-icons/ti";
@@ -9,8 +9,16 @@ import { RxDotFilled } from "react-icons/rx";
 import videoCall from '../../assets/videocall.png';
 import shuttle from '../../assets/shuttle.png';
 import download from '../../assets/download.png'
+import { StoreContext } from "../Context/StoreContext";
+import CallbackForm from "../Callbackform/CallbackForm";
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
+    const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, } = useContext(StoreContext);
+
+    const handleCallbackClick = () => {
+        setShowDateTime(true);
+        toggleCallbackForm();
+    };
     return (
         <div className="mission" id="mission">
             <div className="mission-contents">
@@ -30,7 +38,7 @@ const Mission = () => {
                 <div className="get-started-now">
                     <div className="get-started-now-item">
                         <img src={videoCall} alt="" />
-                        <p>Book a FREE 30 MINUTE Online (or by Phone) Appointment</p>
+                        <p>Book a FREE 30 MINUTE Online Appointment (or by Phone)</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={download} alt="" />
@@ -42,7 +50,15 @@ const Mission = () => {
                     </div>
                     <div className="get-started-now-item">
                         <VscCallIncoming style={iconStyle} />
-                        <p>Use the Request a Callback or Contact form to get in touch with us if you have any questions.</p>
+                        <p style={{ textDecoration: 'none', cursor: 'default' }}
+                            onMouseEnter={(e) => {
+                                e.target.style.textDecoration = 'underline';
+                                e.target.style.cursor = 'pointer';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.target.style.textDecoration = 'none';
+                                e.target.style.cursor = 'default';
+                            }} onClick={handleCallbackClick}>Use the Request a Callback or Contact form to get in touch with us if you have any questions.</p>
                     </div>
                 </div>
                 <div className="bottom-text">
@@ -59,7 +75,8 @@ const Mission = () => {
 
                 </div>
             </div>
-        </div>
+            {isCallbackFormVisible && <CallbackForm />}
+        </div >
     );
 };
 

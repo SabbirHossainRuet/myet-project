@@ -252,14 +252,14 @@ export const employeeservices = [
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Applying for an Acas Early Conciliation Certificate"
     },
     {
         _id: "20",
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Example Text"
+        description: "Support with Employment Tribunal Claims"
     },
 ]
 
