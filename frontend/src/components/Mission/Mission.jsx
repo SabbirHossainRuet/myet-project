@@ -30,11 +30,11 @@ const Mission = () => {
                 <div className="get-started-now">
                     <div className="get-started-now-item">
                         <img src={videoCall} alt="" />
-                        <p>Book a FREE 30 MINUTE appointment</p>
+                        <p>Book a FREE 30 MINUTE Online (or by Phone) Appointment</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={download} alt="" />
-                        <p>Download one of our helpful Information leaflets</p>
+                        <p>Download one of our helpful InfoBriefs/PremiumBriefs</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={shuttle} alt="" />
