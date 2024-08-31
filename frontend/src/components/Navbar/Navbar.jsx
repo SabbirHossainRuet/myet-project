@@ -60,13 +60,13 @@ const Navbar = () => {
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
-        setFormTitle('Callback Form');
+        setFormTitle('Request A Callback');
         toggleCallbackForm();
     };
 
     const handleEnquiryClick = () => {
         setShowDateTime(false);
-        setFormTitle('Enquiry Form');
+        setFormTitle('Make An Enquiry');
         toggleCallbackForm();
     };
 
@@ -103,6 +103,7 @@ const Navbar = () => {
             <div className="navbar-bottom">
                 <div className="navbar-links-container">
                     <Link className="li" to="mission" duration={500} offset={-200}>Mission</Link>
+                    <Link className="li" to="mission" duration={500} offset={800}>Get Started</Link>
                     <Link className="li" to="services" duration={500} offset={-200}>Services</Link>
                     <Link className="li" to="et-guides" duration={500} offset={-180}>InfoBriefs</Link>
                     <Link className="li" to="contact" duration={500} offset={-200}>Contact us</Link>

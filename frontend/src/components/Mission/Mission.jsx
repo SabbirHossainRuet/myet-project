@@ -16,7 +16,7 @@ const Mission = () => {
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
-        setFormTitle('Callback Form');
+        setFormTitle('Request A Callback');
         toggleCallbackForm();
     };
     return (
@@ -38,11 +38,11 @@ const Mission = () => {
                 <div className="get-started-now">
                     <div className="get-started-now-item">
                         <img src={videoCall} alt="" />
-                        <p>Book a FREE 30 MINUTE Online Appointment <br />(or by Phone)</p>
+                        <p>Book a FREE 30 MINUTE Online Appointment <br />(or by Phone).</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={download} alt="" />
-                        <p>Download one of our helpful InfoBriefs/PremiumBriefs</p>
+                        <p>Download one of our helpful InfoBriefs/PremiumBriefs.</p>
                     </div>
                     <div className="get-started-now-item">
                         <img src={shuttle} alt="" />
@@ -58,7 +58,7 @@ const Mission = () => {
                             onMouseLeave={(e) => {
                                 e.target.style.textDecoration = 'none';
                                 e.target.style.cursor = 'default';
-                            }} onClick={handleCallbackClick}>Use the Request a Callback or Contact form to get in touch with us if you have any questions.</p>
+                            }} onClick={handleCallbackClick}>Use the Request A Callback or Contact form to get in touch with us if you have any questions.</p>
                     </div>
                 </div>
                 <div className="bottom-text">

@@ -33,6 +33,9 @@
 
 .callback-form-title {
     color: blue !important;
+    font-size: 22px !important;
+    margin-left: 8px !important;
+
 }
 
 .best-day-call {

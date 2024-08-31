@@ -13,13 +13,13 @@ const Contact = () => {
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
-        setFormTitle('Callback Form');
+        setFormTitle('Request A Callback');
         toggleCallbackForm();
     };
 
     const handleEnquiryClick = () => {
         setShowDateTime(false);
-        setFormTitle('Enquiry Form');
+        setFormTitle('Make An Enquiry');
         toggleCallbackForm();
     };
 
