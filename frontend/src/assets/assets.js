@@ -93,7 +93,7 @@ export const services = [
         _id: "3",
         name: "Option 3",
         price: 0,
-        text: "Dismissal Paperwork Review and Next Steps",
+        text: "Dismissal Paperwork Review \nand Next Steps",
         description: "If you've facing dismissal or recently been dismissed, we'll review your dismissal letters to recommend the best steps you can take."
     },
     {
@@ -114,7 +114,7 @@ export const services = [
         _id: "6",
         name: "Option 6",
         price: 299,
-        text: "We offer 3 x 1 hour Coaching Support Service",
+        text: "We offer 3 x 1 hour \nCoaching Support Service",
         description: "Helping you write your ET1 Form/Particulars of Claim or providing you with help to run your own Tribunal Claim, with our expert Coaching Support Service."
     },
     {
