@@ -308,7 +308,7 @@ export const employeeservices = [
         name: "Option 6",
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "Interim Relief Applications (Strict 7 day time limit applies)"
+        description: "Interim Relief Applications (7 day time limit applies)"
     },
     {
         _id: "25",
