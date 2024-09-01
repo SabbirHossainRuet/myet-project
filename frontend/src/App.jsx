@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact'
 import NewsLetter from './components/Newsletter/Newsletter'
 import Clients from './components/Clients/Clients'
 import EmployeeServices from './components/EmployeeServics/EmployeeServices'
+import NewsAndEvents from './components/NewsAndEvents/NewsAndEvents'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Services />
       <ETGuides />
       <Contact />
+      <NewsAndEvents />
       <hr />
       <NewsLetter />
       <hr />

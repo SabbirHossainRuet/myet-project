@@ -3,6 +3,7 @@ import { et_list } from "../../assets/assets";
 import { et_bundle } from "../../assets/assets";
 import { services } from "../../assets/assets";
 import { employeeservices } from "../../assets/assets";
+import { newsData } from "../../assets/assets";
 
 
 export const StoreContext = createContext(null);
@@ -28,6 +29,7 @@ const StoreContextProvider = (props) => {
         setIsCallbackFormVisible(false);
     };
     const contextValue = {
+        newsData,
         et_list,
         et_bundle,
         services,

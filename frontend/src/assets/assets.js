@@ -4,6 +4,50 @@ export const assets = {
     legal
 }
 
+
+export const newsData = [
+    {
+        day: '28',
+        month: 'Aug',
+        year: '24',
+        title: 'Eaton mess as Hampshire aerospace workers to strike after poor pay offer',
+        summary: 'Aerospace workers in Hampshire will go on strike after negotiations for a pay rise fell through...',
+        image: '/News/legal.jpg',
+    },
+    {
+        day: '28',
+        month: 'Aug',
+        year: '24',
+        title: 'Hounslow traffic and public safety disruption during CCTV pay strikes',
+        summary: 'Public safety and traffic management are expected to face disruption due to CCTV operators joining the strike...',
+        image: '/News/legal.jpg',
+    },
+    {
+        day: '27',
+        month: 'Aug',
+        year: '24',
+        title: 'Unite leader calls for change not cuts',
+        summary: 'The leader of Unite has called for a national shift away from austerity measures...',
+        image: '/News/legal.jpg',
+    },
+    {
+        day: '29',
+        month: 'Aug',
+        year: '24',
+        title: 'Unite leader calls for change not cuts',
+        summary: 'The leader of Unite has called for a national shift away from austerity measures...',
+        image: '/News/legal.jpg',
+    },
+    {
+        day: '27',
+        month: 'Aug',
+        year: '24',
+        title: 'Unite leader calls for change not cuts',
+        summary: 'The leader of Unite has called for a national shift away from austerity measures...',
+        image: '/News/legal.jpg',
+    },
+];
+
 export const et_list = [
     {
         _id: "1",
