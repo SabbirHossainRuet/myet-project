@@ -120,23 +120,23 @@ export const services = [
     {
         _id: "7",
         name: "Option 7",
+        price: 499,
+        text: "Pay for 5, Get 6 Hours of our Coaching Support Service",
+        description: "Pay for 5 hours and we'll provide 6 hours of our Coaching Support Service. You'll recieve a dedicated employment coach working 1 to 1 with you."
+    },
+    {
+        _id: "8",
+        name: "Option 8",
         price: 699,
         text: "ET1 Completion Service",
         description: "If you'd like us to write your ET1 for you, we're happy to do that also."
     },
     {
-        _id: "8",
-        name: "Option 8",
-        price: 949,
-        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
-        description: "As we instruct on multiple ET1s every week, we'll get the best rate for you."
-    },
-    {
         _id: "9",
         name: "Option 9",
         price: 949,
-        text: "Example Text",
-        description: "Example Text"
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "As we instruct on multiple ET1s every week, we'll get the best rate for you."
     },
 
 ]

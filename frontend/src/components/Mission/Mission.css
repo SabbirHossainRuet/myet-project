@@ -143,13 +143,9 @@
 }
 
 .link-services {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
     cursor: pointer;
-}
-
-.link-services:hover {
-    text-decoration: underline;
 }
 
 
