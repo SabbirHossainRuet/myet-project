@@ -121,7 +121,7 @@ export const services = [
         _id: "7",
         name: "Option 7",
         price: 499,
-        text: "Pay for 5, Get 6 Hours of our Coaching Support Service",
+        text: "Pay for 5, Get 6 Hours of our \nCoaching Support Service",
         description: "Pay for 5 hours and we'll provide 6 hours of our Coaching Support Service. You'll recieve a dedicated employment coach working 1 to 1 with you."
     },
     {
@@ -281,6 +281,41 @@ export const employeeservices = [
         price: 949,
         text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
         description: "Support with Employment Tribunal Claims"
+    },
+    {
+        _id: "21",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Harassment Claims"
+    },
+    {
+        _id: "22",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Sickness Absence"
+    },
+    {
+        _id: "23",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "ET1 Form/Particulars of Claim"
+    },
+    {
+        _id: "24",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Interim Relief Applications (Strict 7 day time limit applies)"
+    },
+    {
+        _id: "25",
+        name: "Option 6",
+        price: 949,
+        text: "Commission an expert Employment Lawyer through us to draft your ET1 Particulars of Claim",
+        description: "Capability Proceedings"
     },
 ]
 

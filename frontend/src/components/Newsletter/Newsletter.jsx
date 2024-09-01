@@ -39,7 +39,7 @@ const NewsLetter = () => {
         <div className="newsletter" id="newsletter">
             <div className="news-container">
                 <div className="left">
-                    <h2 className="alt">Stay up to date with us,</h2>
+                    <h2 className="alt">Stay up to date with us</h2>
                     <h2 className="alt2">Get the latest case updates and employment news straight to your inbox.<br />Sign up to our monthly Newsletter by completing your details:</h2>
                     {/* <p style={{ textAlign: "center" }}>
                         Stay up to date with us, and how we're supporting UK workers to resolve their employment disputes.
@@ -62,7 +62,7 @@ const NewsLetter = () => {
                             <button type="submit">Sign up</button>
                         </form>
                     ) : (
-                        <p style={{ fontSize: "20px", color: "orange", marginLeft: "50px", marginTop: "10px", textAlign: 'center' }}>Thank you for signing up!<br /> We'll be in touch soon.</p>
+                        <p style={{ fontSize: "20px", color: "orange", marginLeft: "50px", marginTop: "10px", textAlign: 'center' }}>Thank you for signing up!<br /> {`We'll be in touch soon.`}</p>
                     )}
                 </div>
             </div>

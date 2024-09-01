@@ -31,7 +31,9 @@ const Mission = () => {
                     <h2>Welcome to the</h2>
                     <h2>Employment Rights Network</h2>
                     <div className="mission-texts-text">
-                        <p>{`We're on a mission to help UK workers take control of their employment disputes. Getting quality employment law advice is hard and expensive. We're making it easy and affordable.`}</p>
+                        <p>{`We're on a mission to help UK workers take control of their employment disputes.`}
+                            <br />
+                            {`Getting quality employment law advice is hard and expensive. We're making it easy and affordable.`}</p>
                         <p>{`We're here to provide support and practical no nonsense advice to everyone - that's affordable and accessible - no matter what their financial circumstances.`}</p>
                     </div>
                 </div>
@@ -51,16 +53,25 @@ const Mission = () => {
                     </div>
                     <div className="get-started-now-item">
                         <VscCallIncoming style={iconStyle} />
-                        <p style={{ textDecoration: 'none', cursor: 'default' }}
-                            onMouseEnter={(e) => {
-                                e.target.style.textDecoration = 'underline';
-                                e.target.style.cursor = 'pointer';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.textDecoration = 'none';
-                                e.target.style.cursor = 'default';
-                            }} onClick={handleCallbackClick}>Use the Request A Callback or Contact form to get in touch with us if you have any questions.</p>
+                        <p>
+                            Use the{' '}
+                            <span
+                                style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                                onClick={handleCallbackClick}
+                            >
+                                Request A Callback
+                            </span>{' '}
+                            or{' '}
+                            <span
+                                style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                                onClick={handleCallbackClick}
+                            >
+                                Contact Form
+                            </span>{' '}
+                            to get in touch with us if you have any questions.
+                        </p>
                     </div>
+
                 </div>
                 <div className="bottom-text">
                     <div className="bottom-text-up">
