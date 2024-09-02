@@ -18,7 +18,8 @@ const NewsAndEvents = () => {
     const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="news-events-section">
+        <div className="news-events-section" id='news-events-section'>
+            <p className='title'>News and Events</p>
             <div className="news-container">
                 {currentNewsItems.map((news, index) => (
                     <div className="news-card" key={news._id}>

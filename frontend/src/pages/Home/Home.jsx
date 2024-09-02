@@ -15,10 +15,11 @@ const Home = () => {
         <div>
             <Navbar />
             <Mission />
+            <hr />
+            <NewsAndEvents />
             <Services />
             <ETGuides />
             <Contact />
-            <NewsAndEvents />
             <hr />
             <NewsLetter />
             <hr />

@@ -104,6 +104,7 @@ const Navbar = () => {
                 <div className="navbar-links-container">
                     <Link className="li" to="mission" duration={500} offset={300}>Mission</Link>
                     <Link className="li" to="mission" duration={500} offset={800}>Get Started</Link>
+                    <Link className="li" to="news-events-section" duration={500} offset={-160}>News</Link>
                     <Link className="li" to="services" duration={500} offset={-200}>Services</Link>
                     <Link className="li" to="et-guides" duration={500} offset={-180}>InfoBriefs</Link>
                     <Link className="li" to="contact" duration={500} offset={-200}>Contact us</Link>

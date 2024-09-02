@@ -8,12 +8,12 @@ export const assets = {
 export const newsData = [
     {
         _id: "1",
-        day: '28',
+        day: '24',
         month: 'Aug',
         year: '24',
-        title: 'Eaton mess as Hampshire aerospace workers to strike after poor pay offer',
-        summary: 'Aerospace workers in Hampshire will go on strike after negotiations for a pay rise fell through...',
-        image: '/News/legal.jpg',
+        title: 'Tribunal rules in favour of women in Next equal pay claim',
+        summary: 'This is a summary',
+        image: '/News/image.png',
     },
     {
         _id: "2",
