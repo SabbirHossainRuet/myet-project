@@ -47,28 +47,19 @@ import Clients from './components/Clients/Clients';
 import EmployeeServices from './components/EmployeeServics/EmployeeServices';
 import NewsAndEvents from './components/NewsAndEvents/NewsAndEvents';
 import NewsDetails from './components/NewsDetails/NewsDetails';
+import Home from './pages/Home/Home';
 
 const App = () => {
   return (
-    <Router>
-      <div className='app'>
-        <Navbar />
-        <Mission />
-        <Services />
-        <ETGuides />
-        <Contact />
-        <NewsAndEvents />
-        <hr />
-        <NewsLetter />
-        <hr />
-        <EmployeeServices />
-        <Clients />
-        <Routes>
-          <Route path="/news/:id" element={<NewsDetails />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className='app'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/news/:id" element={<NewsDetails />} />
+      </Routes>
+
+    </div>
   );
 }
 
 export default App;
+

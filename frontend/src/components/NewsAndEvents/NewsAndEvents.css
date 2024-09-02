@@ -1,6 +1,7 @@
 .news-events-section {
     padding: 20px;
     margin: 30px;
+    text-decoration: none;
 }
 
 .news-container {
@@ -8,6 +9,7 @@
     flex-direction: row;
     justify-content: flex-start;
     gap: 15px;
+    text-decoration: none;
 }
 
 .news-card {
@@ -21,6 +23,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.news-card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .news-date {

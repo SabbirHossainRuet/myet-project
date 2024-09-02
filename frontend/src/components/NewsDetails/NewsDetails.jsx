@@ -1,17 +1,22 @@
 import React, { useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../Context/StoreContext';
 import './NewsDetails.css';
 
 const NewsDetails = () => {
   const { id } = useParams();
   const { newsData } = useContext(StoreContext);
+  const navigate = useNavigate();
 
-  const newsItem = newsData.find((news) => news._id === parseInt(id));
+  const newsItem = newsData.find((news) => news._id === id);
 
   if (!newsItem) {
     return <p>News not found</p>;
   }
+
+  const goHome = () => {
+    navigate('/');
+  };
 
   return (
     <div className="news-detail-container">
@@ -26,6 +31,7 @@ const NewsDetails = () => {
         <div className="news-detail-content">
           <p>{newsItem.summary || 'Summary not available.'}</p>
         </div>
+        <button onClick={goHome} className="go-home-button">Back to Home</button>
       </div>
     </div>
   );
