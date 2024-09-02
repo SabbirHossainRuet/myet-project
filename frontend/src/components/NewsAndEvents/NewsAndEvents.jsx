@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './NewsAndEvents.css';
 import { StoreContext } from '../Context/StoreContext';
+import { Link } from 'react-router-dom';
 
 const NewsAndEvents = () => {
 
@@ -12,26 +13,30 @@ const NewsAndEvents = () => {
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentNewsItems = newsData.slice(indexOfFirstItem, indexOfLastItem);
 
+    const totalPages = Math.ceil(newsData.length / itemsPerPage);
+
     const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <div className="news-events-section">
             <div className="news-container">
                 {currentNewsItems.map((news, index) => (
-                    <div className="news-card" key={index}>
-                        <div className="news-date">
-                            <p className="day">{news.day}</p>
-                            <p className="month">{news.month}</p>
-                            <p className="year">{news.year}</p>
-                        </div>
-                        <div className="news-image">
-                            <img src={news.image} alt={news.title} />
-                        </div>
-                        <div className="news-content">
-                            <p className="news-tag">NEWS</p>
-                            <h3 className="news-title">{news.title}</h3>
-                            <p className="news-summary">{news.summary}</p>
-                        </div>
+                    <div className="news-card" key={news._id}>
+                        <Link to={`/news/${news._id}`}>
+                            <div className="news-date">
+                                <p className="day">{news.day}</p>
+                                <p className="month">{news.month}</p>
+                                <p className="year">{news.year}</p>
+                            </div>
+                            <div className="news-image">
+                                <img src={news.image} alt={news.title} />
+                            </div>
+                            <div className="news-content">
+                                <p className="news-tag">NEWS</p>
+                                <h3 className="news-title">{news.title}</h3>
+                                <p className="news-summary">{news.summary}</p>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>
@@ -39,9 +44,15 @@ const NewsAndEvents = () => {
                 <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
                     &lt;
                 </button>
-                <button onClick={() => handlePageChange(1)} className={currentPage === 1 ? 'active' : ''}>1</button>
-                <button onClick={() => handlePageChange(2)} className={currentPage === 2 ? 'active' : ''}>2</button>
-                <button onClick={() => handlePageChange(3)} className={currentPage === 3 ? 'active' : ''}>3</button>
+                {Array.from({ length: totalPages }, (_, index) => (
+                    <button
+                        key={index + 1}
+                        onClick={() => handlePageChange(index + 1)}
+                        className={currentPage === index + 1 ? 'active' : ''}
+                    >
+                        {index + 1}
+                    </button>
+                ))}
                 <button onClick={() => handlePageChange(currentPage + 1)} disabled={indexOfLastItem >= newsData.length}>
                     &gt;
                 </button>

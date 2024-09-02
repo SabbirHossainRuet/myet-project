@@ -7,6 +7,7 @@ export const assets = {
 
 export const newsData = [
     {
+        _id: "1",
         day: '28',
         month: 'Aug',
         year: '24',
@@ -15,6 +16,7 @@ export const newsData = [
         image: '/News/legal.jpg',
     },
     {
+        _id: "2",
         day: '28',
         month: 'Aug',
         year: '24',
@@ -23,6 +25,7 @@ export const newsData = [
         image: '/News/legal.jpg',
     },
     {
+        _id: "3",
         day: '27',
         month: 'Aug',
         year: '24',
@@ -31,6 +34,7 @@ export const newsData = [
         image: '/News/legal.jpg',
     },
     {
+        _id: "4",
         day: '29',
         month: 'Aug',
         year: '24',
@@ -39,6 +43,7 @@ export const newsData = [
         image: '/News/legal.jpg',
     },
     {
+        _id: "5",
         day: '27',
         month: 'Aug',
         year: '24',
