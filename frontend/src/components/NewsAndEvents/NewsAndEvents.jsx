@@ -2,7 +2,6 @@ import { useContext, useState } from 'react';
 import './NewsAndEvents.css';
 import { StoreContext } from '../Context/StoreContext';
 import { Link } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 
 const NewsAndEvents = () => {
 
@@ -44,9 +43,7 @@ const NewsAndEvents = () => {
                                 <p className="news-tag">NEWS</p>
                                 <h3 className="news-title">{news.title}</h3>
                                 <p className="news-summary">
-                                    <ReactMarkdown>
-                                        {truncateSummary(news.summary, 100)}
-                                    </ReactMarkdown>
+                                    {truncateSummary(news.introSummary, 100)}
                                     <Link to={`/news/${news._id}`} className="read-more-link">Read More</Link>
                                 </p>
                             </div>

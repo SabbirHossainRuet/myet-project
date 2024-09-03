@@ -32,7 +32,7 @@ const NewsDetails = () => {
           <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
         </div>
         <div className="news-detail-image">
-          <img src={newsItem.image2} alt={newsItem.title} />
+          <img src={newsItem.image} alt={newsItem.title} />
         </div>
         <div className="news-detail-content">
           <ReactMarkdown

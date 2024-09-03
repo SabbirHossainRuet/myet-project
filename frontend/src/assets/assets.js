@@ -12,9 +12,9 @@ export const newsData = [
         month: 'Aug',
         year: '24',
         title: 'Tribunal rules in favour of women in Next equal pay claim',
-        summary: `<h1 style="color: darkblue;">Female shop workers have won their equal pay battle with high street giant Next.</h1>The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.<br>Current and former female workers took their employer Next to an Employment Tribunal arguing that they were paid less than their warehouse colleagues, who were mostly men.<br>The claim has been fiercely fought with complex assessments about the level of differences involved in the shop and warehouse roles.<br>The shop workers argued that their jobs were equally demanding - physically, mentally and in terms of knowledge, responsibilities, skills and decision making. <br>The Tribunal decided that Next’s pay was discriminatory against the claimants. More than 3500 female workers are now in line for payouts running to thousands of pounds each for back pay, and increases in future pay. Nearly 80% of Next staff are women.The claim was successfully led by law firm Leigh Day. Their top employment and discrimination barrister, Elizabeth George who works as an employed Counsel for the Law firm, led the claim. Ms. George said:<br><br><i style="color: darkblue;">“When you have female-dominated jobs being paid less than male-dominated jobs and the work is equal, employers cannot pay women less simply by pointing to the market saying – it is going rate for the jobs…”</i><br><br>The reasons given by Next for paying its female shop staff less was that they paid the market rates for warehouse staff. The Tribunal found there was ”no conscious or subconscious discrimination” on their part which affected the basic rates of pay.Instead <i>“The drive and imperative was to reduce cost and enhance profit”.</i><br><br>The claim could cost Next over £30 million in payouts.<br><br>Next said it was their intention to lodge an appeal as ‘it raises a number of important legal points’.<br><br>The appeal means that payouts will be put on hold until the Employment Appeal Tribunal rule on the long running dispute, which has gone on for more than 6 years.<br><br>In a statement, Next also said the Tribunal had rejected a number of claims of direct discrimination and some of the indirect discrimination claims.<br><br>The claim is being closely watched by other high street chains and some large Supermarkets, who also face similar equal pay and sex discrimination claims from female shop staff.<br>Some of these other claims are also being led by Leigh Day.<br><br>The Judgement is likely to be a huge encouragement and prompt further equal pay claims in other sectors, such as care, construction, hospitality and Local Authority/Councils.<br><br>Full Tribunal Judgement is <span style="color:red">here</span>:<br><a href="https://www.nextplc.co.uk/~/media/Files/N/Next-PLC-V2/documents/investors/1302019-2018-Reserved%20Judgment%2022-08-2024.pdf">https://www.nextplc.co.uk/~/media/Files/N/Next-PLC-V2/documents/investors/1302019-2018-Reserved%20Judgment%2022-08-2024.pdf</a>`,
-        image: '/News/image.png',
-        image2: '/News/News1.JPG'
+        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next. The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
+        summary: `<h1 style="color: darkblue;">Female shop workers have won their equal pay battle with high street giant Next.</h1><br>The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.<br><br>Current and former female workers took their employer Next to an Employment Tribunal arguing that they were paid less than their warehouse colleagues, who were mostly men.<br><br>The claim has been fiercely fought with complex assessments about the level of differences involved in the shop and warehouse roles.<br><br>The shop workers argued that their jobs were equally demanding - physically, mentally and in terms of knowledge, responsibilities, skills and decision making. <br><br>The Tribunal decided that Next’s pay was discriminatory against the claimants. More than 3500 female workers are now in line for payouts running to thousands of pounds each for back pay, and increases in future pay. Nearly 80% of Next staff are women.<br><br>The claim was successfully led by law firm Leigh Day. Their top employment and discrimination barrister, Elizabeth George who works as an employed Counsel for the Law firm, led the claim. Ms. George said:<br><br><i style="color: darkblue;">“When you have female-dominated jobs being paid less than male-dominated jobs and the work is equal, employers cannot pay women less simply by pointing to the market saying – it is going rate for the jobs…”</i><br><br>The reasons given by Next for paying its female shop staff less was that they paid the market rates for warehouse staff. The Tribunal found there was ”no conscious or subconscious discrimination” on their part which affected the basic rates of pay.Instead <i>“The drive and imperative was to reduce cost and enhance profit”.</i><br><br>The claim could cost Next over £30 million in payouts.<br><br>Next said it was their intention to lodge an appeal as ‘it raises a number of important legal points’.<br><br>The appeal means that payouts will be put on hold until the Employment Appeal Tribunal rule on the long running dispute, which has gone on for more than 6 years.<br><br>In a statement, Next also said the Tribunal had rejected a number of claims of direct discrimination and some of the indirect discrimination claims.<br><br>The claim is being closely watched by other high street chains and some large Supermarkets, who also face similar equal pay and sex discrimination claims from female shop staff.<br>Some of these other claims are also being led by Leigh Day.<br><br>The Judgement is likely to be a huge encouragement and prompt further equal pay claims in other sectors, such as care, construction, hospitality and Local Authority/Councils.<br><br>Full Tribunal Judgement is <a href="https://www.nextplc.co.uk/~/media/Files/N/Next-PLC-V2/documents/investors/1302019-2018-Reserved%20Judgment%2022-08-2024.pdf" style="color:red">here</a>`,
+        image: '/News/News1.JPG',
     },
     {
         _id: "2",
@@ -22,6 +22,7 @@ export const newsData = [
         month: 'Aug',
         year: '24',
         title: 'Hounslow traffic and public safety disruption during CCTV pay strikes',
+        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
         summary: 'Public safety and traffic management are expected to face disruption due to CCTV operators joining the strike...',
         image: '/News/legal.jpg',
     },
@@ -31,6 +32,7 @@ export const newsData = [
         month: 'Aug',
         year: '24',
         title: 'Unite leader calls for change not cuts',
+        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
         summary: 'The leader of Unite has called for a national shift away from austerity measures...',
         image: '/News/legal.jpg',
     },
@@ -40,6 +42,7 @@ export const newsData = [
         month: 'Aug',
         year: '24',
         title: 'Unite leader calls for change not cuts',
+        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
         summary: 'The leader of Unite has called for a national shift away from austerity measures...',
         image: '/News/legal.jpg',
     },
@@ -49,6 +52,7 @@ export const newsData = [
         month: 'Aug',
         year: '24',
         title: 'Unite leader calls for change not cuts',
+        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
         summary: 'The leader of Unite has called for a national shift away from austerity measures...',
         image: '/News/legal.jpg',
     },
@@ -60,6 +64,7 @@ export const et_list = [
         name: "InfoBrief 1",
         price: 0,
         description: "Applying for an ACAS Certificate",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -67,6 +72,7 @@ export const et_list = [
         name: "InfoBrief 2",
         price: 0,
         description: "Key Points for Unfair Dismissal",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -74,6 +80,7 @@ export const et_list = [
         name: "InfoBrief 3",
         price: 0,
         description: "What is Constructive Unfair Dismissal?",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -81,13 +88,15 @@ export const et_list = [
         name: "InfoBrief 4",
         price: 0,
         description: "What is Wrongful Dismissal?",
-        pdfUrl: "/ACAS.pdf"
+        thumbnail: "/InfoBriefs/image.png",
+        pdfUrl: "/Wrongfuldismissal.pdf"
     },
     {
         _id: "5",
         name: "InfoBrief 5",
         price: 0,
         description: "Understanding Redundancy Dismissals",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -95,6 +104,7 @@ export const et_list = [
         name: "PremiumBrief 6",
         price: 19.99,
         description: "What you need to know about Time Limits in the Employment Tribunal",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -102,6 +112,7 @@ export const et_list = [
         name: "PremiumBrief 7",
         price: 29.99,
         description: "Preparing your ET1 and Particulars of Claim",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
     {
@@ -109,6 +120,7 @@ export const et_list = [
         name: "PremiumBrief 8",
         price: 39.99,
         description: "Questions and Answers Session (Valid for 1 month)",
+        thumbnail: "/InfoBriefs/image.png",
         pdfUrl: "/ACAS.pdf"
     },
 

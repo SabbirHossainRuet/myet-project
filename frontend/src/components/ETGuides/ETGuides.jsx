@@ -133,6 +133,12 @@ const ETGuides = () => {
                                         {item.description}
                                     </u></h2>
 
+                                    <img
+                                        src={item.thumbnail}
+                                        alt={`${item.name} thumbnail`}
+                                        className="thumbnail"
+                                    />
+
                                     <div className="learn-more">
                                         <p>Learn more</p>
                                         <FaGreaterThan style={iconStyle} />
