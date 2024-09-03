@@ -35,9 +35,16 @@ const NewsDetails = () => {
           <img src={newsItem.image} alt={newsItem.title} />
         </div>
         <div className="news-detail-content">
-          <ReactMarkdown>{newsItem.summary || 'Summary not available.'}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              strong: ({ node, ...props }) => <span className="custom-strong" {...props} />,
+              a: ({ node, ...props }) => <a className="custom-link" {...props} />,
+            }}
+          >
+            {newsItem.summary || 'Summary not available.'}
+          </ReactMarkdown>
         </div>
-        <button onClick={goHome} className="go-home-button">Back to Home</button>
+        <button onClick={goHome} className="go-home-button">Back to News</button>
       </div>
     </div>
   );

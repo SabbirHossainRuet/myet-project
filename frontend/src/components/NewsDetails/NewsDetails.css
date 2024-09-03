@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #c1d4e9;
 }
 
 .news-detail {
@@ -27,13 +28,15 @@
 
 .news-detail-image img {
   width: 100%;
-  height: auto;
+  height: 500px;
   border-radius: 8px;
 }
 
 .news-detail-content {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  padding: 0px 8px;
 }
 
 .go-home-button {
@@ -49,4 +52,21 @@
 
 .go-home-button:hover {
   background-color: #0056b3;
+}
+
+.custom-strong {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #0056b3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-link{
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.custom-link:hover{
+  text-decoration: underline;
 }

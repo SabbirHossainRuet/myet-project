@@ -36,7 +36,6 @@
 
 //Second version of the code
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext, useState } from "react";
 import Logo from "../../assets/logo.jpg";
 import './Navbar.css'
