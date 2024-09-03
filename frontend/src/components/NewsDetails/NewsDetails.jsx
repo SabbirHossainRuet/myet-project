@@ -2,6 +2,7 @@ import { useContext, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../Context/StoreContext';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import './NewsDetails.css';
 
 const NewsDetails = () => {
@@ -12,7 +13,6 @@ const NewsDetails = () => {
   const newsItem = newsData.find((news) => news._id === id);
 
   useEffect(() => {
-
     window.scrollTo(0, 0);
   }, []);
 
@@ -32,12 +32,16 @@ const NewsDetails = () => {
           <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
         </div>
         <div className="news-detail-image">
-          <img src={newsItem.image} alt={newsItem.title} />
+          <img src={newsItem.image2} alt={newsItem.title} />
         </div>
         <div className="news-detail-content">
           <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
             components={{
-              strong: ({ node, ...props }) => <span className="custom-strong" {...props} />,
+              h1: ({ node, ...props }) => <h1 className="custom-h1" {...props} />,
+              h2: ({ node, ...props }) => <h2 className="custom-h2" {...props} />,
+              h3: ({ node, ...props }) => <h3 className="custom-h3" {...props} />,
+              p: ({ node, ...props }) => <p className="custom-paragraph" {...props} />,
               a: ({ node, ...props }) => <a className="custom-link" {...props} />,
             }}
           >
