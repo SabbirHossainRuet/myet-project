@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../Context/StoreContext';
+import ReactMarkdown from 'react-markdown';
 import './NewsDetails.css';
 
 const NewsDetails = () => {
@@ -34,7 +35,7 @@ const NewsDetails = () => {
           <img src={newsItem.image} alt={newsItem.title} />
         </div>
         <div className="news-detail-content">
-          <p>{newsItem.summary || 'Summary not available.'}</p>
+          <ReactMarkdown>{newsItem.summary || 'Summary not available.'}</ReactMarkdown>
         </div>
         <button onClick={goHome} className="go-home-button">Back to Home</button>
       </div>

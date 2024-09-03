@@ -12,7 +12,23 @@ export const newsData = [
         month: 'Aug',
         year: '24',
         title: 'Tribunal rules in favour of women in Next equal pay claim',
-        summary: 'This is a summary',
+        summary: `**Female shop workers have won their equal pay battle with high street giant Next.** 
+        The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month. 
+        Current and former female workers took their employer Next to an Employment Tribunal arguing that they were paid less than their warehouse colleagues, who were mostly men. 
+        The claim has been fiercely fought with complex assessments about the level of differences involved in the shop and warehouse roles. 
+        The shop workers argued that their jobs were equally demanding - physically, mentally and in terms of knowledge, responsibilities, skills and decision making.  
+        The Tribunal decided that Next’s pay was discriminatory against the claimants. More than 3500 female workers are now in line for payouts running to thousands of pounds each for back pay, and increases in future pay. Nearly 80% of Next staff are women. 
+        The claim was successfully led by law firm Leigh Day. Their top employment and discrimination barrister, Elizabeth George who works as an employed Counsel for the Law firm, led the claim. Ms. George said:
+        “When you have female-dominated jobs being paid less than male-dominated jobs and the work is equal, employers cannot pay women less simply by pointing to the market saying – it is going rate for the jobs…” 
+        The reasons given by Next for paying  its female shop staff less was that they paid the market rates for warehouse staff. The Tribunal found there was ”no conscious or subconscious discrimination” on their part which affected the basic rates of pay. Instead “The drive and imperative was to reduce cost and enhance profit”.
+        The claim could cost Next over £30million in payouts.  
+        Next said it was their intention to lodge an appeal as ‘it raises a number of important legal points’. 
+        The appeal means that payouts will be put on hold until the Employment Appeal Tribunal rule on the long running dispute, which has gone on for more than 6 years. 
+        In a statement, Next also said the Tribunal had rejected a number of claims of direct discrimination and some of the indirect discrimination claims. 
+        The claim is being closely watched by other high street chains and some large Supermarkets, who also face similar equal pay and sex discrimination claims from female shop staff. 
+        Some of these other claims are also being led by Leigh Day. 
+        The Judgement is likely to be a huge encouragement and prompt further equal pay claims in other sectors, such as care, construction, hospitality and Local Authority/Councils. 
+        Full Tribunal Judgement is  here: https://www.nextplc.co.uk/~/media/Files/N/Next-PLC-V2/documents/investors/1302019-2018-Reserved%20Judgment%2022-08-2024.pdf`,
         image: '/News/image.png',
     },
     {

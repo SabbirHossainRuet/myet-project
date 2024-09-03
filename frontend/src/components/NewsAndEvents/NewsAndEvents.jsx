@@ -1,7 +1,8 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import './NewsAndEvents.css';
 import { StoreContext } from '../Context/StoreContext';
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 
 const NewsAndEvents = () => {
 
@@ -17,11 +18,18 @@ const NewsAndEvents = () => {
 
     const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
+    const truncateSummary = (summary, maxLength) => {
+        if (summary.length > maxLength) {
+            return summary.slice(0, maxLength) + '...';
+        }
+        return summary;
+    };
+
     return (
         <div className="news-events-section" id='news-events-section'>
             <p className='title'>News and Events</p>
             <div className="news-container">
-                {currentNewsItems.map((news, index) => (
+                {currentNewsItems.map((news) => (
                     <div className="news-card" key={news._id}>
                         <Link to={`/news/${news._id}`}>
                             <div className="news-date">
@@ -35,7 +43,12 @@ const NewsAndEvents = () => {
                             <div className="news-content">
                                 <p className="news-tag">NEWS</p>
                                 <h3 className="news-title">{news.title}</h3>
-                                <p className="news-summary">{news.summary}</p>
+                                <p className="news-summary">
+                                    <ReactMarkdown>
+                                        {truncateSummary(news.summary, 100)}
+                                    </ReactMarkdown>
+                                    <Link to={`/news/${news._id}`} className="read-more-link">Read More</Link>
+                                </p>
                             </div>
                         </Link>
                     </div>

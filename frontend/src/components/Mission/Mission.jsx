@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Mission.css";
 import { assets } from "../../assets/assets";
-import { TiTick } from "react-icons/ti";
-import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { VscCallIncoming } from "react-icons/vsc";
 import { MdOutlineStar } from "react-icons/md";
 import videoCall from '../../assets/videocall.png';

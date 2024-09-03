@@ -94,8 +94,9 @@
 
 .pagination button {
     background-color: transparent;
+    width: 40px;
     border: none;
-    padding: 10px;
+    padding: 12px;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -103,5 +104,15 @@
 .pagination button.active {
     background-color: #005f73;
     color: white;
-    border-radius: 50%;
+    border-radius: 100%;
+}
+
+.read-more-link {
+    color: #007bff!important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
 }
