@@ -17,8 +17,13 @@
 }
 
 .news-detail-header {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  margin: 20px 10px;
+}
+
+.news-detail-header p {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .news-detail-image {
@@ -34,7 +39,7 @@
 
 .header-title {
   color: orange;
-  margin-left: 5px;
+  margin-left: 7px;
   margin-bottom: 20px;
 }
 
@@ -64,8 +69,8 @@
 
 
 .custom-h1 {
-  font-size: 1.3rem;
-  color: darkblue;
+  font-size: 20px;
+  color: black;
 }
 
 .custom-h2 {
@@ -79,9 +84,7 @@
 }
 
 .custom-paragraph {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 .custom-link {

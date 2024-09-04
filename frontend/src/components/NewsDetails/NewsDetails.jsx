@@ -41,12 +41,14 @@ const NewsDetails = () => {
   return (
     <div className="news-detail-container">
       <div className="news-detail">
-        <div className="news-detail-header">
-          <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
-        </div>
+
         <div className="news-detail-image">
           {newsItem.image && (
             <img src={newsItem.image} alt={newsItem.title} />)}
+        </div>
+        <div className="news-detail-header">
+          <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
+          <hr />
         </div>
         <h1 className='header-title'>{newsItem.title}</h1>
         <div className="news-detail-content">
