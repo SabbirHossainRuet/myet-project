@@ -151,13 +151,6 @@ const ETGuides = () => {
                                                     alt={`${item.name} thumbnail`}
                                                     className="thumbnail"
                                                 />
-                                                <div className="thumbnail-overlay">
-                                                    <img
-                                                        src={item.thumbnail}
-                                                        alt={`${item.name} enlarged`}
-                                                        className="thumbnail-enlarged"
-                                                    />
-                                                </div>
                                             </>
                                         )}
                                     </div>

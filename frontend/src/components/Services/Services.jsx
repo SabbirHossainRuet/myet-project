@@ -19,7 +19,11 @@ const Services = () => {
                 <div className="services-bundle">
                     {services.map((item, index) => (
                         <div className="services-bundle-item" key={index}>
-                            <h3>{item.name}</h3>
+                            <div className="header-items">
+                                <h3>{item.name}</h3>
+                                <hr />
+                            </div>
+
                             <p className='price'>{item.price === 0 ? "FREE" : `£${item.price}`}</p>
                             <p className='text'>
                                 {formatTextWithLineBreaks(item.text)}
