@@ -36,20 +36,21 @@
   padding: 0px 8px;
 }
 
-.go-home-button {
-  margin-top: 20px;
-  padding: 10px 20px;
+.go-to-news-events, .go-to-services{
+  margin: 10px 10px;
+  padding: 10px 10px;
   font-size: 16px;
-  color: white;
-  background-color: #007bff;
+  color: black;
+  background-color: orange;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
-.go-home-button:hover {
-  background-color: #0056b3;
+.go-to-news-events:hover, .go-to-services:hover{
+  text-decoration: underline;
 }
+
+
 
 .custom-h1 {
   font-size: 1.3rem;
@@ -57,10 +58,8 @@
 }
 
 .custom-h2 {
-  font-size: 2rem;
-  color: darkred;
-  /* Default color for H2 */
-  margin-bottom: 0.75rem;
+  color: orange;
+  text-align:justify;
 }
 
 .custom-h3 {

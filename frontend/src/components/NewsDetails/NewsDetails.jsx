@@ -20,15 +20,29 @@ const NewsDetails = () => {
     return <p>News not found</p>;
   }
 
-  const goHome = () => {
+
+
+  const navigateToSection = (sectionId, offset = 100) => {
     navigate('/');
-  };
+    setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'auto'
+            });
+        }
+    }, 0);
+};
 
   return (
     <div className="news-detail-container">
       <div className="news-detail">
         <div className="news-detail-header">
-          <h1>{newsItem.title}</h1>
+          {/* <h1>{newsItem.title}</h1> */}
           <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
         </div>
         <div className="news-detail-image">
@@ -48,7 +62,8 @@ const NewsDetails = () => {
             {newsItem.summary || 'Summary not available.'}
           </ReactMarkdown>
         </div>
-        <button onClick={goHome} className="go-home-button">Back to News</button>
+        <button className='go-to-news-events' onClick={() => navigateToSection('news-events-section', 170)} >Back to News</button>
+        <button className='go-to-services' onClick={() => navigateToSection('services', 200)}>Back to Services</button>
       </div>
     </div>
   );

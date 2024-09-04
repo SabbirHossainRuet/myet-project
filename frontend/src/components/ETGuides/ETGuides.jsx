@@ -133,11 +133,34 @@ const ETGuides = () => {
                                         {item.description}
                                     </u></h2>
 
-                                    <img
-                                        src={item.thumbnail}
-                                        alt={`${item.name} thumbnail`}
-                                        className="thumbnail"
-                                    />
+                                    {/* <div className="thumbnail-container">
+                                        {item.thumbnail && (
+                                            <img
+                                                src={item.thumbnail}
+                                                alt={`${item.name} thumbnail`}
+                                                className="thumbnail"
+                                            />
+                                        )}
+                                    </div> */}
+
+                                    <div className="thumbnail-container">
+                                        {item.thumbnail && (
+                                            <>
+                                                <img
+                                                    src={item.thumbnail}
+                                                    alt={`${item.name} thumbnail`}
+                                                    className="thumbnail"
+                                                />
+                                                <div className="thumbnail-overlay">
+                                                    <img
+                                                        src={item.thumbnail}
+                                                        alt={`${item.name} enlarged`}
+                                                        className="thumbnail-enlarged"
+                                                    />
+                                                </div>
+                                            </>
+                                        )}
+                                    </div>
 
                                     <div className="learn-more">
                                         <p>Learn more</p>

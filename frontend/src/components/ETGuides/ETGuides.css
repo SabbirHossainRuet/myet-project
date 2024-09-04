@@ -63,12 +63,13 @@
 
 
 .et-list-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 15px 20px;
     gap: 5px;
     min-width: 230px;
-    height: 460px;
+    height: 440px;
 }
 
 .et-list-item h3,
@@ -86,14 +87,14 @@
 
 .et-list-item h3 {
     font-size: 20px;
-    min-height: 55px;
+    min-height: 40px;
 }
 
 .et-list-item .description {
     margin: 5px 0px;
     font-size: 19px;
     min-width: 100px;
-    min-height: 100px;
+    min-height: 90px;
     text-align: center;
     color: black;
     font-weight: bold;
@@ -333,8 +334,37 @@ hr {
 
 /* General Styles for ET Guides */
 
-.thumbnail {
-    min-height: 90px;
+.thumbnail-container {
+    position: relative;
+    min-height: 60px;
     min-width: 80%;
-    height: 100px;
+    height: 80px;
+}
+
+.thumbnail-container .thumbnail{
+    height: 100%;
+    min-width: 100%;
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-enlarged {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.thumbnail-container:hover .thumbnail-overlay {
+    opacity: 1;
 }
