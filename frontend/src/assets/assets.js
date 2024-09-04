@@ -43,7 +43,7 @@ export const newsData = [
         month: 'January',
         year: '2024',
         title: 'Changes to the National Minimum Wage',
-        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
+        introSummary: 'The National Minimum wage changes on 1st April every year. From 1st April 2024, the following hourly rate changes will apply:-',
         summary: `<p>The National Minimum wage changes on <b>1<sup>st</sup> April every year.</b></p>From <b>1<sup>st</sup>April 2024</b>, the following hourly rate changes will apply:-<br><br><table>
         <tr>
           <th rowspan="2" style="text-align: center; padding: 2px;font-size:24px;">April<br>2024</th>
