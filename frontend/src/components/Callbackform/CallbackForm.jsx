@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { StoreContext } from "../Context/StoreContext";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import './CallbackForm.css';
 
 const CallbackForm = ({ handleTitleClick, titleText }) => {

@@ -37,7 +37,7 @@
 //Second version of the code
 
 import React, { useContext, useState } from "react";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import './Navbar.css'
 import { Link, scroller } from 'react-scroll';
 import { HiOutlineBars3 } from "react-icons/hi2";

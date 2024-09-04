@@ -79,7 +79,7 @@
     display: flex;
     align-items: start;
     margin: 10px 0;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 .news-summary {
@@ -108,7 +108,7 @@
 }
 
 .read-more-link {
-    color: #007bff!important;
+    color: #007bff !important;
     text-decoration: none;
     font-weight: bold;
 }

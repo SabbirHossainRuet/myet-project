@@ -18,6 +18,7 @@
 
 .news-detail-header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .news-detail-image {
@@ -28,6 +29,13 @@
 
 .news-detail-image img {
   height: 150px;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  color: orange;
+  margin-left: 5px;
+  margin-bottom: 20px;
 }
 
 .news-detail-content {
@@ -36,7 +44,8 @@
   padding: 0px 8px;
 }
 
-.go-to-news-events, .go-to-services{
+.go-to-news-events,
+.go-to-services {
   margin: 10px 10px;
   padding: 10px 10px;
   font-size: 16px;
@@ -46,7 +55,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.go-to-news-events:hover, .go-to-services:hover{
+
+.go-to-news-events:hover,
+.go-to-services:hover {
   text-decoration: underline;
 }
 
@@ -59,7 +70,7 @@
 
 .custom-h2 {
   color: orange;
-  text-align:justify;
+  text-align: justify;
 }
 
 .custom-h3 {

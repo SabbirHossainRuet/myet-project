@@ -25,29 +25,30 @@ const NewsDetails = () => {
   const navigateToSection = (sectionId, offset = 100) => {
     navigate('/');
     setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-            const offsetPosition = elementPosition - offset;
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'auto'
-            });
-        }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'auto'
+        });
+      }
     }, 0);
-};
+  };
 
   return (
     <div className="news-detail-container">
       <div className="news-detail">
         <div className="news-detail-header">
-          {/* <h1>{newsItem.title}</h1> */}
           <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
         </div>
         <div className="news-detail-image">
-          <img src={newsItem.image} alt={newsItem.title} />
+          {newsItem.image && (
+            <img src={newsItem.image} alt={newsItem.title} />)}
         </div>
+        <h1 className='header-title'>{newsItem.title}</h1>
         <div className="news-detail-content">
           <ReactMarkdown
             rehypePlugins={[rehypeRaw]}
