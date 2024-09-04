@@ -47,7 +47,10 @@ const NewsDetails = () => {
             <img src={newsItem.image} alt={newsItem.title} />)}
         </div>
         <div className="news-detail-header">
-          <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
+          <div className="date-and-text">
+            <p>{newsItem.day} {newsItem.month}, {newsItem.year}</p>
+            <span>by Employment Rights Network</span>
+          </div>
           <hr />
         </div>
         <h1 className='header-title'>{newsItem.title}</h1>
@@ -60,6 +63,13 @@ const NewsDetails = () => {
               h3: ({ node, ...props }) => <h3 className="custom-h3" {...props} />,
               p: ({ node, ...props }) => <p className="custom-paragraph" {...props} />,
               a: ({ node, ...props }) => <a className="custom-link" {...props} />,
+              table: ({ node, ...props }) => <table className="custom-table" {...props} />,
+              tr: ({ node, ...props }) => <tr className="custom-tr" {...props} />,
+              th: ({ node, ...props }) => <th className="custom-th" {...props} />,
+              td: ({ node, ...props }) => <td className="custom-td" {...props} />,
+              ul: ({ node, ...props }) => <ul className="custom-ul" {...props} />,
+              ol: ({ node, ...props }) => <ol className="custom-ol" {...props} />,
+              li: ({ node, ...props }) => <li className="custom-li" {...props} />,
             }}
           >
             {newsItem.summary || 'Summary not available.'}

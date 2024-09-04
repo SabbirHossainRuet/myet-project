@@ -21,6 +21,11 @@
   margin: 20px 10px;
 }
 
+.date-and-text {
+  display: flex;
+  gap: 10px;
+}
+
 .news-detail-header p {
   font-size: 17px;
   font-weight: bold;
@@ -90,4 +95,31 @@
 .custom-link {
   color: #007bff;
   text-decoration: underline;
+}
+
+.custom-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+}
+
+.custom-tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-th,
+.custom-td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.custom-ul,
+.custom-ol {
+  margin-left: 100px;
+  margin-bottom: 15px;
+}
+
+.custom-li {
+  margin-bottom: 5px;
 }
