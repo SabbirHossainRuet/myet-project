@@ -362,6 +362,36 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
+  collectionName: 'news_and_events';
+  info: {
+    singularName: 'news-and-event';
+    pluralName: 'news-and-events';
+    displayName: 'NewsAndEvents';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    JustText: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::news-and-event.news-and-event',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::news-and-event.news-and-event',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -788,137 +818,6 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
-export interface ApiCallbackRequestCallbackRequest
-  extends Schema.CollectionType {
-  collectionName: 'callback_requests';
-  info: {
-    singularName: 'callback-request';
-    pluralName: 'callback-requests';
-    displayName: 'callback-requests';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String & Attribute.Required;
-    email: Attribute.Email & Attribute.Required;
-    phone: Attribute.String & Attribute.Required;
-    bestDay: Attribute.Enumeration<['today', 'tomorrow']> & Attribute.Required;
-    bestTime: Attribute.Enumeration<
-      ['Morning', 'Lunch time', 'Afternoon', 'Early Evening']
-    > &
-      Attribute.Required;
-    subject: Attribute.Text & Attribute.Required;
-    message: Attribute.RichText & Attribute.Required;
-    source: Attribute.Enumeration<
-      [
-        'Facebook',
-        'Google Search',
-        'Linked In',
-        'Twitter',
-        'Instagram',
-        'Law Society Website',
-        'Other'
-      ]
-    > &
-      Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::callback-request.callback-request',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::callback-request.callback-request',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiEnquiryRequestEnquiryRequest extends Schema.CollectionType {
-  collectionName: 'enquiry_requests';
-  info: {
-    singularName: 'enquiry-request';
-    pluralName: 'enquiry-requests';
-    displayName: 'enquiry-requests';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String & Attribute.Required;
-    email: Attribute.Email & Attribute.Required;
-    phone: Attribute.String & Attribute.Required;
-    subject: Attribute.Text & Attribute.Required;
-    message: Attribute.RichText & Attribute.Required;
-    source: Attribute.Enumeration<
-      [
-        'Facebook',
-        'Google Search',
-        'Linked In',
-        'Twitter',
-        'Instagram',
-        'Law Society Website',
-        'Other'
-      ]
-    > &
-      Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::enquiry-request.enquiry-request',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::enquiry-request.enquiry-request',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
-  collectionName: 'news_and_events';
-  info: {
-    singularName: 'news-and-event';
-    pluralName: 'news-and-events';
-    displayName: 'NewsAndEvents';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-    summary: Attribute.String & Attribute.Required;
-    date: Attribute.DateTime & Attribute.Required;
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::news-and-event.news-and-event',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::news-and-event.news-and-event',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -929,6 +828,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -937,9 +837,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
-      'api::callback-request.callback-request': ApiCallbackRequestCallbackRequest;
-      'api::enquiry-request.enquiry-request': ApiEnquiryRequestEnquiryRequest;
-      'api::news-and-event.news-and-event': ApiNewsAndEventNewsAndEvent;
     }
   }
 }
