@@ -1,7 +1,7 @@
 
 export const fetchNewsAndEvents = async () => {
     try {
-        const response = await fetch('http://localhost:1337/api/news-and-events');
+        const response = await fetch('http://localhost:1337/api/news-and-events?populate=*');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

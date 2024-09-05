@@ -368,12 +368,17 @@ export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
     singularName: 'news-and-event';
     pluralName: 'news-and-events';
     displayName: 'NewsAndEvents';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    JustText: Attribute.String & Attribute.Required;
+    date: Attribute.Date & Attribute.Required;
+    title: Attribute.Text & Attribute.Required;
+    summary: Attribute.RichText & Attribute.Required;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

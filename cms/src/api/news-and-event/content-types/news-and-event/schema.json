@@ -4,15 +4,35 @@
   "info": {
     "singularName": "news-and-event",
     "pluralName": "news-and-events",
-    "displayName": "NewsAndEvents"
+    "displayName": "NewsAndEvents",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "JustText": {
-      "type": "string",
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "summary": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
       "required": true
     }
   }
