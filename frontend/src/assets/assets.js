@@ -50,13 +50,13 @@ export const newsData = [
 
     {
         _id: "5",
-        day: '',
+        day: '20',
         month: 'May',
         year: '2024',
         title: 'British Airways to pay £20,000 to worker who was dismissed',
         introSummary: 'After a hearing at Watford Employment Tribunal, British Airways agreed to pay an ex-worker £20,000 as compensation',
         summary: `<p>After a hearing at Watford Employment Tribunal, British Airways agreed to pay an ex-worker £20,000 as compensation.</p><br>The worker, Ms. S brought proceedings for unfair dismissal against British Airways, according to the Judgment handed down by the Tribunal.<br><br>Employment Judge Shrimplin made the award for compensation after an application was made to the Tribunal for a <b>judgment by ‘consent’</b> by the parties.<br><br>The hearing was listed to be heard by an Employment Judge and two lay panel members over 5 days.<br><br>Costs against either side were not ordered in the judgement.<br><br>Details behind the claim or the reasons for it have not been made public.`,
-        image: '/News/News05.jpg',
+        image: '/News/News2005.jpg',
     },
 
     {
@@ -66,7 +66,7 @@ export const newsData = [
         year: '2024',
         title: 'Costs in the Employment Tribunal are the exception rather than the norm.',
         introSummary: 'But don’t be fooled. Costs may be awarded where a party has behaved unreasonably.',
-        summary: `<p>But don’t be fooled. Costs may be awarded where a party has behaved unreasonably.</p><br>Examples where cost orders have been made in cases:<ul><li>Respondent not conceding the issue of ‘disability’ earlier in proceedings</li><li>Respondent’s / Claimant’s poor handling of disclosure</li><li>A claimant bringing (or continuing) proceedings where there was ‘no reasonable prospect of success’</li><li>Giving false or untruthful information to the Tribunal/other party</li><li>Doctoring of evidence/documents to mislead  the Tribunal/other party</li></ul><br><p>Act reasonably. Act fairly. Take independent advice.</p><br>Contact us for free advice and information.`,
+        summary: `<p>But don’t be fooled. Costs may be awarded where a party has behaved unreasonably.</p><br>Examples where cost orders have been made in cases:<ul><li>Respondent <b>not conceding</b> the issue of ‘disability’ earlier in proceedings</li><li>Respondent’s / Claimant’s <b>poor handling</b> of disclosure</li><li>A claimant bringing (or continuing) proceedings where there was <b>‘no reasonable prospect of success’</b></li><li>Giving <b>false or untruthful</b> information to the Tribunal/other party</li><li><b>Doctoring of evidence</b>/documents to mislead  the Tribunal/other party</li></ul><br><p>Act reasonably. Act fairly. Take independent advice.</p><br>Contact us for free advice and information.`,
         image: '/News/News0402.jpg',
     },
 
@@ -106,13 +106,13 @@ export const newsData = [
     },
     {
         _id: "8",
-        day: '29',
-        month: 'Aug',
-        year: '24',
-        title: 'Unite leader calls for change not cuts',
-        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
-        summary: 'The leader of Unite has called for a national shift away from austerity measures...',
-        image: '/News/legal.jpg',
+        day: '12',
+        month: 'March',
+        year: '2024',
+        title: 'Time limits to make a claim in the Employment Tribunal are very strict. Don’t miss any deadline!',
+        introSummary: 'Generally, you have 3 months less 1 day to make a claim*. The 3 months less 1 day period is known as the primary time limit',
+        summary: `<p>Generally, you have 3 months less 1 day to make a claim*.<p><br>The <b>3 months less 1 day</b> period is known as the <b>primary time limit</b>, and it is strictly enforced by the Tribunal.<br><br>It is important therefore to get any advice and submit any claim within the primary time limit.<br><br>Waiting for a response to any <b>internal processes</b> such as a grievance response or grievance appeal, or an internal appeal against dismissal, will not normally be a good reason to making a claim late.<br><br>Employees can protect their position to a degree by contacting <b>Acas</b> (within the primary time limit period) and engaging in <b>Early Conciliation (EC)</b>.<br><br><b>You can apply for EC by completing a short form on the Acas website or by phone</b> (number on the  Acas website, link at the end).<br><br>EC will pause the time limit during the EC period.<br><br>Once an EC certificate is issued, workers will have a <b>MINIMUM of 1 month</b> to still make any claim from the date the certificate is issued.<br><br><hr><br>*There are some limited exceptions to the primary time limit to be extended:-<br><br><ul><li>Where it is judged by the Tribunal <b><i>‘such other period as the employment tribunal thinks just and equitable’</i></b> to extend time (under the Equality Act 2010, Section  123 (1) (b); or</li><li>For a series of continuing acts, <b><i>or ‘conduct extending over a period is to be treated as done at the end of the period’</i></b>, Section 123, (3), (a), Equality Act 2010.</li><li>Where <b><i>it was not reasonably practicable</i> (and if not, what <u>further period was</u> reasonable)</b> to make a claim (Section 23 (4) Employment Rights Act 1996:<br><b><i>“where the employment tribunal is satisfied that it was not reasonably practicable for a complaint under the section to be presented before the end of the relevant period of three months, the tribunal may consider the complaint if it is presented within such further period as the tribunal considers reasonable”.</i></b><br><br>The burden of proof is on the Claimant to prove this.</li></ul><br><hr><br>However, these limited exceptions are <b><u>strictly applied</u></b> (and guarded) by the Tribunal.<br><br>More information on <b>Acas</b> and <b>Early Conciliation</b> can be found on the Acas website: <a href="www.acas.org.uk"><u>www.acas.org.uk</u></a><br><br><b>Contact us today if you have any questions about time limits.</b><br><br>We’re here to help, our core advice and information service is free for everyone.`,
+        image: '/News/News1203.png',
     },
     {
         _id: "9",

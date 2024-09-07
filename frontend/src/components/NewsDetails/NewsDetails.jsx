@@ -77,6 +77,7 @@ const NewsDetails = () => {
         </div>
         <button className='go-to-news-events' onClick={() => navigateToSection('news-events-section', 170)} >Back to News</button>
         <button className='go-to-services' onClick={() => navigateToSection('services', 200)}>Back to Services</button>
+        <button className='go-to-newsletter' onClick={() => navigateToSection('newsletter', 200)}>Sign up here to our Newsletter</button>
       </div>
     </div>
   );

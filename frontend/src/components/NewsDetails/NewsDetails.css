@@ -38,7 +38,8 @@
 }
 
 .news-detail-image img {
-  height: 150px;
+  height: 60%;
+  width: 60%;
   margin-bottom: 20px;
 }
 
@@ -55,7 +56,8 @@
 }
 
 .go-to-news-events,
-.go-to-services {
+.go-to-services,
+.go-to-newsletter {
   margin: 10px 10px;
   padding: 10px 10px;
   font-size: 16px;
@@ -67,7 +69,8 @@
 }
 
 .go-to-news-events:hover,
-.go-to-services:hover {
+.go-to-services:hover,
+.go-to-newsletter:hover {
   text-decoration: underline;
 }
 
