@@ -20,10 +20,10 @@ const API_URL = 'http://localhost:1337/api';
 export const submitCallbackForm = async (formData, showDateTime) => {
     try {
         console.log('Submitting form data:', formData);
-        
-        const apiUrl = showDateTime 
-            ? `${API_URL}/callback-requests` 
-            : `${API_URL}/enquiry-requests`; 
+
+        const apiUrl = showDateTime
+            ? `${API_URL}/callback-requests`
+            : `${API_URL}/enquiry-requests`;
 
         const response = await fetch(apiUrl, {
             method: 'POST',
