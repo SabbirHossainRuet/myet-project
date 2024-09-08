@@ -1,7 +1,7 @@
 
 export const fetchNewsAndEvents = async () => {
     try {
-        const response = await fetch('http://localhost:1337/api/news-and-events?populate=*');
+        const response = await fetch('https://cms-2n8x.onrender.com/api/news-and-events?populate=*');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -15,7 +15,7 @@ export const fetchNewsAndEvents = async () => {
 
 // src/apiService.js
 
-const API_URL = 'http://localhost:1337/api';
+const API_URL = 'https://cms-2n8x.onrender.com/api';
 
 export const submitCallbackForm = async (formData, showDateTime) => {
     try {
