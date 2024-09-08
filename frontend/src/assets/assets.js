@@ -61,6 +61,28 @@ export const newsData = [
 
     {
         _id: "6",
+        day: '15',
+        month: 'April',
+        year: '2024',
+        title: 'New duties on employers to prevent sexual harassment to come into force',
+        introSummary: 'The Worker Protection Act 2023 (WPA 2023) (Amendment to the Equality Act 2010) comes into force in October 2024.',
+        summary: `<p>The Worker Protection Act 2023 (WPA 2023) (Amendment to the Equality Act 2010) comes into force in <b>October 2024</b>.<p><br>The WPA 2023 will place a <b>new positive duty</b> on employers to prevent sexual harassment in the workplace, including any acts by any third parties.<br><br>Failure by employers to take positive <b>action</b> will give the Employment Tribunal discretion in cases where they first find unlawful sexual harassment, to <b>impose a 25% uplift</b> to compensation wards.<br><br><b>The Equality and Human Rights Commission</b> (EHRC) will also have powers to take enforcement steps against employers in breach of the new duty.<br><br>The act takes a <b>‘preventative’</b> rather than a <b>‘redress’</b> approach as is currently the case under the existing provisions of the  <b>Equality Act 2010</b>.<br><br>The Equality and Human Rights Commission has produced guidance for employers, giving examples of what may constitute sexual harassment, at pg 22 of its guidance:<br><br><b><i>“Sexual harassment occurs when a worker is subjected to unwanted conduct as defined in paragraphs 2.8 to 2.14 and which is of a sexual nature.</i></b><br><br><b><i>The conduct need not be sexually motivated, only sexual in nature (s.26(2)).</i></b><br><br>The EHRC also states in its guidance<br><br><b><i>“It does not matter whether or not the employer knows about the harassment (s.109(1) and s.109(3))”</i></b> for it to be held liable.<br><br><b><u>TAKING REASONABLE STEPS</u></b><br><br>The duty requires employers to take <b>‘reasonable steps’</b> to prevent sexual harassment of its staff.<br><br>“The EHRC states reasonable steps as:<br><br>Taking all reasonable steps to prevent harassment<br><br><ul style="list-style-type: none"><li>4.20. An employer will not be liable for harassment committed by a worker in the course of employment if they can show that they took all reasonable steps to prevent the harassment (the ‘reasonable steps’ defence) (s.109(4)).</li><br><li>4.21. An employer will have taken all reasonable steps if there are no further steps that they could reasonably have been expected to take.</li><br><li>4.22. In deciding whether a step is reasonable, an employer should consider its likely effect and whether an alternative step could be more effective.</li><br><li>4.23. A tribunal or court may find that it would have been reasonable for an employer to take a certain step, even if that step might not have prevented the act of harassment”.</li></ul><br><b><u>Examples of reasonable steps</u></b> by an employer may include:<br><br><ol><li><b>Having in place robust</b> Equality, Diversity and Inclusion Policies, Anti-Harassment Policies and other similar policies; updating these, consulting on them and re-circulating them to staff and managers as necessary</li><br><li><b>Reviewing policies and procedures</b> to prevent harassment of staff, and keeping policies as ‘live’ documents, ensuring implementation and enforcement of polices</li><br><li><b>Pro-actively identifying in risk assessments</b> for each role and taking mitigation steps to prevent any harassment</li><br><li><b>Provide regular training</b> (and any refresher training) to staff and managers on their responsibilities to prevent and report such behaviour, and keeping accurate and up to date training records, in case this needs to be produced to investigate (or defend) any claims</li><br><li><b>Ensure workers</b> who deal with customers/third parties are protected from inappropriate third party behaviour</li><br><li><b>Providing visible signage and written publicity material</b> for customers/third parties, warning unacceptable conduct will not be tolerated, and how to report it, if it is observed.</li><br><li><b>Protecting any vulnerable staff, male and female workers</b> from sexual harassment <b>or other inappropriate behaviour, discrimination or harassment</b> if it occurs by taking prompt and effective steps, including protecting complainants and witnesses, carrying out proper investigations (undertaken sensitively), responding to grievances,  following all formal policies, taking of disciplinary or other action against employees found to be committing such conduct</li><br><li><b>Taking steps to change the culture</b>, working practices and attitudes to eradicate unlawful harassment of workers</li></ol><br><b>Further details and technical guidance</b> on the new duty (which may be used as evidence by an Employment Tribunal and may be taken into account) can be found on the EHRC website <a href="https://www.equalityhumanrights.com/sites/default/files/sexual_harassment_and_harassment_at_work.pdf  ">here</a>`,
+        image: '/News/News1504.jpg',
+    },
+
+    {
+        _id: "7",
+        day: '12',
+        month: 'March',
+        year: '2024',
+        title: 'Time limits to make a claim in the Employment Tribunal are very strict. Don’t miss any deadline!',
+        introSummary: 'Generally, you have 3 months less 1 day to make a claim*. The 3 months less 1 day period is known as the primary time limit',
+        summary: `<p>Generally, you have 3 months less 1 day to make a claim*.<p><br>The <b>3 months less 1 day</b> period is known as the <b>primary time limit</b>, and it is strictly enforced by the Tribunal.<br><br>It is important therefore to get any advice and submit any claim within the primary time limit.<br><br>Waiting for a response to any <b>internal processes</b> such as a grievance response or grievance appeal, or an internal appeal against dismissal, will not normally be a good reason to making a claim late.<br><br>Employees can protect their position to a degree by contacting <b>Acas</b> (within the primary time limit period) and engaging in <b>Early Conciliation (EC)</b>.<br><br><b>You can apply for EC by completing a short form on the Acas website or by phone</b> (number on the  Acas website, link at the end).<br><br>EC will pause the time limit during the EC period.<br><br>Once an EC certificate is issued, workers will have a <b>MINIMUM of 1 month</b> to still make any claim from the date the certificate is issued.<br><br><hr><br>*There are some limited exceptions to the primary time limit to be extended:-<br><br><ul><li>Where it is judged by the Tribunal <b><i>‘such other period as the employment tribunal thinks just and equitable’</i></b> to extend time (under the Equality Act 2010, Section  123 (1) (b); or</li><li>For a series of continuing acts, <b><i>or ‘conduct extending over a period is to be treated as done at the end of the period’</i></b>, Section 123, (3), (a), Equality Act 2010.</li><li>Where <b><i>it was not reasonably practicable</i> (and if not, what <u>further period was</u> reasonable)</b> to make a claim (Section 23 (4) Employment Rights Act 1996:<br><b><i>“where the employment tribunal is satisfied that it was not reasonably practicable for a complaint under the section to be presented before the end of the relevant period of three months, the tribunal may consider the complaint if it is presented within such further period as the tribunal considers reasonable”.</i></b><br><br>The burden of proof is on the Claimant to prove this.</li></ul><br><hr><br>However, these limited exceptions are <b><u>strictly applied</u></b> (and guarded) by the Tribunal.<br><br>More information on <b>Acas</b> and <b>Early Conciliation</b> can be found on the Acas website: <a href="www.acas.org.uk"><u>www.acas.org.uk</u></a><br><br><b>Contact us today if you have any questions about time limits.</b><br><br>We’re here to help, our core advice and information service is free for everyone.`,
+        image: '/News/News1203.png',
+    },
+
+    {
+        _id: "8",
         day: '04',
         month: 'February',
         year: '2024',
@@ -71,7 +93,7 @@ export const newsData = [
     },
 
     {
-        _id: "7",
+        _id: "9",
         day: '04',
         month: 'January',
         year: '2024',
@@ -104,26 +126,8 @@ export const newsData = [
     `,
         image: '/News/News0401.jpg',
     },
-    {
-        _id: "8",
-        day: '12',
-        month: 'March',
-        year: '2024',
-        title: 'Time limits to make a claim in the Employment Tribunal are very strict. Don’t miss any deadline!',
-        introSummary: 'Generally, you have 3 months less 1 day to make a claim*. The 3 months less 1 day period is known as the primary time limit',
-        summary: `<p>Generally, you have 3 months less 1 day to make a claim*.<p><br>The <b>3 months less 1 day</b> period is known as the <b>primary time limit</b>, and it is strictly enforced by the Tribunal.<br><br>It is important therefore to get any advice and submit any claim within the primary time limit.<br><br>Waiting for a response to any <b>internal processes</b> such as a grievance response or grievance appeal, or an internal appeal against dismissal, will not normally be a good reason to making a claim late.<br><br>Employees can protect their position to a degree by contacting <b>Acas</b> (within the primary time limit period) and engaging in <b>Early Conciliation (EC)</b>.<br><br><b>You can apply for EC by completing a short form on the Acas website or by phone</b> (number on the  Acas website, link at the end).<br><br>EC will pause the time limit during the EC period.<br><br>Once an EC certificate is issued, workers will have a <b>MINIMUM of 1 month</b> to still make any claim from the date the certificate is issued.<br><br><hr><br>*There are some limited exceptions to the primary time limit to be extended:-<br><br><ul><li>Where it is judged by the Tribunal <b><i>‘such other period as the employment tribunal thinks just and equitable’</i></b> to extend time (under the Equality Act 2010, Section  123 (1) (b); or</li><li>For a series of continuing acts, <b><i>or ‘conduct extending over a period is to be treated as done at the end of the period’</i></b>, Section 123, (3), (a), Equality Act 2010.</li><li>Where <b><i>it was not reasonably practicable</i> (and if not, what <u>further period was</u> reasonable)</b> to make a claim (Section 23 (4) Employment Rights Act 1996:<br><b><i>“where the employment tribunal is satisfied that it was not reasonably practicable for a complaint under the section to be presented before the end of the relevant period of three months, the tribunal may consider the complaint if it is presented within such further period as the tribunal considers reasonable”.</i></b><br><br>The burden of proof is on the Claimant to prove this.</li></ul><br><hr><br>However, these limited exceptions are <b><u>strictly applied</u></b> (and guarded) by the Tribunal.<br><br>More information on <b>Acas</b> and <b>Early Conciliation</b> can be found on the Acas website: <a href="www.acas.org.uk"><u>www.acas.org.uk</u></a><br><br><b>Contact us today if you have any questions about time limits.</b><br><br>We’re here to help, our core advice and information service is free for everyone.`,
-        image: '/News/News1203.png',
-    },
-    {
-        _id: "9",
-        day: '27',
-        month: 'Aug',
-        year: '24',
-        title: 'Unite leader calls for change not cuts',
-        introSummary: 'Female shop workers have won their equal pay battle with high street giant Next.The Tribunal ruled in favour of the shop workers in a landmark employment ruling this month.',
-        summary: 'The leader of Unite has called for a national shift away from austerity measures...',
-        image: '/News/legal.jpg',
-    },
+
+
 ];
 
 export const et_list = [
