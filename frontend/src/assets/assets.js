@@ -6,8 +6,19 @@ export const assets = {
 
 
 export const newsData = [
+
     {
         _id: "1",
+        day: '11',
+        month: 'September',
+        year: '2024',
+        title: 'Appeal Tribunal rules unpaid wages claim was ‘in time’ overturning decision of lower Tribunal',
+        introSummary: 'The Employment Appeal Tribunal (EAT) ruled this month that an Employment Tribunal wrongly dismissed a claim as presented outside of the prescribed time limit, when it was ‘in time’.',
+        summary: `<p>The Employment Appeal Tribunal (EAT) ruled this month that an Employment Tribunal wrongly dismissed a claim as presented <b>outside of the prescribed time limit</b>, when it was ‘in time’.</p><br>In the case of <b>J Wharton v Sheehan Haulage and Plant Hire Ltd</b> heard on 25 June 2024, the Claimant appealed the decision of an earlier Tribunal decision heard on 3 March 2022.<br><br>The parties represented themselves without legal representation before the EAT as they did at the original Tribunal.<br><br>Mr. W claimed that the usual <b>3 months less 1 day time limit</b> to bring a claim began to run from the date the wages were due (18 September 2020), rather than the date of termination of his employment, the day he walked out of his job (9 September 2020).<br><br>The Respondent alleged the Claimant threw his keys at the Mr. Sheehan and said <b><i>‘stick your job’</i></b> and walked out and did not return the next day.<br><br>The respondent therefore considered that he had resigned and not given them any notice.<br><br>The Claimant claimed his claim was for the <b>unlawful deduction of wages</b>, and that deduction took place on 18 September, rather than 9 September.<br><br>Mr. W claimed on this basis the Tribunal had jurisdiction to consider his claim, and the first Tribunal had applied the law wrongly.<br><br>The first claim form was presented to the ET by Mr. W in February 2021, claiming he was owed one week’s notice pay of £595 and outstanding holiday pay of £43.92.<br><br>The EAT noted that wages were paid a ‘week in arrears’, which the Respondent admitted to, and therefore agreed with Mr. W’s argument, and the <b>appeal was allowed.</b><br><br><b><u>Notice Period</u></b><br><br>The EAT also noted the relevant law as to notice periods:<br><br><ul style="list-style-type:none"><li><b>“Section 86(1) ERA 1996 provides that where an employee has been continuously employed for one month or more but less than two years, the employer must give one week’s notice to terminate the contract of employment.</b></li><br><li><b>Section 86(2) states that the notice required to be given by an employee who has been continuously employed for one month or more to terminate the contract of employment is not less than one week”.</b></li></ul><br><b><u>Payment of Wages</u></b><br><br>The EAT also said:<br><br><ul style="list-style-type:none"><li><b>“As I have already explained when setting out the legal position, where a single shortfall in payment is alleged (as opposed to a series), the date of the underpayment is regarded as the date of the deduction and, in turn, due to section 23(2) ERA 1996 the three-month period for presenting the claim runs from the date of payment from which the deduction was made.</b></li></ul><br><b><u>Acas Early Conciliation</u></b><br><br>In relation to the Claimant contacting Acas for Early Conciliation, the EAT said this:<br><br><ul style="list-style-type:none"><li><b>“Accordingly, the three-month time limit for the claimant to make claims in relation to holiday pay and notice pay ran from 18 September 2020. The claimant contacted ACAS on 16 December 2020. This was still within the prescribed three-month period. Accordingly, he was able to take advantage of the provisions in section 207B ERA 1996 that I have referred to, meaning that he had one month to present the claim from the date when he received the EC Certificate. He received the certificate on 6 January 2021 and the claim was presented to the ET on 5 February 2021. Accordingly, it was presented within time”.</b></li></ul><br>The EAT confirmed in its judgment that it only hears on <b>points or errors of law</b>.<br><br>The  case was sent back <b>to be heard afresh</b> by another Employment Tribunal.<br><br>The full judgment is <a href="https://assets.publishing.service.gov.uk/media/66b0a7f2ab418ab0555932af/Mr_J_Wharton_v_Sheehan_Haulage_and_Plant_Hire_Ltd__2024__EAT_127.pdf" style="color:red">here</a>`,
+        image: '/News/News1109.jpg',
+    },
+    {
+        _id: "2",
         day: '02',
         month: 'September',
         year: '2024',
@@ -17,7 +28,7 @@ export const newsData = [
         image: '/News/News0209.jpg',
     },
     {
-        _id: "2",
+        _id: "3",
         day: '30',
         month: 'August',
         year: '2024',
@@ -27,7 +38,7 @@ export const newsData = [
         image: '/News/News3008.jpg',
     },
     {
-        _id: "3",
+        _id: "4",
         day: '24',
         month: 'August',
         year: '2024',
@@ -38,7 +49,18 @@ export const newsData = [
     },
 
     {
-        _id: "4",
+        _id: "5",
+        day: '17',
+        month: 'July',
+        year: '2024',
+        title: 'Let’s get to work reforming worker’s rights',
+        introSummary: 'The Employment Rights Network welcomes the new government’s commitment to reform worker’s rights.',
+        summary: `<p>The Employment Rights Network welcomes the new government’s commitment to reform worker’s rights.</p><br>The government has committed in their manifesto to:<br><br><ul><li>To give all workers <b>‘Day One’ rights</b> such as for sick pay, unfair dismissal and parental leave</li><br><li>Strengthen worker’s rights in the <b>gig economy</b></li><br><li>Ensuring <b>‘fair tips’ practices</b> in the hospitality sector</li><br><li>End <b>‘fire and rehire’</b> practices that some large employers have adopted</li><br><li>Make the minimum wage a <b>true living wage</b></li><br><li>Create a <b>single ‘worker’ status</b> instead of having the myriad of ones we have currently</li></ul><br>Let’s hope that any changes make it out of the policy debates that will be rife.<br><br>Whether any of the government’s pre-election pledges are watered down or delivered as promised, time will tell.<br><br>Our hope is – there’s a renewed commitment to make life fairer and better for everyone.<br><br>Let’s hope we’re not all kept dangling for too long.<br><br>Watch this space!`,
+        image: '/News/News1707.jpg',
+    },
+
+    {
+        _id: "6",
         day: '26',
         month: 'June',
         year: '2024',
@@ -49,7 +71,7 @@ export const newsData = [
     },
 
     {
-        _id: "5",
+        _id: "7",
         day: '20',
         month: 'May',
         year: '2024',
@@ -60,7 +82,7 @@ export const newsData = [
     },
 
     {
-        _id: "6",
+        _id: "8",
         day: '15',
         month: 'April',
         year: '2024',
@@ -71,7 +93,7 @@ export const newsData = [
     },
 
     {
-        _id: "7",
+        _id: "9",
         day: '12',
         month: 'March',
         year: '2024',
@@ -82,7 +104,7 @@ export const newsData = [
     },
 
     {
-        _id: "8",
+        _id: "10",
         day: '04',
         month: 'February',
         year: '2024',
@@ -93,7 +115,18 @@ export const newsData = [
     },
 
     {
-        _id: "9",
+        _id: "11",
+        day: '20',
+        month: 'January',
+        year: '2024',
+        title: 'Fines for employers hiring illegal workers set to triple next month',
+        introSummary: 'Employers who hire illegal workers could be fined an astonishing £45,000 per worker from 13 February 2024.',
+        summary: `<p>Employers who hire illegal workers could be fined an astonishing <b>£45,000 per worker</b> from 13 February 2024.</p><br>The fines are part of the Home Office’s package of measures to deter illegal immigration.<br><br>Fines were first introduced in 2008. The current fines are £15,000 per worker (for a first offence) if they are considered by the Home Office to be working illegally.<br><br>The inflation busting increases were announced by the Government in August 2023.<br><br>Businesses that are repeat offenders can be fined a maximum of <b>£60,000 per worker</b>, a three-fold increase, based on the current fines of £20,000 per worker.<br><br>There are two scenarios in which fines and criminal charges can apply to employers.<br><br><b><u>Scenario 1</u></b><br><br>In the first scenario, an employer <b>who knows or has reasonable cause to know</b>, that they are employing a worker without the correct immigration permission, but still employs an illegal worker, may be committing a <b>criminal offence</b>. If found guilty, an employer can face a sentence of <b>up to 5 years imprisonment</b> and an unlimited fine.<br><br><b><u>Scenario 2</u></b><br><br>The fines of up to £45,000 per worker (and £60,000 for repeat offenders) are intended for scenarios where the employer <b>unknowingly or unwittingly</b> employs an illegal worker.<br><br><b><u>Right to Work Checks</u></b><br><br>It’s vital therefore for employers to conduct proper and thorough right to work checks to avoid any inadvertent fines both before a worker is hired, but also during the remaining course of any employment as part of any follow up checks.<br><br>Whatever the scenario, the penalties for employers getting it wrong are eye wateringly high.<br><br><b>If you’re a worker facing a suspension or investigation from your employer, regarding your immigration status/right to work status, contact us urgently for advice.</b>`,
+        image: '/News/News2001.jpg',
+    },
+
+    {
+        _id: "12",
         day: '04',
         month: 'January',
         year: '2024',
