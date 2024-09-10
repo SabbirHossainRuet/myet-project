@@ -17,9 +17,9 @@
 
 .carousel-image img {
     width: 100%;
-    height: 450px; /* Fixed height for consistency */
+    height: 490px;
+    /* Fixed height for consistency */
     object-fit: cover;
-    border-radius: 8px;
     transition: transform 0.5s ease-in-out;
 }
 

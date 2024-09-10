@@ -143,6 +143,12 @@ const ETGuides = () => {
                                         )}
                                     </div> */}
 
+                                    <div className="learn-more">
+                                        <p>Learn more</p>
+                                        <FaGreaterThan style={iconStyle} />
+
+                                    </div>
+
                                     <div className="thumbnail-container">
                                         {item.thumbnail && (
                                             <>
@@ -153,12 +159,6 @@ const ETGuides = () => {
                                                 />
                                             </>
                                         )}
-                                    </div>
-
-                                    <div className="learn-more">
-                                        <p>Learn more</p>
-                                        <FaGreaterThan style={iconStyle} />
-
                                     </div>
 
                                 </div>
