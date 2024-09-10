@@ -9,6 +9,7 @@ import download from '../../assets/download.png'
 import { StoreContext } from "../Context/StoreContext";
 import CallbackForm from "../Callbackform/CallbackForm";
 import { Link } from 'react-scroll';
+import Carousel from "../Carousel/Carousel";
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
     const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, setFormTitle, formTitle } = useContext(StoreContext);
@@ -21,9 +22,7 @@ const Mission = () => {
     return (
         <div className="mission" id="mission">
             <div className="mission-contents">
-                <div className="mission-image">
-                    <img src={assets.legal} alt="" />
-                </div>
+                <Carousel />
                 <div className="mission-texts">
                     <p className="title">Mission</p>
                     <h2>Welcome to the</h2>
