@@ -1,7 +1,21 @@
-import legal from './legal.jpg'
+import legal from './images/image1.jpg';
+import image2 from './images/image2.jpg';
+import image3 from './images/image3.jpg';
+import image4 from './images/image4.jpg';
+
 
 export const assets = {
     legal
+}
+
+export const images = {
+
+    image_list: [
+        { src: legal, alt: 'Legal' },
+        { src: image2, alt: 'image2' },
+        { src: image3, alt: 'image3' },
+        { src: image4, alt: 'image4' },
+    ]
 }
 
 

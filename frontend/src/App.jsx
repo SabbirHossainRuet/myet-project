@@ -49,6 +49,7 @@ import NewsAndEvents from './components/NewsAndEvents/NewsAndEvents';
 import NewsDetails from './components/NewsDetails/NewsDetails';
 import Home from './pages/Home/Home';
 
+
 const App = () => {
   return (
     <div className='app'>
