@@ -69,7 +69,7 @@
     padding: 15px 20px;
     gap: 5px;
     min-width: 230px;
-    height: 440px;
+    height: 540px;
 }
 
 .et-list-item h3,
@@ -340,12 +340,10 @@ hr {
 
 .thumbnail-container {
     position: relative;
-    min-height: 60px;
-    min-width: 80%;
-    height: 80px;
+    min-height: 200px;
 }
 
 .thumbnail-container .thumbnail {
     height: 100%;
-    min-width: 100%;
+    min-width: 80%;
 }
