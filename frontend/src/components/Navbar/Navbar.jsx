@@ -57,16 +57,20 @@ const Navbar = () => {
         toggleCallbackForm, setShowDateTime, setFormTitle, formTitle,
     } = useContext(StoreContext);
 
+    const [activeLink, setActiveLink] = useState("");
+
     const handleCallbackClick = () => {
         setShowDateTime(true);
         setFormTitle('Request A Callback');
         toggleCallbackForm();
+        setActiveLink("");
     };
 
     const handleEnquiryClick = () => {
         setShowDateTime(false);
         setFormTitle('Make An Enquiry');
         toggleCallbackForm();
+        setActiveLink("");
     };
 
     const iconStyle = { fontSize: '40px' };
@@ -81,6 +85,7 @@ const Navbar = () => {
 
     const handleTitleClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to the top
+        setActiveLink("");
         // Alternatively, you can use:
         // window.location.reload(); // Reload the page
     };
@@ -101,15 +106,23 @@ const Navbar = () => {
             </div>
             <div className="navbar-bottom">
                 <div className="navbar-links-container">
-                    <Link className="li" to="mission" duration={500} offset={-150}>Home</Link>
-                    <Link className="li" to="mission" duration={500} offset={300}>Mission</Link>
-                    <Link className="li" to="mission" duration={500} offset={800}>Get Started</Link>
-                    <Link className="li" to="news-events-section" duration={500} offset={-160}>News</Link>
-                    <Link className="li" to="services" duration={500} offset={-200}>Services</Link>
-                    <Link className="li" to="et-guides" duration={500} offset={-180}>InfoBriefs</Link>
-                    <Link className="li" to="contact" duration={500} offset={-200}>Contact us</Link>
-                    <Link className="li" to="newsletter" duration={500} offset={-200}>Newsletter</Link>
-                    <Link className="li" to="clients" duration={500} offset={-200}>Customers</Link>
+                    <Link className={`li ${activeLink === "Home" ? "active" : ""}`} to="mission" duration={500} offset={-150} onClick={() => setActiveLink("Home")}>Home</Link>
+
+                    <Link className={`li ${activeLink === "Mission" ? "active" : ""}`} to="mission" duration={500} offset={300} onClick={() => setActiveLink("Mission")}>Mission</Link>
+
+                    <Link className={`li ${activeLink === "Get Started" ? "active" : ""}`} to="mission" duration={500} offset={800} onClick={() => setActiveLink("Get Started")}>Get Started</Link>
+
+                    <Link className={`li ${activeLink === "News" ? "active" : ""}`} to="news-events-section" duration={500} offset={-160} onClick={() => setActiveLink("News")}>News</Link>
+
+                    <Link className={`li ${activeLink === "Services" ? "active" : ""}`} to="services" duration={500} offset={-200} onClick={() => setActiveLink("Services")}>Services</Link>
+
+                    <Link className={`li ${activeLink === "InfoBriefs" ? "active" : ""}`} to="et-guides" duration={500} offset={-180} onClick={() => setActiveLink("InfoBriefs")}>InfoBriefs</Link>
+
+                    <Link className={`li ${activeLink === "Contact us" ? "active" : ""}`} to="contact" duration={500} offset={-200} onClick={() => setActiveLink("Contact us")}>Contact us</Link>
+
+                    <Link className={`li ${activeLink === "Newsletter" ? "active" : ""}`} to="newsletter" duration={500} offset={-200} onClick={() => setActiveLink("Newsletter")}>Newsletter</Link>
+
+                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} onClick={() => setActiveLink("Customers")}>Customers</Link>
                 </div>
             </div>
             <div className="navbar-menu-container">
