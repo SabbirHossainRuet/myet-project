@@ -36,10 +36,10 @@
 
 //Second version of the code
 
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import Logo from "../../assets/logo.png";
 import './Navbar.css'
-import { Link, scroller } from 'react-scroll';
+import { Link, scroller, Element } from 'react-scroll';
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
 import Box from "@mui/material/Box";
@@ -83,6 +83,18 @@ const Navbar = () => {
         { text: "Clients", to: "clients" },
     ];
 
+    // Handle resetting active link when the page reloads
+    useEffect(() => {
+        const handlePageReload = () => {
+            setActiveLink("");
+        };
+        window.addEventListener("load", handlePageReload);
+        return () => {
+            window.removeEventListener("load", handlePageReload);
+        };
+    }, []);
+
+
     const handleTitleClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to the top
         setActiveLink("");
@@ -108,23 +120,23 @@ const Navbar = () => {
                 <div className="navbar-links-container">
                     <Link className={`li ${activeLink === "Home" ? "active" : ""}`} to="mission" duration={500} offset={-150} onClick={() => setActiveLink("Home")}>Home</Link>
 
-                    <Link className={`li ${activeLink === "Mission" ? "active" : ""}`} to="mission" duration={500} offset={300} onClick={() => setActiveLink("Mission")}>Mission</Link>
+                    <Link className={`li ${activeLink === "Mission" ? "active" : ""}`} to="mission" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Mission")} onClick={() => setActiveLink("Mission")}>Mission</Link>
 
-                    <Link className={`li ${activeLink === "Get Started" ? "active" : ""}`} to="mission" duration={500} offset={800} onClick={() => setActiveLink("Get Started")}>Get Started</Link>
+                    <Link className={`li ${activeLink === "get-started" ? "active" : ""}`} to="mission" duration={500} offset={800} onClick={() => setActiveLink("mission")}>Get Started</Link>
 
-                    <Link className={`li ${activeLink === "News" ? "active" : ""}`} to="news-events-section" duration={500} offset={-160} onClick={() => setActiveLink("News")}>News</Link>
+                    <Link className={`li ${activeLink === "News" ? "active" : ""}`} to="news-events-section" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("News")} onClick={() => setActiveLink("News")}>News</Link>
 
-                    <Link className={`li ${activeLink === "Services" ? "active" : ""}`} to="services" duration={500} offset={-200} onClick={() => setActiveLink("Services")}>Services</Link>
+                    <Link className={`li ${activeLink === "Services" ? "active" : ""}`} to="services" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Services")} onClick={() => setActiveLink("Services")}>Services</Link>
 
-                    <Link className={`li ${activeLink === "InfoBriefs" ? "active" : ""}`} to="et-guides" duration={500} offset={-180} onClick={() => setActiveLink("InfoBriefs")}>InfoBriefs</Link>
+                    <Link className={`li ${activeLink === "InfoBriefs" ? "active" : ""}`} to="et-guides" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("InfoBriefs")} onClick={() => setActiveLink("InfoBriefs")}>InfoBriefs</Link>
 
-                    <Link className={`li ${activeLink === "Contact us" ? "active" : ""}`} to="contact" duration={500} offset={-200} onClick={() => setActiveLink("Contact us")}>Contact us</Link>
+                    <Link className={`li ${activeLink === "Contact us" ? "active" : ""}`} to="contact" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Contact us")} onClick={() => setActiveLink("Contact us")}>Contact us</Link>
 
-                    <Link className={`li ${activeLink === "Newsletter" ? "active" : ""}`} to="newsletter" duration={500} offset={-200} onClick={() => setActiveLink("Newsletter")}>Newsletter</Link>
+                    <Link className={`li ${activeLink === "Newsletter" ? "active" : ""}`} to="newsletter" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Newsletter")} onClick={() => setActiveLink("Newsletter")}>Newsletter</Link>
 
-                    <Link className={`li ${activeLink === "law" ? "active" : ""}`} to="employee-services" duration={500} offset={-200} onClick={() => setActiveLink("law")}>Employment Law</Link>
+                    <Link className={`li ${activeLink === "law" ? "active" : ""}`} to="employee-services" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("law")} onClick={() => setActiveLink("law")}>Employment Law</Link>
 
-                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} onClick={() => setActiveLink("Customers")}>Customers</Link>
+                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Customers")} onClick={() => setActiveLink("Customers")}>Customers</Link>
                 </div>
             </div>
             <div className="navbar-menu-container">

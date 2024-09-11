@@ -194,7 +194,7 @@ hr {
     background-color: white;
     margin: 10px 20px;
     padding: 20px;
-    height: 60px;
+    height: 80px;
     color: rgb(13, 33, 59);
     display: flex;
     gap: 20px;
@@ -226,7 +226,7 @@ hr {
     display: flex;
     font-size: 18px;
     font-weight: bold;
-    min-width: 400px;
+    max-width: 400px;
 }
 
 .et-rows-2 .name {
@@ -242,6 +242,10 @@ hr {
     position: absolute;
     top: 0;
     left: 3px;
+}
+
+.et-rows-2 .description {
+    max-width: 320px;
 }
 
 .row-items-all .pointer {

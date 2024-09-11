@@ -34,7 +34,7 @@ const Mission = () => {
                     </div>
                 </div>
                 <h3><u>Get started now</u></h3>
-                <div className="get-started-now">
+                <div className="get-started-now" id="get-started">
                     <div className="get-started-now-item">
                         <img src={videoCall} alt="" />
                         <p>Book a FREE 30 MINUTE Online Appointment <br />(or by Phone).</p>
