@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import "./Mission.css";
-import { assets } from "../../assets/assets";
 import { VscCallIncoming } from "react-icons/vsc";
 import { MdOutlineStar } from "react-icons/md";
 import videoCall from '../../assets/videocall.png';
@@ -30,7 +29,8 @@ const Mission = () => {
                     <div className="mission-texts-text">
                         <p>{`We're on a mission to help UK workers take control of their employment disputes.`}</p>
                         <p>{`Getting quality employment law advice is hard and expensive. We're making it easy and affordable.`}</p>
-                        <p>{`We're here to provide support and practical no nonsense advice to everyone - that's affordable and accessible - no matter what their financial circumstances.`}</p>
+                        <p>{`We're here to provide support and practical no nonsense advice to everyone`}</p>
+                        <p>{`that's affordable and accessible - no matter what their financial circumstances.`}</p>
                     </div>
                 </div>
                 <h3><u>Get started now</u></h3>

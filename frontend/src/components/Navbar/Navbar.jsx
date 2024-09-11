@@ -36,7 +36,7 @@
 
 //Second version of the code
 
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import Logo from "../../assets/logo.png";
 import './Navbar.css'
 import { Link, scroller } from 'react-scroll';
@@ -101,6 +101,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-bottom">
                 <div className="navbar-links-container">
+                    <Link className="li" to="mission" duration={500} offset={-150}>Home</Link>
                     <Link className="li" to="mission" duration={500} offset={300}>Mission</Link>
                     <Link className="li" to="mission" duration={500} offset={800}>Get Started</Link>
                     <Link className="li" to="news-events-section" duration={500} offset={-160}>News</Link>

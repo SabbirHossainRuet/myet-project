@@ -9,6 +9,7 @@ import NewsLetter from '../../components/Newsletter/Newsletter';
 import EmployeeServices from '../../components/EmployeeServics/EmployeeServices';
 import Clients from '../../components/Clients/Clients';
 import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <hr />
             <EmployeeServices />
             <Clients />
+            <Footer />
         </div>
     )
 }

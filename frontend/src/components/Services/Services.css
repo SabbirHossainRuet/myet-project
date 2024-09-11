@@ -50,7 +50,6 @@
 
 .services-bundle-item .price {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 50px;
@@ -94,4 +93,34 @@
 .services-bundle-item .description {
     font-size: 1em;
     color: black;
+}
+
+
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden; /* Ensures the text is hidden until revealed */
+    white-space: nowrap; /* Keeps the text on one line */
+    border-right: 2px solid; /* Simulates the cursor */
+    animation: typing 2s steps(4) 1s infinite, blink 0.5s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 4ch; /* "FREE" has 4 characters */
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }

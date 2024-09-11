@@ -12,6 +12,10 @@ const Services = () => {
             </React.Fragment>
         ));
     };
+
+    const animateFreeText = (text) => {
+        return <span className="typewriter">{text}</span>;
+    };
     return (
         <div className='services' id='services'>
             <p className='title'>Services</p>
@@ -24,7 +28,9 @@ const Services = () => {
                                 <hr />
                             </div>
 
-                            <p className='price'>{item.price === 0 ? "FREE" : `£${item.price}`}</p>
+                            <p className='price'>
+                                {item.price === 0 ? animateFreeText("FREE") : `£${item.price}`}
+                            </p>
                             <p className='text'>
                                 {formatTextWithLineBreaks(item.text)}
                             </p>
