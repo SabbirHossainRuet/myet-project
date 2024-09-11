@@ -171,24 +171,43 @@ const ETGuides = () => {
                         <FaGreaterThan />
                     </button>
                 </div>
-                <div className="et-bundle-container">
-                    <div className="et-bundle">
-                        {et_bundle.map((item, index) => (
-                            <div className="et-bundle-item" key={index}>
-                                <h3>{item.name}</h3>
-                                <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
-                                <p className='text'>{item.text}</p>
-                                <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
 
-                                <p className='description'>{item.description}</p>
-
+                <div className="et-all-container">
+                    <div className="et-rows-container">
+                        <div className="et-rows-1">
+                            <div className="row-items">
+                                {et_list.map((item, index) => (
+                                    <div className="row-items-all" key={index}>
+                                        <p className='description'>{item.description}</p>
+                                        <p className='pointer'>{`>`}</p>
+                                    </div>
+                                ))}
                             </div>
-                        ))
-                        }
+                        </div>
+                        <div className="et-rows-2">
 
+                        </div>
+                    </div>
+                    <div className="et-bundle-container">
+                        <div className="et-bundle">
+                            {et_bundle.map((item, index) => (
+                                <div className="et-bundle-item" key={index}>
+                                    <h3>{item.name}</h3>
+                                    <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
+                                    <p className='text'>{item.text}</p>
+                                    <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
+
+                                    <p className='description'>{item.description}</p>
+
+                                </div>
+                            ))
+                            }
+                        </div>
                     </div>
 
+
                 </div>
+
 
             </div>
             <hr />
