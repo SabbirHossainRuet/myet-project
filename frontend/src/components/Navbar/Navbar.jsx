@@ -122,6 +122,8 @@ const Navbar = () => {
 
                     <Link className={`li ${activeLink === "Newsletter" ? "active" : ""}`} to="newsletter" duration={500} offset={-200} onClick={() => setActiveLink("Newsletter")}>Newsletter</Link>
 
+                    <Link className={`li ${activeLink === "law" ? "active" : ""}`} to="employee-services" duration={500} offset={-200} onClick={() => setActiveLink("law")}>Employment Law</Link>
+
                     <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} onClick={() => setActiveLink("Customers")}>Customers</Link>
                 </div>
             </div>

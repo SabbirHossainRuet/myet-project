@@ -176,7 +176,7 @@ const ETGuides = () => {
                     <div className="et-rows-container">
                         <div className="et-rows-1">
                             <div className="row-items">
-                                {et_list.map((item, index) => (
+                                {et_list.slice(0, 5).map((item, index) => (
                                     <div className="row-items-all" key={index}>
                                         <p className='description'>{item.description}</p>
                                         <p className='pointer'>{`>`}</p>
@@ -185,7 +185,17 @@ const ETGuides = () => {
                             </div>
                         </div>
                         <div className="et-rows-2">
-
+                            <div className="row-items">
+                                {et_list.slice(5, 8).map((item, index) => (
+                                    <div className="row-items-all" key={index}>
+                                        <div className="rows-items-name-desc">
+                                            <p className='name'>{item.name}</p>
+                                            <p className='description'>{item.description}</p>
+                                        </div>
+                                        <p className='pointer'>{`>`}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                     <div className="et-bundle-container">

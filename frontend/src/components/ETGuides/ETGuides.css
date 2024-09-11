@@ -170,6 +170,7 @@ hr {
 
 .et-all-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -179,13 +180,14 @@ hr {
 .rows-items {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .row-items-all {
     border: none;
     border-radius: 60px;
     background-color: white;
-    margin-bottom: 10px;
+    margin: 10px 20px;
     padding: 20px;
     height: 60px;
     color: rgb(13, 33, 59);
@@ -202,11 +204,43 @@ hr {
     transition: all 0.5s ease;
 }
 
+.et-rows-2 .row-items-all {
+    color: orange;
+    position: relative;
+    padding-top: 35px!important;
+
+}
+
+.et-rows-2 .row-items-all:hover {
+    background-color: orange;
+    color: white;
+    transition: all 0.5s ease;
+}
+
 .row-items-all .description {
     display: flex;
     font-size: 18px;
     font-weight: bold;
-    max-width: 350px;
+    min-width: 620px;
+}
+
+.et-rows-2 .name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2px 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px 0px 10px 0px;
+    background-color: rgb(13, 33, 59);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+.et-rows-2 .name:hover {
+    background-color: white;
 }
 
 .row-items-all .pointer {
