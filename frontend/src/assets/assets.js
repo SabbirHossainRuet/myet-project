@@ -236,7 +236,7 @@ export const et_list = [
         _id: "8",
         name: "PremiumBrief 8",
         price: 39.99,
-        description: "Questions and Answers Session (Valid for 1 month)",
+        description: "One to One Questions and Answers Session (Valid for 1 month)",
         thumbnail: "",
         pdfUrl: "/ACAS.pdf"
     },

@@ -177,6 +177,11 @@ hr {
     margin: 20px 20px;
 }
 
+.et-rows-container {
+    display: flex;
+
+}
+
 .rows-items {
     display: flex;
     flex-direction: column;
@@ -207,7 +212,7 @@ hr {
 .et-rows-2 .row-items-all {
     color: orange;
     position: relative;
-    padding-top: 35px!important;
+    padding-top: 35px !important;
 
 }
 
@@ -221,7 +226,7 @@ hr {
     display: flex;
     font-size: 18px;
     font-weight: bold;
-    min-width: 620px;
+    min-width: 400px;
 }
 
 .et-rows-2 .name {
@@ -271,7 +276,7 @@ hr {
 .et-bundle-container {
     margin: 20px 0px;
     position: relative;
-    
+
 }
 
 .et-bundle {
