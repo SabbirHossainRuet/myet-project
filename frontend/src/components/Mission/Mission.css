@@ -5,6 +5,10 @@
     top: 50px;
 }
 
+.get-started-container{
+    margin-bottom: 50px;
+}
+
 .get-started-container h3 {
     text-decoration: underline;
     text-align: center;
