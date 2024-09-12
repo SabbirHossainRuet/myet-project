@@ -1,12 +1,11 @@
-import React, { useContext, useState } from 'react';
+import { useContext } from 'react';
 import './Contact.css';
-import { VscCallIncoming } from "react-icons/vsc";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { StoreContext } from "../Context/StoreContext";
-import InfoIcon from "../../assets/infoicon.jpg";
 import CallbackForm from '../Callbackform/CallbackForm';
 import Email from '../../assets/email.png';
 import Enquiry from '../../assets/enquiry.png';
+import Phone from '../../assets/phone.png';
 
 const Contact = () => {
     const iconStyle = { fontSize: '40px' };
@@ -49,7 +48,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="contact-item">
-                        <VscCallIncoming style={iconStyle} />
+                        <img src={Phone} alt="" />
                         <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
                             e.target.style.textDecoration = 'underline';
                         }}

@@ -3,10 +3,9 @@
     min-height: 500px;
     position: relative;
     top: 50px;
-    margin-bottom: 100px;
 }
 
-.mission-contents h3 {
+.get-started-container h3 {
     text-decoration: underline;
     text-align: center;
     font-size: 25px;

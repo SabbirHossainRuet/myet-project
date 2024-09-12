@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react'
+import { useContext, useRef } from 'react'
 import './ETGuides.css'
 import { StoreContext } from '../Context/StoreContext'
 import { loadStripe } from '@stripe/stripe-js';
@@ -173,17 +173,20 @@ const ETGuides = () => {
                 </div>
 
                 <div className="et-all-container">
-                    <div className="et-rows-container">
-                        <div className="et-rows-1">
-                            <div className="row-items">
-                                {et_list.slice(0, 5).map((item, index) => (
-                                    <div className="row-items-all" key={index}>
+                    <div className="et-rows-1">
+                        <div className="row-items">
+                            {et_list.slice(0, 5).map((item, index) => (
+                                <div className="row-items-all" key={index}>
+                                    <div className="rows-items-name-desc">
+                                        <p className='name'>{item.name}</p>
                                         <p className='description'>{item.description}</p>
-                                        <p className='pointer'>{`>`}</p>
                                     </div>
-                                ))}
-                            </div>
+                                    <p className='pointer'>{`>`}</p>
+                                </div>
+                            ))}
                         </div>
+                    </div>
+                    <div className="et-column">
                         <div className="et-rows-2">
                             <div className="row-items">
                                 {et_list.slice(5, 8).map((item, index) => (
@@ -197,28 +200,24 @@ const ETGuides = () => {
                                 ))}
                             </div>
                         </div>
-                    </div>
-                    <div className="et-bundle-container">
-                        <div className="et-bundle">
-                            {et_bundle.map((item, index) => (
-                                <div className="et-bundle-item" key={index}>
-                                    <h3>{item.name}</h3>
-                                    <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
-                                    <p className='text'>{item.text}</p>
-                                    <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
+                        <div className="et-bundle-container">
+                            <div className="et-bundle">
+                                {et_bundle.map((item, index) => (
+                                    <div className="et-bundle-item" key={index}>
+                                        <h3>{item.name}</h3>
+                                        <p className='price'>{item.price === 0 ? "Free" : `£${item.price}`}</p>
+                                        <p className='text'>{item.text}</p>
+                                        <button onClick={() => makePayment(item)}>{item.price === 0 ? "Download" : "Buy"}</button>
 
-                                    <p className='description'>{item.description}</p>
+                                        <p className='description'>{item.description}</p>
 
-                                </div>
-                            ))
-                            }
+                                    </div>
+                                ))
+                                }
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
-
-
             </div>
             <hr />
         </div >

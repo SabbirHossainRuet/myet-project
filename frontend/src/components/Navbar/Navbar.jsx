@@ -39,7 +39,7 @@
 import { useContext, useState, useEffect } from "react";
 import Logo from "../../assets/logo.png";
 import './Navbar.css'
-import { Link, scroller, Element } from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
 import Box from "@mui/material/Box";
@@ -58,6 +58,19 @@ const Navbar = () => {
     } = useContext(StoreContext);
 
     const [activeLink, setActiveLink] = useState("");
+    const [scrolling, setScrolling] = useState(false);
+
+    const handleSetActive = (link) => {
+        if (!scrolling) {
+            setActiveLink(link);
+        }
+    };
+
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
+        setScrolling(true);
+        setTimeout(() => setScrolling(false), 4000);
+    };
 
     const handleCallbackClick = () => {
         setShowDateTime(true);
@@ -86,6 +99,7 @@ const Navbar = () => {
     // Handle resetting active link when the page reloads
     useEffect(() => {
         const handlePageReload = () => {
+            window.scrollTo({ top: 0, behavior: 'auto' });
             setActiveLink("");
         };
         window.addEventListener("load", handlePageReload);
@@ -118,25 +132,25 @@ const Navbar = () => {
             </div>
             <div className="navbar-bottom">
                 <div className="navbar-links-container">
-                    <Link className={`li ${activeLink === "Home" ? "active" : ""}`} to="mission" duration={500} offset={-150} onClick={() => setActiveLink("Home")}>Home</Link>
+                    <Link className={`li ${activeLink === "home-section" ? "active" : ""}`} to="home-section" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("home-section")} onClick={() => handleLinkClick("home-section")}>Home</Link>
 
-                    <Link className={`li ${activeLink === "Mission" ? "active" : ""}`} to="mission" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Mission")} onClick={() => setActiveLink("Mission")}>Mission</Link>
+                    <Link className={`li ${activeLink === "mission-section" ? "active" : ""}`} to="mission-section" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("mission-section")} onClick={() => handleLinkClick("mission-section")}>Mission</Link>
 
-                    <Link className={`li ${activeLink === "get-started" ? "active" : ""}`} to="mission" duration={500} offset={800} onClick={() => setActiveLink("mission")}>Get Started</Link>
+                    <Link className={`li ${activeLink === "get-started-section" ? "active" : ""}`} to="get-started-section" duration={500} offset={-200} spy={true}  onSetActive={() => handleSetActive("get-started-section")} onClick={() => handleLinkClick("get-started-section")}>Get Started</Link>
 
-                    <Link className={`li ${activeLink === "News" ? "active" : ""}`} to="news-events-section" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("News")} onClick={() => setActiveLink("News")}>News</Link>
+                    <Link className={`li ${activeLink === "News" ? "active" : ""}`} to="news-events-section" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("News")} onClick={() => handleLinkClick("News")}>News</Link>
 
-                    <Link className={`li ${activeLink === "Services" ? "active" : ""}`} to="services" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Services")} onClick={() => setActiveLink("Services")}>Services</Link>
+                    <Link className={`li ${activeLink === "Services" ? "active" : ""}`} to="services" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Services")} onClick={() => handleLinkClick("Services")}>Services</Link>
 
-                    <Link className={`li ${activeLink === "InfoBriefs" ? "active" : ""}`} to="et-guides" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("InfoBriefs")} onClick={() => setActiveLink("InfoBriefs")}>InfoBriefs</Link>
+                    <Link className={`li ${activeLink === "InfoBriefs" ? "active" : ""}`} to="et-guides" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("InfoBriefs")} onClick={() => handleLinkClick("InfoBriefs")}>InfoBriefs</Link>
 
-                    <Link className={`li ${activeLink === "Contact us" ? "active" : ""}`} to="contact" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Contact us")} onClick={() => setActiveLink("Contact us")}>Contact us</Link>
+                    <Link className={`li ${activeLink === "Contact us" ? "active" : ""}`} to="contact" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Contact us")} onClick={() => handleLinkClick("Contact us")}>Contact us</Link>
 
-                    <Link className={`li ${activeLink === "Newsletter" ? "active" : ""}`} to="newsletter" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Newsletter")} onClick={() => setActiveLink("Newsletter")}>Newsletter</Link>
+                    <Link className={`li ${activeLink === "Newsletter" ? "active" : ""}`} to="newsletter" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Newsletter")} onClick={() => handleLinkClick("Newsletter")}>Newsletter</Link>
 
-                    <Link className={`li ${activeLink === "law" ? "active" : ""}`} to="employee-services" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("law")} onClick={() => setActiveLink("law")}>Employment Law</Link>
+                    <Link className={`li ${activeLink === "law" ? "active" : ""}`} to="employee-services" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("law")} onClick={() => handleLinkClick("law")}>Employment Law</Link>
 
-                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} spy={true} onSetActive={() => setActiveLink("Customers")} onClick={() => setActiveLink("Customers")}>Customers</Link>
+                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Customers")} onClick={() => handleLinkClick("Customers")}>Customers</Link>
                 </div>
             </div>
             <div className="navbar-menu-container">
