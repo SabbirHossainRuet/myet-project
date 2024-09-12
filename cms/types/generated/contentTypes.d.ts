@@ -362,80 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiCallbackRequestCallbackRequest
-  extends Schema.CollectionType {
-  collectionName: 'callback_requests';
-  info: {
-    singularName: 'callback-request';
-    pluralName: 'callback-requests';
-    displayName: 'callback-requests';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.Text & Attribute.Required;
-    email: Attribute.Email & Attribute.Required;
-    phone: Attribute.Text & Attribute.Required;
-    bestDay: Attribute.Enumeration<['today', 'tomorrow']> & Attribute.Required;
-    bestTime: Attribute.Enumeration<
-      ['Morning', 'Lunch time', 'Afternoon', 'Early Evening']
-    > &
-      Attribute.Required;
-    subject: Attribute.Text & Attribute.Required;
-    message: Attribute.Text & Attribute.Required;
-    source: Attribute.Enumeration<
-      [
-        'Facebook',
-        'Google Search',
-        'Linked In',
-        'Twitter',
-        'Instagram',
-        'Law Society Website',
-        'Other'
-      ]
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::callback-request.callback-request',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::callback-request.callback-request',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTestTest extends Schema.CollectionType {
-  collectionName: 'tests';
-  info: {
-    singularName: 'test';
-    pluralName: 'tests';
-    displayName: 'test';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.Text;
-    image: Attribute.Media<'images'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::test.test', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::test.test', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -862,6 +788,125 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiCallbackRequestCallbackRequest
+  extends Schema.CollectionType {
+  collectionName: 'callback_requests';
+  info: {
+    singularName: 'callback-request';
+    pluralName: 'callback-requests';
+    displayName: 'callback-requests';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.Text & Attribute.Required;
+    email: Attribute.Email & Attribute.Required;
+    phone: Attribute.Text & Attribute.Required;
+    bestDay: Attribute.Enumeration<['today', 'tomorrow']> & Attribute.Required;
+    bestTime: Attribute.Enumeration<
+      ['Morning', 'Lunch time', 'Afternoon', 'Early Evening']
+    > &
+      Attribute.Required;
+    subject: Attribute.Text & Attribute.Required;
+    message: Attribute.Text & Attribute.Required;
+    source: Attribute.Enumeration<
+      [
+        'Facebook',
+        'Google Search',
+        'Linked In',
+        'Twitter',
+        'Instagram',
+        'Law Society Website',
+        'Other'
+      ]
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::callback-request.callback-request',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::callback-request.callback-request',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiEnquiryRequestEnquiryRequest extends Schema.CollectionType {
+  collectionName: 'enquiry_requests';
+  info: {
+    singularName: 'enquiry-request';
+    pluralName: 'enquiry-requests';
+    displayName: 'enquiry-requests';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.Text & Attribute.Required;
+    email: Attribute.Email & Attribute.Required;
+    phone: Attribute.Text & Attribute.Required;
+    subject: Attribute.Text & Attribute.Required;
+    message: Attribute.Text & Attribute.Required;
+    source: Attribute.Enumeration<
+      [
+        'Facebook',
+        'Google Search',
+        'Linked In',
+        'Twitter',
+        'Instagram',
+        'Law Society Website',
+        'Other'
+      ]
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::enquiry-request.enquiry-request',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::enquiry-request.enquiry-request',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiTestTest extends Schema.CollectionType {
+  collectionName: 'tests';
+  info: {
+    singularName: 'test';
+    pluralName: 'tests';
+    displayName: 'test';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.Text;
+    image: Attribute.Media<'images'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::test.test', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::test.test', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -872,8 +917,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::callback-request.callback-request': ApiCallbackRequestCallbackRequest;
-      'api::test.test': ApiTestTest;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -882,6 +925,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::callback-request.callback-request': ApiCallbackRequestCallbackRequest;
+      'api::enquiry-request.enquiry-request': ApiEnquiryRequestEnquiryRequest;
+      'api::test.test': ApiTestTest;
     }
   }
 }
