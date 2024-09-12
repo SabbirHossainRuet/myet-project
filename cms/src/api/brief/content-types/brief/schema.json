@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "briefs",
+  "info": {
+    "singularName": "brief",
+    "pluralName": "briefs",
+    "displayName": "briefs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

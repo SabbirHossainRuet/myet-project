@@ -4,10 +4,16 @@ import { StoreContext } from '../Context/StoreContext'
 import { loadStripe } from '@stripe/stripe-js';
 import { FaGreaterThan, FaLessThan } from 'react-icons/fa';
 import download from '../../assets/download.png'
+import { useNavigate } from 'react-router-dom';
 
 
 
 const ETGuides = () => {
+    const navigate = useNavigate();
+
+    const handleItemClick = (id) => {
+        navigate(`/brief/${id}`);
+    }
 
     // const formatTextWithACAS = (text) => {
     //     if (text.includes('ACAS')) {
@@ -176,7 +182,7 @@ const ETGuides = () => {
                     <div className="et-rows-1">
                         <div className="row-items">
                             {et_list.slice(0, 5).map((item, index) => (
-                                <div className="row-items-all" key={index}>
+                                <div className="row-items-all" key={index} onClick={() => handleItemClick(item._id)}>
                                     <div className="rows-items-name-desc">
                                         <p className='name'>{item.name}</p>
                                         <p className='description'>{item.description}</p>
@@ -190,7 +196,7 @@ const ETGuides = () => {
                         <div className="et-rows-2">
                             <div className="row-items">
                                 {et_list.slice(5, 8).map((item, index) => (
-                                    <div className="row-items-all" key={index}>
+                                    <div className="row-items-all" key={index} onClick={() => handleItemClick(item._id)}>
                                         <div className="rows-items-name-desc">
                                             <p className='name'>{item.name}</p>
                                             <p className='description'>{item.description}</p>

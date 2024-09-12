@@ -37,6 +37,7 @@
 import { Route, Routes } from 'react-router-dom';
 import NewsDetails from './components/NewsDetails/NewsDetails';
 import Home from './pages/Home/Home';
+import ETGuidesDetails from './components/ETGuidesDetails/ETGuidesDetails';
 
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news/:id" element={<NewsDetails />} />
+        <Route path="/brief/:id" element={<ETGuidesDetails />} />
       </Routes>
 
     </div>

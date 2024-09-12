@@ -788,6 +788,37 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiBriefBrief extends Schema.CollectionType {
+  collectionName: 'briefs';
+  info: {
+    singularName: 'brief';
+    pluralName: 'briefs';
+    displayName: 'briefs';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.Text & Attribute.Required;
+    text: Attribute.RichText & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::brief.brief',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::brief.brief',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiCallbackRequestCallbackRequest
   extends Schema.CollectionType {
   collectionName: 'callback_requests';
@@ -925,6 +956,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::brief.brief': ApiBriefBrief;
       'api::callback-request.callback-request': ApiCallbackRequestCallbackRequest;
       'api::enquiry-request.enquiry-request': ApiEnquiryRequestEnquiryRequest;
       'api::test.test': ApiTestTest;
