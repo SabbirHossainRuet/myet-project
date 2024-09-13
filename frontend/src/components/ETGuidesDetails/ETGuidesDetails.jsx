@@ -19,12 +19,12 @@ const ETGuidesDetails = () => {
             try {
                 const response = await fetch(`https://cms-2n8x.onrender.com/api/briefs?filters[name][$eq]=${localGuide.name}`);
 
-                console.log(response);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
                 const data = await response.json();
-                setGuideData(data);
+                console.log('Fetched Data from Strapi:', data);
+                setGuideData(data.data[0]);
             } catch (error) {
                 setError(error.message);
             } finally {
@@ -55,6 +55,8 @@ const ETGuidesDetails = () => {
             <p>{guideData.data[0]?.attributes.text || 'No additional content available'}</p>  {/* Display text from Strapi */}
         </div>
     );
+
+
 };
 
 export default ETGuidesDetails;
