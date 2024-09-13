@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { et_list } from '../../assets/assets';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 const ETGuidesDetails = () => {
     const { id } = useParams();
@@ -51,8 +53,19 @@ const ETGuidesDetails = () => {
 
     return (
         <div className="guide-details">
-            <h1>{guideData.data[0]?.attributes.subject}</h1>  {/* Display the name from local data */}
-            <p>{guideData.data[0]?.attributes.text || 'No additional content available'}</p>  {/* Display text from Strapi */}
+            <h1 className="guide-title">{guideData.attributes.subject}</h1>
+            <ReactMarkdown
+                rehypePlugins={[rehypeRaw]}
+                components={{
+                    h1: ({ node, ...props }) => <h1 className="custom-h1" {...props} />,
+                    h2: ({ node, ...props }) => <h2 className="custom-h2" {...props} />,
+                    h3: ({ node, ...props }) => <h3 className="custom-h3" {...props} />,
+                    p: ({ node, ...props }) => <p className="custom-paragraph" {...props} />,
+                    a: ({ node, ...props }) => <a className="custom-link" {...props} />,
+                }}
+            >
+                {guideData.attributes.texts || 'No additional content available'}
+            </ReactMarkdown>
         </div>
     );
 
