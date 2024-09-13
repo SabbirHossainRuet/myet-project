@@ -801,8 +801,8 @@ export interface ApiBriefBrief extends Schema.CollectionType {
   };
   attributes: {
     subject: Attribute.Text & Attribute.Required;
-    text: Attribute.RichText & Attribute.Required;
     name: Attribute.Text & Attribute.Required;
+    text: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

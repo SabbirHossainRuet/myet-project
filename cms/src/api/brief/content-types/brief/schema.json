@@ -16,12 +16,12 @@
       "type": "text",
       "required": true
     },
-    "text": {
-      "type": "richtext",
-      "required": true
-    },
     "name": {
       "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "blocks",
       "required": true
     }
   }
