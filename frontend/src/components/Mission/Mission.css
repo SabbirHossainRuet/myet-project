@@ -5,7 +5,7 @@
     top: 50px;
 }
 
-.get-started-container{
+.get-started-container {
     margin-bottom: 50px;
 }
 
@@ -76,9 +76,8 @@
     text-align: center;
 }
 
-.get-started-now-item img {
-    height: 37px;
-    width: 37px;
+.image-div {
+    min-height: 49px;
 }
 
 .bottom-text {

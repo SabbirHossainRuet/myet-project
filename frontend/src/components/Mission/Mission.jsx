@@ -47,19 +47,27 @@ const Mission = () => {
                     <h3><u>Get started now</u></h3>
                     <div className="get-started-now">
                         <div className="get-started-now-item">
-                            <img src={videoCall} alt="" />
+                            <div className="image-div">
+                                <img src={videoCall} alt="" style={{ height: '37px', width: '37px' }} />
+                            </div>
                             <p>Book a FREE 30 MINUTE Online Appointment <br />(or by Phone).</p>
                         </div>
                         <div className="get-started-now-item">
-                            <img src={download} alt="" />
+                            <div className="image-div">
+                                <img src={download} alt="" style={{ height: '37px', width: '37px' }} />
+                            </div>
                             <p>Download one of our helpful <Link className="link-services" to="et-guides" duration={500} offset={-200}>InfoBriefs/PremiumBriefs</Link>.</p>
                         </div>
                         <div className="get-started-now-item">
-                            <img src={shuttle} alt="" />
+                            <div className="image-div">
+                                <img src={shuttle} alt="" style={{ height: '37px', width: '37px' }} />
+                            </div>
                             <p>For one to one advice and support click on any of our tailored <Link className="link-services" to="services" duration={500} offset={-200}>Services</Link> packages.</p>
                         </div>
                         <div className="get-started-now-item">
-                            <img src={Phone} alt="" />
+                            <div className="image-div">
+                                <img src={Phone} alt="" style={{ height: '45px', width: '45px' }} />
+                            </div>
                             <p>
                                 Use the{' '}
                                 <span
@@ -89,7 +97,7 @@ const Mission = () => {
                             <p>Accessible</p>
                         </div>
                         <div className="bottom-text-down">
-                            <p>Expert employment support for UK Workers</p>
+                            <p>Employment support for UK Workers</p>
                         </div>
 
                     </div>
