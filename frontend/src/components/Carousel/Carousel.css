@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     margin-top: 130px;
-    height: 500px;
+    height: 570px;
     overflow: hidden;
     background-color: #f0f0f0;
 }
@@ -27,7 +27,7 @@
 /* Arrows Styling */
 .carousel-arrows {
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;

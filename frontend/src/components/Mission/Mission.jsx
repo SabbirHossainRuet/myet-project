@@ -9,6 +9,8 @@ import { StoreContext } from "../Context/StoreContext";
 import CallbackForm from "../Callbackform/CallbackForm";
 import { Element, Link } from 'react-scroll';
 import Carousel from "../Carousel/Carousel";
+import Phone from '../../assets/phone.png';
+
 const Mission = () => {
     const iconStyle = { fontSize: '35px' };
     const { toggleCallbackForm, isCallbackFormVisible, setShowDateTime, setFormTitle, formTitle } = useContext(StoreContext);
@@ -57,7 +59,7 @@ const Mission = () => {
                             <p>For one to one advice and support click on any of our tailored <Link className="link-services" to="services" duration={500} offset={-200}>Services</Link> packages.</p>
                         </div>
                         <div className="get-started-now-item">
-                            <VscCallIncoming style={iconStyle} />
+                            <img src={Phone} alt="" />
                             <p>
                                 Use the{' '}
                                 <span

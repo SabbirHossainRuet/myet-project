@@ -99,22 +99,35 @@
 
 .typewriter {
     display: inline-block;
-    overflow: hidden; /* Ensures the text is hidden until revealed */
-    white-space: nowrap; /* Keeps the text on one line */
-    border-right: 2px solid; /* Simulates the cursor */
-    animation: typing 3s steps(4) 5s infinite, blink 0.5s step-end infinite;
+    overflow: hidden;
+    /* Ensures the text is hidden until revealed */
+    white-space: nowrap;
+    /* Keeps the text on one line */
+    border-right: 2px solid;
+    /* Simulates the cursor */
+    animation: typing 7s steps(4, end) infinite, blink 0.5s step-end infinite;
 }
+
 
 /* Typing animation */
 @keyframes typing {
     0% {
         width: 0;
     }
-    50% {
-        width: 4ch; /* "FREE" has 4 characters */
+
+    30% {
+        width: 3.7ch;
+        /* "FREE" has 4 characters */
     }
+
+    90% {
+        width: 3.7ch;
+        /* Hold the text for 4 seconds */
+    }
+
     100% {
         width: 0;
+        /* Erase the text */
     }
 }
 

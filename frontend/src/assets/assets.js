@@ -29,8 +29,20 @@ export const newsData = [
         summary: `<p>The Employment Appeal Tribunal (EAT) ruled this month that an Employment Tribunal wrongly dismissed a claim as presented <b>outside of the prescribed time limit</b>, when it was ‘in time’.</p><br>In the case of <b>J Wharton v Sheehan Haulage and Plant Hire Ltd</b> heard on 25 June 2024, the Claimant appealed the decision of an earlier Tribunal decision heard on 3 March 2022.<br><br>The parties represented themselves without legal representation before the EAT as they did at the original Tribunal.<br><br>Mr. W claimed that the usual <b>3 months less 1 day time limit</b> to bring a claim began to run from the date the wages were due (18 September 2020), rather than the date of termination of his employment, the day he walked out of his job (9 September 2020).<br><br>The Respondent alleged the Claimant threw his keys at the Mr. Sheehan and said <b><i>‘stick your job’</i></b> and walked out and did not return the next day.<br><br>The respondent therefore considered that he had resigned and not given them any notice.<br><br>The Claimant claimed his claim was for the <b>unlawful deduction of wages</b>, and that deduction took place on 18 September, rather than 9 September.<br><br>Mr. W claimed on this basis the Tribunal had jurisdiction to consider his claim, and the first Tribunal had applied the law wrongly.<br><br>The first claim form was presented to the ET by Mr. W in February 2021, claiming he was owed one week’s notice pay of £595 and outstanding holiday pay of £43.92.<br><br>The EAT noted that wages were paid a ‘week in arrears’, which the Respondent admitted to, and therefore agreed with Mr. W’s argument, and the <b>appeal was allowed.</b><br><br><b><u>Notice Period</u></b><br><br>The EAT also noted the relevant law as to notice periods:<br><br><ul style="list-style-type:none"><li><b>“Section 86(1) ERA 1996 provides that where an employee has been continuously employed for one month or more but less than two years, the employer must give one week’s notice to terminate the contract of employment.</b></li><br><li><b>Section 86(2) states that the notice required to be given by an employee who has been continuously employed for one month or more to terminate the contract of employment is not less than one week”.</b></li></ul><br><b><u>Payment of Wages</u></b><br><br>The EAT also said:<br><br><ul style="list-style-type:none"><li><b>“As I have already explained when setting out the legal position, where a single shortfall in payment is alleged (as opposed to a series), the date of the underpayment is regarded as the date of the deduction and, in turn, due to section 23(2) ERA 1996 the three-month period for presenting the claim runs from the date of payment from which the deduction was made.</b></li></ul><br><b><u>Acas Early Conciliation</u></b><br><br>In relation to the Claimant contacting Acas for Early Conciliation, the EAT said this:<br><br><ul style="list-style-type:none"><li><b>“Accordingly, the three-month time limit for the claimant to make claims in relation to holiday pay and notice pay ran from 18 September 2020. The claimant contacted ACAS on 16 December 2020. This was still within the prescribed three-month period. Accordingly, he was able to take advantage of the provisions in section 207B ERA 1996 that I have referred to, meaning that he had one month to present the claim from the date when he received the EC Certificate. He received the certificate on 6 January 2021 and the claim was presented to the ET on 5 February 2021. Accordingly, it was presented within time”.</b></li></ul><br>The EAT confirmed in its judgment that it only hears on <b>points or errors of law</b>.<br><br>The  case was sent back <b>to be heard afresh</b> by another Employment Tribunal.<br><br>The full judgment is <a href="https://assets.publishing.service.gov.uk/media/66b0a7f2ab418ab0555932af/Mr_J_Wharton_v_Sheehan_Haulage_and_Plant_Hire_Ltd__2024__EAT_127.pdf" style="color:red">here</a>`,
         image: '/News/News1109.jpg',
     },
+
     {
         _id: "2",
+        day: '06',
+        month: 'September',
+        year: '2024',
+        title: 'Senior employment lawyer loses race discrimination claim against City law firm',
+        introSummary: 'An employment lawyer who claimed a range of unlawful acts - race discrimination, unfair dismissal, wrongful dismissal, unfair constructive dismissal',
+        summary: `<p>An employment lawyer who claimed a range of unlawful acts - race discrimination, unfair dismissal, wrongful dismissal, unfair constructive dismissal, providing an unsafe place to work, personal injury and victimisation against his former employer - has lost all his claims against the firm.</p><br>Mr. D who worked for RBL Law Ltd, now RBG Holdings, claimed that he was subject to race discrimination and other unfair acts.<br><br>He claimed, a racist comment was made by the former CEO of the firm (Respondent two in the proceedings) at a public dinner in 2018, which was organised to celebrate the firm’s London Stock Exchange Listing.<br><br>The CEO later apologised for using the racist phrase.  She was dismissed from the firm in early 2023, after 6 years in post. There was no suggestion it was anything to do with Mr. D’s claim.<br><br>In front of a large crowd, the former CEO made what were alleged to be racist comments, which were also made in front of the firm’s founder and senior partner Ian Roseblatt.<br><br>The firm admitted the highly offensive comments were made but denied all the claims.<br><br>Instead they claimed that the claimant was dismissed for a fair reason related to his capability.<br><br>Mr.D started work for the firm in May 2017 and was dismissed in February 2020.<br><br><b>Earlier Proceedings 2020-2023</b><br><br>Mr.D made an application for <b>Interim Relief</b> in 2020 for the firm to continue to pay him or to honour his contract until his full case was decided, but the application was dismissed.<br><br>The Respondents attempted to <b>strike out</b> the claims on the basis the claim had not been ‘actively pursued’ due to no contact over a 28 month period from June 2020-October 2022, and for ‘unreasonable conduct’.<br><br>That application failed and was dismissed in January 2023 following a preliminary hearing.<br><br>The Tribunal ruled any delay was due to Covid lockdowns and the Claimant simply waited for the Tribunal to progress his claim, rather than chasing the Tribunal for a response.<br><br>In relation to unreasonable conduct, there was a further delay in 2021/2022, which the Tribunal did find the Claimant to have acted unreasonably, but only to a limited extent, and not enough for the claim to be struck out. The ET stated:<br><br><ul style="list-style-type:none"><li><b><i>“However I did not accept that the delay was such as gave rise to a substantial risk that it was not possible to have a fair trial of the issues in the action, or was likely to cause or to have caused serious prejudice to the defendants”.</i></b></li><li>(Para 43 , Jan 23 Judgment)</li></ul><br>The Tribunal ruled that there was no serious risk to memories fading for the Respondent’s witnesses and therefore little risk that a fair trial was no longer possible.<br><br>Mr. D had set out a very detailed claim form, provided detailed further and better particulars at the request of the Respondents and there had been disclosure of documents.<br><br>The Tribunal also observed, witnesses statements were taken by the Respondent for the earlier Interim Relief application.<br><br>The Tribunal determined that the Respondents were therefore in an unusually good position to defend the claim, as evidence had been obtained very early on.<br><br>Employment Judge Brown also stated:<br><br><ul style="list-style-type:none"><li><b><i>“The Respondents’ failure to make financial provision for the hearing was the Respondents’ decision.</i></b></li><br><li><b><i> I did not find that the fact that individual Respondents would face proceedings persuasive towards striking out the claim. I considered that there was an equal, if not greater, public interest in having important discrimination and protected disclosure claims heard.</i></b></li><br><li><b><i>Ultimately this is a case where “orderly preparation” for trial can still be made in the usual manner. It would not be proportionate simply to strike it out”.</i></b></li></ul><br>The Tribunal also refused to allow the Claimant to amend a number of his claims, though some minor amendments were allowed.<br><br><b>Later Proceedings in 2024</b><br><br>After a 4 year legal battle and the full hearing of the claim at the central London Employment Tribunal (ET) in Holborn, the ET found that all the claims should be dismissed.<br><br>Although the Tribunal agreed that the claim for the racist comment was well founded, it was out of time and therefore dismissed.<br><br>No extension of time was granted as Mr. D was well aware of the time limits, given his professional role as an employment lawyer and head of the employment department.<br><br>The Tribunal went further to state:<br><br><ul style="list-style-type:none"><li><i>‘…he has only sought to revive it in order to cause maximum embarrassment to the respondents’.</i></li></ul><br>The Tribunal also found that the founding partner did not laugh at the racist comment as alleged, but instead was himself offended by the term and admonished the former CEO for what she had said.<br><br>The Tribunal also found the former CEO <b>did not use the term</b> as a way to violate the claimant’s <b>dignity or of creating an intimidating, hostile, degrading, humiliating or offensive environment.</b><br><br>The Tribunal did find that it created an offensive environment for the Claimant, albeit fleetingly.<br><br>Other attendees were equally offended, though the Tribunal did recognise that due to the Mr. D’s heritage he had a unique personal connection to the phrase that was used.<br><br>All of the claims failed.<br><br>A spokesperson for the firm said<br><br><ul style="list-style-type:none"><li><b><i>‘We are pleased the tribunal unanimously dismissed each and every claim made..’.</i></b></li></ul>Mr. D represented himself at the hearing.`,
+        image: '/News/News0609.jpg',
+    },
+
+    {
+        _id: "3",
         day: '02',
         month: 'September',
         year: '2024',
@@ -40,7 +52,7 @@ export const newsData = [
         image: '/News/News0209.jpg',
     },
     {
-        _id: "3",
+        _id: "4",
         day: '30',
         month: 'August',
         year: '2024',
@@ -50,7 +62,7 @@ export const newsData = [
         image: '/News/News3008.jpg',
     },
     {
-        _id: "4",
+        _id: "5",
         day: '24',
         month: 'August',
         year: '2024',
@@ -61,7 +73,7 @@ export const newsData = [
     },
 
     {
-        _id: "5",
+        _id: "6",
         day: '17',
         month: 'July',
         year: '2024',
@@ -72,7 +84,7 @@ export const newsData = [
     },
 
     {
-        _id: "6",
+        _id: "7",
         day: '26',
         month: 'June',
         year: '2024',
@@ -83,7 +95,7 @@ export const newsData = [
     },
 
     {
-        _id: "7",
+        _id: "8",
         day: '20',
         month: 'May',
         year: '2024',
@@ -94,7 +106,7 @@ export const newsData = [
     },
 
     {
-        _id: "8",
+        _id: "9",
         day: '15',
         month: 'April',
         year: '2024',
@@ -105,7 +117,7 @@ export const newsData = [
     },
 
     {
-        _id: "9",
+        _id: "10",
         day: '12',
         month: 'March',
         year: '2024',
@@ -116,7 +128,7 @@ export const newsData = [
     },
 
     {
-        _id: "10",
+        _id: "11",
         day: '04',
         month: 'February',
         year: '2024',
@@ -127,7 +139,7 @@ export const newsData = [
     },
 
     {
-        _id: "11",
+        _id: "12",
         day: '20',
         month: 'January',
         year: '2024',
@@ -138,7 +150,7 @@ export const newsData = [
     },
 
     {
-        _id: "12",
+        _id: "13",
         day: '04',
         month: 'January',
         year: '2024',
