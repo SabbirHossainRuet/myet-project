@@ -25,11 +25,21 @@ export const newsData = [
         year: '2024',
         title: 'Manchester Court worker awarded £10,935 in compensation for victimisation claim against Justice Secretary',
         introSummary: 'A Manchester Court worker has been successful in her claim for victimisation against the Secretary of State for Justice and His Majesty’s Courts and Tribunal Service (HMCTS).',
-        summary: `<p>A Manchester Court worker has been successful in her claim for victimisation against the <b>Secretary of State for Justice</b> and <b>His Majesty’s Courts and Tribunal Service (HMCTS).</b></p><br>This is the second Court worker who has successfully sued the Secretary of State for Justice in the last couple of months.<br><br>Last month, another Court worker in London at Highbury Magistrates Court was <b>awarded £27,000 for discrimination.</b><br><br>In the latest case, following a hearing at the Manchester Employment Tribunal, Mrs. B successfully argued that she was victimised in breach of the Equality Act 2010.<br><br>The victimisation took place in February 2022, although there were other employment issues going back to at least 2019, which were raised as part of the claim.<br><br>Mrs. B complained about the conduct of a Team Leader at <b>Manchester Magistrates Court</b>, where she worked as a listing clerk.<br><br>Ms. B had been employed by HMCTS since 2008. She was a long serving worker who had contributed to very positive work in the North West area according to her employer.<br><br>The row centred on a complaint Ms. B made that the Team Leader was breaching covid regulations by giving ‘in person training’ to a newly appointed female court worker, which was not normal practice at the time.<br><br>Ms. B having raised her concerns about the ‘face to face’ training, lodged a grievance in November 2021.<br><br>The Team Leader (Mr. O’Bryan) later made a counter grievance, where according to the Tribunal he told ‘untruths’ about Ms. B.<br><br>He claimed to management that Ms. B had said that he was ‘all over’ the female colleague he was training. This was found by the Tribunal to be untruthful.<br><br>Ms. B continued to work for a period, as she told the Tribunal she tried to carry on with her work, despite the hostility and victimisation she faced.<br><br>She went off on long term sickness absence from September 2022, after finding it too difficult to continue.<br><br>According to the Tribunal, the employer regarded Mrs. B as a valuable and well respected employee, playing a key role in the North West Region’s Equality Group.<br><br>The Tribunal referred to a letter from the Chief Executive of HMCTS, Mr. Goodwin, who said:<br><br><ul style="list-style-type:none"><li><b><i>Chief Executive of HMCTS, Mr Goodwin, at page 106 of the remedy bundle in a letter of 16 June 2023 to the Mayor of Greater Manchester. What he said was:</i></b></li><br><li><b><i>“Ms B.. has played a key role in the North West Region’s Equality, Diversity and Inclusion Group over the last few years and has been supported in this work by the management team there, as part of their commitment to making a difference in this area.</i></b></li><br><li><b><i>Her line manager continues to support Ms B….and would be keen to see her resume this work when she is able.</i></b></li></ul><br>The Team Leader, Mr. O Bryan, also later left his job at Manchester Magistrates Court.<br><br><b><u>COSTS:</u></b><br><br>As Ms. B was successful in her claim, she sought her costs against HMCTS for pursuing the claim, but this was rejected by the Tribunal who said:<br><br><ul style="list-style-type:none"><li><b><i>‘Costs in the Employment Tribunal are very much the exception and not the rule’.</i></b></li><br><li><b><i>‘…The fact that the claimant succeeded in her claim did not mean, in and of itself, that we should award her costs, because that is not the way the Employment Tribunal system works. It is very different to lots of other jurisdictions. It is not the case that the loser simply pays the winner’s costs’.</i></b></li></ul><br><b><u>DAMAGES:</u></b><br><br>Ms.B was awarded <b>£9,100 for damages</b> and a further <b>£1,835 for interest.</b><br><br>A copy of the <b>remedy judgment</b> is <a href="https://assets.publishing.service.gov.uk/media/66dacc4dfb86ba5a1f214ef8/Mr_S_Balogun_v_The_Secretary_of_State_for_Justice_-_2401737_2022_-_Reasons.pdf" style="color:red">here</a>`,
+        summary: `<p>A Manchester Court worker has been successful in her claim for victimisation against the <b>Secretary of State for Justice</b> and <b>His Majesty’s Courts and Tribunal Service (HMCTS).</b></p><br>This is the second Court worker who has successfully sued the Secretary of State for Justice in the last couple of months.<br><br>Last month, another Court worker in London at Highbury Magistrates Court was <b>awarded £27,000 for discrimination.</b><br><br>In the latest case, following a hearing at the Manchester Employment Tribunal, Mrs. B successfully argued that she was victimised in breach of the Equality Act 2010.<br><br>The victimisation took place in February 2022, although there were other employment issues going back to at least 2019, which were raised as part of the claim.<br><br>Ms. B complained about the conduct of a Team Leader at <b>Manchester Magistrates Court</b>, where she worked as a listing clerk.<br><br>Ms. B had been employed by HMCTS since 2008. She was a long serving worker who had contributed to very positive work in the North West area according to her employer.<br><br>The row centred on a complaint Ms. B made that the Team Leader was breaching covid regulations by giving ‘in person training’ to a newly appointed female court worker, which was not normal practice at the time.<br><br>Ms. B having raised her concerns about the ‘face to face’ training, lodged a grievance in November 2021.<br><br>The Team Leader (Mr. O’Bryan) later made a counter grievance, where according to the Tribunal he told ‘untruths’ about Ms. B.<br><br>He claimed to management that Ms. B had said that he was ‘all over’ the female colleague he was training. This was found by the Tribunal to be untruthful.<br><br>Ms. B continued to work for a period, as she told the Tribunal she tried to carry on with her work, despite the hostility and victimisation she faced.<br><br>She went off on long term sickness absence from September 2022, after finding it too difficult to continue.<br><br>According to the Tribunal, the employer regarded Ms. B as a valuable and well respected employee, playing a key role in the North West Region’s Equality Group.<br><br>The Tribunal referred to a letter from the Chief Executive of HMCTS, Mr. Goodwin, who said:<br><br><ul style="list-style-type:none"><li><b><i>Chief Executive of HMCTS, Mr Goodwin, at page 106 of the remedy bundle in a letter of 16 June 2023 to the Mayor of Greater Manchester. What he said was:</i></b></li><br><li><b><i>“Ms B.. has played a key role in the North West Region’s Equality, Diversity and Inclusion Group over the last few years and has been supported in this work by the management team there, as part of their commitment to making a difference in this area.</i></b></li><br><li><b><i>Her line manager continues to support Ms B….and would be keen to see her resume this work when she is able.</i></b></li></ul><br>The Team Leader, Mr. O Bryan, also later left his job at Manchester Magistrates Court.<br><br><b><u>COSTS:</u></b><br><br>As Ms. B was successful in her claim, she sought her costs against HMCTS for pursuing the claim, but this was rejected by the Tribunal who said:<br><br><ul style="list-style-type:none"><li><b><i>‘Costs in the Employment Tribunal are very much the exception and not the rule’.</i></b></li><br><li><b><i>‘…The fact that the claimant succeeded in her claim did not mean, in and of itself, that we should award her costs, because that is not the way the Employment Tribunal system works. It is very different to lots of other jurisdictions. It is not the case that the loser simply pays the winner’s costs’.</i></b></li></ul><br><b><u>DAMAGES:</u></b><br><br>Ms.B was awarded <b>£9,100 for damages</b> and a further <b>£1,835 for interest.</b><br><br>A copy of the <b>remedy judgment</b> is <a href="https://assets.publishing.service.gov.uk/media/66dacc4dfb86ba5a1f214ef8/Mr_S_Balogun_v_The_Secretary_of_State_for_Justice_-_2401737_2022_-_Reasons.pdf" style="color:red">here</a>`,
         image: '/News/News1909.jpg',
     },
     {
         _id: "2",
+        day: '18',
+        month: 'September',
+        year: '2024',
+        title: 'Tesco loses Supreme Court case for controversial ‘fire and rehire’ practice',
+        introSummary: 'Tesco Stores Ltd (‘Tesco’) has lost a controversial practice of ‘fire and rehire’ after a battle with a retail and distribution trade Union and their members.',
+        summary: `<p>Tesco Stores Ltd (‘Tesco’) has lost a controversial practice of <b>‘fire and rehire’</b> after a battle with a retail and distribution trade Union and their members.</p><br>The Supreme Court, overturning an earlier appeal that Tesco had won, came down on the side of USDAW union and its members in legal arguments about the contractual terms at the centre of the row which started in 2021.<br><br>Tesco wanted to fire a small number of employees, and rehire them on lower pay.<br><br>The workers argued this was unfair as Tesco had made an earlier ‘permanent’ benefits agreement to honour their contractual terms.<br><br>In 2007, Tesco wanted to close some distribution centres and open new ones, and agreed to pay workers an element of <b>‘retained pay’</b> so they would relocate.<br><br>In 2021 however, Tesco sought to abolish the ‘retained pay’ which affected approximately 50 people working at distribution centres in Daventry and Lichfield.<br><br>In 2022, USDAW successfully applied for an injunction to stop Tesco going ahead with its plan. Tesco overturned the injunction on appeal in the same year.<br><br>Last week on Thursday, the <b>Supreme Court</b> reversed the appeal decision.<br><br>The five justices ruled that when Tesco offered and agreed the retained pay deal in the beginning, it did so on a ‘permanent basis’, and it was not up to Tesco to now unilaterally undo the contract.<br><br>The Supreme Court ruled, using the word ‘permanent’ did not indicate that the deal was time limited.<br><br>The Court said:<br><br><ul style="list-style-type:none"><li>“The Supreme Court unanimously allows the appeal and restores the injunction granted by Ellenbogen J. The employment contracts contained a term implied by fact with the effect that the employer’s right to terminate could not be exercised for the purpose of depriving the employees of their right to RP. Lord Burrows and Lady Simler give the leading judgment, with which Lord Lloyd-Jones agrees. Lord Leggatt and Lord Reed give concurring judgments.</li></ul><br><b>Neil Todd, a partner at law firm Thompsons Solicitors, which represented Usdaw, says:</b><br><br><ul style="list-style-type:none"><li>“This is a fantastic judgement for Usdaw and the members concerned. Those in receipt of retained pay were promised unequivocally that they would be afforded a permanent benefit under their employment contract if they agreed to remain with the business and support it when it needed them most.</li><br><li>“They were then threatened with ‘fire and rehire’ when Tesco considered that the benefit had served its purpose. This decision illustrates that a court will intervene to give effect to the parties’ intentions when entering into a contract. It also demonstrates that a right to an injunction is available regarding a breach of contract of employment when damages are not an adequate remedy, as was the case here.</li><br><li>“The injunction will prevent this important right from being stripped away. The litigation has been hard fought, but we are delighted to achieve an outcome that we consider just in all circumstances.”</li></ul><br>Tesco said the majority of distribution colleagues do not receive this top up pay, and instead wanted to make a ‘competitive’ lump sum offer to abolish it or their contracts would be terminated, and reoffered on the same terms without the ‘retained pay’ entitlement.<br><br>It added , its distribution colleagues <b>‘play a really critical role’</b> in helping to serve its customers, and all the workers were highly valued and respected.<br><br>The new government has proposed to abolish the controversial policy of ‘fire and rehire’ after a number of large employers have used the tactic over recent years. In X P&O, sacked over 800 workers and sough to rehire them via an agency.<br><br>Full judgment is <a href="https://www.supremecourt.uk/cases/uksc-2022-0133.html" style="color:red">here</a>`,
+        image: '/News/News1809.png',
+    },
+    {
+        _id: "3",
         day: '16',
         month: 'September',
         year: '2024',
@@ -40,7 +50,7 @@ export const newsData = [
     },
 
     {
-        _id: "3",
+        _id: "4",
         day: '11',
         month: 'September',
         year: '2024',
@@ -51,7 +61,7 @@ export const newsData = [
     },
 
     {
-        _id: "4",
+        _id: "5",
         day: '06',
         month: 'September',
         year: '2024',
@@ -62,7 +72,7 @@ export const newsData = [
     },
 
     {
-        _id: "5",
+        _id: "6",
         day: '02',
         month: 'September',
         year: '2024',
@@ -72,7 +82,7 @@ export const newsData = [
         image: '/News/News0209.jpg',
     },
     {
-        _id: "6",
+        _id: "7",
         day: '30',
         month: 'August',
         year: '2024',
@@ -82,7 +92,7 @@ export const newsData = [
         image: '/News/News3008.jpg',
     },
     {
-        _id: "7",
+        _id: "8",
         day: '24',
         month: 'August',
         year: '2024',
@@ -93,7 +103,7 @@ export const newsData = [
     },
 
     {
-        _id: "8",
+        _id: "9",
         day: '17',
         month: 'July',
         year: '2024',
@@ -104,7 +114,7 @@ export const newsData = [
     },
 
     {
-        _id: "9",
+        _id: "10",
         day: '26',
         month: 'June',
         year: '2024',
@@ -115,7 +125,7 @@ export const newsData = [
     },
 
     {
-        _id: "10",
+        _id: "11",
         day: '20',
         month: 'May',
         year: '2024',
@@ -126,7 +136,7 @@ export const newsData = [
     },
 
     {
-        _id: "11",
+        _id: "12",
         day: '15',
         month: 'April',
         year: '2024',
@@ -137,7 +147,7 @@ export const newsData = [
     },
 
     {
-        _id: "12",
+        _id: "13",
         day: '12',
         month: 'March',
         year: '2024',
@@ -148,7 +158,7 @@ export const newsData = [
     },
 
     {
-        _id: "13",
+        _id: "14",
         day: '04',
         month: 'February',
         year: '2024',
@@ -159,7 +169,7 @@ export const newsData = [
     },
 
     {
-        _id: "14",
+        _id: "15",
         day: '20',
         month: 'January',
         year: '2024',
@@ -170,7 +180,7 @@ export const newsData = [
     },
 
     {
-        _id: "15",
+        _id: "16",
         day: '04',
         month: 'January',
         year: '2024',
@@ -268,7 +278,7 @@ export const et_list = [
         _id: "8",
         name: "PremiumBrief 8",
         price: 39.99,
-        description: "One to One Questions and Answers Session (Valid for 1 month)",
+        description: "One to One Questions and Answers Session with an Employment Coach (Valid for 1 month)",
         thumbnail: "",
         pdfUrl: "/ACAS.pdf"
     },

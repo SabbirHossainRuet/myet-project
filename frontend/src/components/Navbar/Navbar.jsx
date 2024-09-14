@@ -136,7 +136,7 @@ const Navbar = () => {
 
                     <Link className={`li ${activeLink === "mission-section" ? "active" : ""}`} to="mission-section" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("mission-section")} onClick={() => handleLinkClick("mission-section")}>Mission</Link>
 
-                    <Link className={`li ${activeLink === "get-started-section" ? "active" : ""}`} to="get-started-section" duration={500} offset={-200} spy={true}  onSetActive={() => handleSetActive("get-started-section")} onClick={() => handleLinkClick("get-started-section")}>Get Started</Link>
+                    <Link className={`li ${activeLink === "get-started-section" ? "active" : ""}`} to="get-started-section" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("get-started-section")} onClick={() => handleLinkClick("get-started-section")}>Get Started</Link>
 
                     <Link className={`li ${activeLink === "News" ? "active" : ""}`} to="news-events-section" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("News")} onClick={() => handleLinkClick("News")}>News</Link>
 
@@ -150,7 +150,7 @@ const Navbar = () => {
 
                     <Link className={`li ${activeLink === "law" ? "active" : ""}`} to="employee-services" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("law")} onClick={() => handleLinkClick("law")}>Employment Law</Link>
 
-                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Customers")} onClick={() => handleLinkClick("Customers")}>Customers</Link>
+                    <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Customers")} onClick={() => handleLinkClick("Customers")}>Reviews</Link>
                 </div>
             </div>
             <div className="navbar-menu-container">
