@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="end-panel-end">
-            <h3>Employment Rights Network @2024. All rights reserved</h3>
+            <h3>Employment Rights Network 2024. All rights reserved</h3>
           </div>
         </div>
       </Element>

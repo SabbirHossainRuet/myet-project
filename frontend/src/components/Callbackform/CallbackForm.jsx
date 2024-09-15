@@ -240,36 +240,41 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
+            // Submit the form
             await submitCallbackForm(callbackFormData, showDateTime);
 
+            // Notify user immediately after form submission
+            alert('Form submitted successfully');
+            toggleCallbackForm();
+
+            // Send the email asynchronously without blocking
             const templateParams = {
-                name: callbackFormData.name,     
-                email: callbackFormData.email,  
-                phone: callbackFormData.phone, 
+                name: callbackFormData.name,
+                email: callbackFormData.email,
+                phone: callbackFormData.phone,
                 subject: callbackFormData.subject,
                 message: callbackFormData.message,
-                reply_to: 'itechopedia@gmail.com'
             };
-            
+
             emailjs.send(
                 'service_mqvxm7m', // Replace with your EmailJS service ID
                 'template_3pxpf95', // Replace with your EmailJS template ID
                 templateParams,
                 'QTqyMNRoh1SL2LShi'
             )
-            .then(() => {
-                alert('Form submitted and email sent successfully!');
-            })
-            .catch((error) => {
-                console.error('Failed to send email:', error);
-                alert('Form submitted, but failed to send email.');
-            });
+                .then(() => {
+                    console.log('Email sent successfully');
+                })
+                .catch((error) => {
+                    console.error('Failed to send email:', error);
+                    alert('Form submitted, but failed to send email.');
+                });
 
-            toggleCallbackForm();
         } catch (error) {
             alert('Failed to submit form');
         }
     };
+
 
     return (
         <div className="callback-form-container"
