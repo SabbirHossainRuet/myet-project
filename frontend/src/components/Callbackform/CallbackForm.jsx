@@ -199,6 +199,7 @@ import { StoreContext } from "../Context/StoreContext";
 import Logo from "../../assets/logo.png";
 import './CallbackForm.css';
 import { submitCallbackForm } from '../../apiService';
+import emailjs from 'emailjs-com';
 
 const CallbackForm = ({ handleTitleClick, titleText }) => {
     const { callbackFormData, handleFormChange, toggleCallbackForm, showDateTime } = useContext(StoreContext);
@@ -225,11 +226,45 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
         };
     }, [isCursorInsideForm]);
 
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+    //     try {
+    //         await submitCallbackForm(callbackFormData, showDateTime);
+    //         alert('Form submitted successfully');
+    //         toggleCallbackForm();
+    //     } catch (error) {
+    //         alert('Failed to submit form');
+    //     }
+    // };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
             await submitCallbackForm(callbackFormData, showDateTime);
-            alert('Form submitted successfully');
+
+            const templateParams = {
+                name: callbackFormData.name,     
+                email: callbackFormData.email,  
+                phone: callbackFormData.phone, 
+                subject: callbackFormData.subject,
+                message: callbackFormData.message,
+                reply_to: 'itechopedia@gmail.com'
+            };
+            
+            emailjs.send(
+                'service_mqvxm7m', // Replace with your EmailJS service ID
+                'template_3pxpf95', // Replace with your EmailJS template ID
+                templateParams,
+                'QTqyMNRoh1SL2LShi'
+            )
+            .then(() => {
+                alert('Form submitted and email sent successfully!');
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error);
+                alert('Form submitted, but failed to send email.');
+            });
+
             toggleCallbackForm();
         } catch (error) {
             alert('Failed to submit form');
