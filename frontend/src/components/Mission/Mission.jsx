@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import "./Mission.css";
-import { VscCallIncoming } from "react-icons/vsc";
 import { MdOutlineStar } from "react-icons/md";
 import videoCall from '../../assets/videocall.png';
 import shuttle from '../../assets/shuttle.png';
