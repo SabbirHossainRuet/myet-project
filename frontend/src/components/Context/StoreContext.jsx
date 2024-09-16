@@ -14,17 +14,16 @@ const StoreContextProvider = (props) => {
     const [showDateTime, setShowDateTime] = useState(true);
     const [formTitle, setFormTitle] = useState('');
 
-    const toggleCallbackForm = () => {
-        setIsCallbackFormVisible(!isCallbackFormVisible);
-    };
-
     // const toggleCallbackForm = () => {
-    //     if (isCallbackFormVisible) {
-    //         // If the form is currently visible (meaning it's about to be closed), reset the form data
-    //         setCallbackFormData({});
-    //     }
     //     setIsCallbackFormVisible(!isCallbackFormVisible);
     // };
+
+    const toggleCallbackForm = () => {
+        if (isCallbackFormVisible) {
+            setCallbackFormData({});
+        }
+        setIsCallbackFormVisible(!isCallbackFormVisible);
+    };
 
     const handleFormChange = (e) => {
         const { name, value } = e.target;
