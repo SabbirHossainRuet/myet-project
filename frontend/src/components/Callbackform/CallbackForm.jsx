@@ -247,7 +247,6 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
             alert('Form submitted successfully');
             toggleCallbackForm();
 
-            // Send the email asynchronously without blocking
             const templateParams = {
                 name: callbackFormData.name,
                 email: callbackFormData.email,
