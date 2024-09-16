@@ -203,28 +203,28 @@ import emailjs from 'emailjs-com';
 
 const CallbackForm = ({ handleTitleClick, titleText }) => {
     const { callbackFormData, handleFormChange, toggleCallbackForm, showDateTime } = useContext(StoreContext);
-    const [isCursorInsideForm, setCursorInsideForm] = useState(false);
+    // const [isCursorInsideForm, setCursorInsideForm] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = (event) => {
-            if (isCursorInsideForm) {
-                event.preventDefault();
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = (event) => {
+    //         if (isCursorInsideForm) {
+    //             event.preventDefault();
+    //         }
+    //     };
 
-        if (isCursorInsideForm) {
-            window.addEventListener('wheel', handleScroll, { passive: false });
-            window.addEventListener('touchmove', handleScroll, { passive: false });
-        } else {
-            window.removeEventListener('wheel', handleScroll);
-            window.removeEventListener('touchmove', handleScroll);
-        }
+    //     if (isCursorInsideForm) {
+    //         window.addEventListener('wheel', handleScroll, { passive: false });
+    //         window.addEventListener('touchmove', handleScroll, { passive: false });
+    //     } else {
+    //         window.removeEventListener('wheel', handleScroll);
+    //         window.removeEventListener('touchmove', handleScroll);
+    //     }
 
-        return () => {
-            window.removeEventListener('wheel', handleScroll);
-            window.removeEventListener('touchmove', handleScroll);
-        };
-    }, [isCursorInsideForm]);
+    //     return () => {
+    //         window.removeEventListener('wheel', handleScroll);
+    //         window.removeEventListener('touchmove', handleScroll);
+    //     };
+    // }, [isCursorInsideForm]);
 
     // const handleSubmit = async (event) => {
     //     event.preventDefault();
@@ -271,16 +271,13 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
                 });
 
         } catch (error) {
-            alert('Failed to submit form');
+            alert('Failed to submit form. Please enter valid email');
         }
     };
 
 
     return (
-        <div className="callback-form-container"
-            onMouseEnter={() => setCursorInsideForm(true)}
-            onMouseLeave={() => setCursorInsideForm(false)}
-        >
+        <div className="callback-form-container">
             <div className="callback-form-container-left">
                 <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
                 <h2 className="callback-form-title">{titleText}</h2>
