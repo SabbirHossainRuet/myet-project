@@ -38,6 +38,8 @@ import { Route, Routes } from 'react-router-dom';
 import NewsDetails from './components/NewsDetails/NewsDetails';
 import Home from './pages/Home/Home';
 import ETGuidesDetails from './components/ETGuidesDetails/ETGuidesDetails';
+import { ToastContainer } from 'react-toastify'; // Import ToastContainer
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
@@ -48,7 +50,17 @@ const App = () => {
         <Route path="/news/:id" element={<NewsDetails />} />
         <Route path="/brief/:id" element={<ETGuidesDetails />} />
       </Routes>
-
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }

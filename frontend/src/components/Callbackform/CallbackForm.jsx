@@ -200,9 +200,11 @@ import Logo from "../../assets/logo.png";
 import './CallbackForm.css';
 import { submitCallbackForm } from '../../apiService';
 import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
 
 const CallbackForm = ({ handleTitleClick, titleText }) => {
     const { callbackFormData, handleFormChange, toggleCallbackForm, showDateTime } = useContext(StoreContext);
+    const [isLoading, setIsLoading] = useState(false);
     // const [isCursorInsideForm, setCursorInsideForm] = useState(false);
 
     // useEffect(() => {
@@ -239,13 +241,25 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setIsLoading(true);
         try {
             // Submit the form
             await submitCallbackForm(callbackFormData, showDateTime);
 
             // Notify user immediately after form submission
-            alert('Form submitted successfully');
+            toast.success('Thank you! Form submitted successfully');
             toggleCallbackForm();
+
+            const now = new Date();
+            const ukDateTime = now.toLocaleString('en-GB', {
+                timeZone: 'Europe/London',
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            });
 
             const templateParams = {
                 name: callbackFormData.name,
@@ -253,6 +267,7 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
                 phone: callbackFormData.phone,
                 subject: callbackFormData.subject,
                 message: callbackFormData.message,
+                submissionDateTime: ukDateTime,
             };
 
             emailjs.send(
@@ -270,7 +285,10 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
                 });
 
         } catch (error) {
-            alert('Failed to submit form. Please enter valid email');
+            toast.error('Failed to submit form. Please enter valid email');
+        }
+        finally {
+            setIsLoading(false);
         }
     };
 
@@ -437,7 +455,9 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
                             <option value="Other">Other</option>
                         </select>
                     </label>
-                    <button type="submit">Send</button>
+                    <button type="submit" disabled={isLoading}>
+                        {isLoading ? 'Submitting...' : 'Send'}
+                    </button>
                     <button type="button" onClick={toggleCallbackForm}>Cancel</button>
                 </form>
                 <br />
