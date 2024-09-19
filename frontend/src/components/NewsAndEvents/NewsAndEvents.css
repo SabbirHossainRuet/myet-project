@@ -116,3 +116,17 @@
 .read-more-link:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+        text-decoration: none;
+    }
+    .news-card {
+        width: 100%;
+    }
+    
+}

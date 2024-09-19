@@ -119,7 +119,12 @@ const Navbar = () => {
     return (
         <nav>
             <div className="navbar-top">
-                <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
+                <div className="navbar-left">
+                    <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
+                    <div className="navbar-menu-container">
+                        <HiOutlineBars3 style={iconStyle} onClick={() => setOpenMenu(true)} />
+                    </div>
+                </div>
                 <div className="buttons">
                     <button style={{ backgroundColor: '#00AF6C' }} onClick={handleEnquiryClick}>Make An Enquiry</button>
                     <button style={{ backgroundColor: '#006DB2' }} onClick={handleCallbackClick}>Request A Callback</button>
@@ -128,7 +133,6 @@ const Navbar = () => {
                     <CiSearch style={{ fontSize: '18px' }} />
                     <input type="text" className="search-box" placeholder="Search..." />
                 </div>
-
             </div>
             <div className="navbar-bottom">
                 <div className="navbar-links-container">
@@ -152,9 +156,6 @@ const Navbar = () => {
 
                     <Link className={`li ${activeLink === "Customers" ? "active" : ""}`} to="clients" duration={500} offset={-200} spy={true} onSetActive={() => handleSetActive("Customers")} onClick={() => handleLinkClick("Customers")}>Reviews</Link>
                 </div>
-            </div>
-            <div className="navbar-menu-container">
-                <HiOutlineBars3 style={iconStyle} onClick={() => setOpenMenu(true)} />
             </div>
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right" >
                 <Box

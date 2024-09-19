@@ -90,3 +90,18 @@
 .bubble.active {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+@media (max-width:768px){
+    .carousel{
+        height: 300px;
+    }
+
+    .carousel-arrows {
+        top: 65%;
+    }
+    .arrow {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}

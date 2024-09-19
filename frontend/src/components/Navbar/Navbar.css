@@ -135,10 +135,15 @@ nav {
   align-items: center;
 }
 
-nav img {
+.navbar-left {
+  display: flex;
+  width: 15%;
+}
+
+.navbar-left img{
   height: 110px;
   margin: 40px;
-  width: 12%;
+  width: 100%;
   color: orange;
 }
 
@@ -199,29 +204,47 @@ nav img {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .navbar-links-container {
+  .navbar-top {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    height: 230px;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .navbar-left img {
+    margin: 0;
+    height: 110px;
+    width: 50%;
+  }
+
+  .navbar-top .buttons {
+    order: 2; /* Re-order buttons */
+    width: 80%;
+    display: flex;
+    margin: 0px 50px;
+  }
+
+  .search-container {
+    order: 3;
+    width: 60%!important;
+    margin: 0px 20px;
+  }
+
+  .navbar-bottom {
     display: none;
   }
 
-  nav h3 {
-    font-size: 35px;
+  .navbar-menu-container{
+    display: block;
   }
 
-  nav {
-    gap: 0px;
-  }
-
-  .navbar-menu-container {
-    display: flex;
-  }
-
-  nav button {
-    border: none;
-    color: white;
-    margin-left: 100px;
-    width: 12%;
-    height: 33px;
-    background-color: orange;
-
+  .navbar-top .buttons button {
+    width: 48%; /* Make buttons full-width for better stacking */
   }
 }

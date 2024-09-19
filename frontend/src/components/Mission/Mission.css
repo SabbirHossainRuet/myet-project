@@ -60,7 +60,7 @@
 
 .get-started-now {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 30px 200px;
     gap: 50px;
 }
@@ -165,5 +165,20 @@
         font-size: 35px;
         width: max(80vw, 100px);
         text-align: center;
+    }
+
+    .get-started-now {
+        margin: 40px 40px;
+        gap: 20px;
+    }
+
+    .bottom-text-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        font-weight: bold;
+        /* Strong, bold text for emphasis */
     }
 }
