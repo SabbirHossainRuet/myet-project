@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 .employee-services {
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 
-
-.employee-bundle {
-    margin: 10px 200px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2px;
+/* Adjust container and grid settings */
+.employee-container {
     padding: 20px;
 }
 
+.employee-bundle {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns by default */
+    gap: 20px; /* Increased gap for better spacing */
+    margin: 10px 0;
+}
+
+/* Style for each item in the grid */
 .employee-bundle-item {
     height: 100px;
     background-color: #FE6601;
@@ -23,6 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+}
+
+.employee-bundle-item:hover {
+    transform: translateY(-5px);
 }
 
 .employee-services .title {
@@ -30,44 +39,14 @@
     font-size: 35px;
     font-weight: 500;
     color: orange;
-    font-family: "Kalam";
-}
-
-.employee-bundle-item .description {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-align: center;
-
-}
-
-.employee-bundle-item:hover {
-    transform: translateY(-5px);
-}
-
-.employee-services .title2 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-    color: orange;
-    font-family: "Kalam";
+    font-family: "Kalam", cursive;
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    .employee-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .employee-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .employee-container {
+@media (max-width: 768px) {
+    .employee-bundle {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* 4 columns */
     }
 }
+
