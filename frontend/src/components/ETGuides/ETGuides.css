@@ -351,10 +351,10 @@ hr {
 
     .et-list {
 
-        margin: 20px 0px;
-        padding: 20px 0px;
+        margin: 10px 10px;
+        padding: 10px 10px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 0.2fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         min-height: 300px;
         gap: 20px;
 
@@ -367,10 +367,13 @@ hr {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: start;
         gap: 15px;
         background-color: white;
 
     }
+
 
     .et-list-item h3,
     .et-list-item .price,
@@ -380,8 +383,14 @@ hr {
         height: 100%;
         align-items: center;
         justify-content: center;
-        min-height: 35px;
+        min-height: 30px;
     }
+
+    .et-list-item .description {
+        min-height: 80px;
+        align-items: start;
+    }
+
 
     .et-list-item h3 {
         color: orange;
@@ -417,14 +426,50 @@ hr {
     }
 
     .et-bundle-item button {
-        min-width: 300px;
+        min-width: 60px;
+        max-width: 270px;
 
+    }
+
+    .thumbnail-container img {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .et-all-container {
         display: flex;
         flex-direction: column;
         margin: 20px 20px;
+    }
+
+    .row-items-all {
+        margin: 10px 10px;
+        color: rgb(13, 33, 59);
+        gap: 10px;
+    }
+
+    .row-items-all .description {
+        display: flex;
+        font-size: 15px;
+        font-weight: bold;
+        min-width: 280px;
+    }
+
+    .et-rows-2 .row-items-all {
+        padding-top: 30px !important;
+
+    }
+
+    .scroll-button.left {
+        display: none;
+
+    }
+
+    .scroll-button.right {
+        display: none;
     }
 }
 
