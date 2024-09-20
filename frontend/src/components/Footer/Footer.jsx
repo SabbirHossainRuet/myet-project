@@ -24,12 +24,13 @@ const Footer = () => {
           </div>
           <div className="end-panel-middle">
             <div className="middle-left">
-              <h2>Legal Information</h2>
+              <h2>Connect with us</h2>
               <ul>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
-                <li>Cookie Policy</li>
+                <li>Email Address</li>
+                <li>Phone</li>
+                <li>Live Chat</li>
               </ul>
+
             </div>
             <div className="middle-center">
               <h2>Support and Help</h2>
@@ -40,13 +41,12 @@ const Footer = () => {
 
             </div>
             <div className="middle-right">
-              <h2>Connect with us</h2>
+              <h2>Legal Information</h2>
               <ul>
-                <li>Email Address</li>
-                <li>Phone</li>
-                <li>Live Chat</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Cookie Policy</li>
               </ul>
-
             </div>
           </div>
           <div className="end-panel-end">
