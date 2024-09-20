@@ -128,14 +128,15 @@
     .callback-form-container {
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 330px;
+        padding: 15px;
         max-height: 80vh;
     }
 
     .callback-form-container-right {
         width: 100%;
         margin-bottom: 20px;
-        padding-right: 20px;
+        padding-right: 5px;
         overflow-y: auto;
     }
 
