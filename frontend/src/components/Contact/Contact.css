@@ -41,6 +41,11 @@
     font-size: 20px;
 }
 
+.enquiry,
+.callback {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .contact {
         margin: 20px 20px 20px 20px;

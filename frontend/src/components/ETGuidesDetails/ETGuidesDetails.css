@@ -16,6 +16,20 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.go-to-infobriefs {
+    padding: 10px 10px;
+    font-size: 16px;
+    color: black;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-to-infobriefs:hover {
+    text-decoration: underline;
+}
+
 @media (max-width:768px) {
     .guide-details {
         max-width: 100%;
@@ -23,6 +37,11 @@
 
     .guide-details-content p {
         font-size: 15px;
+    }
+
+    .custom-h2 {
+        text-align: left;
+        font-size: 21px;
     }
 
 }

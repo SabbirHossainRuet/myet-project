@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { et_list } from '../../assets/assets';
 import ReactMarkdown from 'react-markdown';
@@ -11,6 +11,7 @@ const ETGuidesDetails = () => {
     const [localItem, setLocalItem] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const localGuide = et_list.find((item) => item._id === id);
@@ -52,6 +53,22 @@ const ETGuidesDetails = () => {
         return <p>No data found</p>;
     }
 
+    const navigateToSection = (sectionId, offset = 100) => {
+        navigate('/');
+        setTimeout(() => {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 0);
+    };
+
     return (
         <div className="guide-details-container">
             <div className="guide-details">
@@ -69,6 +86,7 @@ const ETGuidesDetails = () => {
                     >
                         {guideData.attributes.texts || 'No additional content available'}
                     </ReactMarkdown>
+                    <button className='go-to-infobriefs' onClick={() => navigateToSection('et-guides', 200)} >Back to InfoBriefs</button>
                 </div>
             </div>
         </div>

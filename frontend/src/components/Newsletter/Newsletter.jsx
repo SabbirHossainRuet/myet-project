@@ -40,7 +40,7 @@ const NewsLetter = () => {
             <div className="newsletter-container">
                 <div className="left">
                     <h2 className="alt">Stay up to date with us</h2>
-                    <h2 className="alt2">Get the latest case updates and employment news straight to your inbox.<br />Sign up to our monthly Newsletter by completing your details:</h2>
+                    <h2 className="alt2">Sign up below:</h2>
                     {/* <p style={{ textAlign: "center" }}>
                         Stay up to date with us, and how we're supporting UK workers to resolve their employment disputes.
                     </p> */}

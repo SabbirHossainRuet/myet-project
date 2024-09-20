@@ -38,23 +38,19 @@ const Contact = () => {
                     </div>
                     <div className="contact-item">
                         <img src={Enquiry} alt="" />
-                        <p onClick={handleEnquiryClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
-                            e.target.style.textDecoration = 'underline';
-                        }}
-                            onMouseLeave={(e) => {
-                                e.target.style.textDecoration = 'none';
-                            }}>
+                        <p onClick={handleEnquiryClick} style={{ cursor: 'pointer' }} className='enquiry'>
                             Make an Enquiry
                         </p>
                     </div>
                     <div className="contact-item">
                         <img src={Phone} alt="" />
-                        <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
+                        {/* <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }} onMouseEnter={(e) => {
                             e.target.style.textDecoration = 'underline';
                         }}
                             onMouseLeave={(e) => {
                                 e.target.style.textDecoration = 'none';
-                            }}>Request a Callback</p>
+                            }} className='callback'>Request a Callback</p> */}
+                        <p onClick={handleCallbackClick} style={{ cursor: 'pointer' }} className='callback'>Request a Callback</p>
                     </div>
                     <div className="contact-item">
                         <img src={Email} alt="" />

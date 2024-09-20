@@ -218,12 +218,18 @@ const NewsAndEvents = () => {
 
     const showLessNews = () => {
         setItemsToShow(4);
-        // Scroll to the top of the news section
+        // Scroll to the top of the news section with an offset
         const newsSection = document.getElementById('news-events-section');
         if (newsSection) {
-            newsSection.scrollIntoView({ behavior: 'smooth' });
+            const offsetTop = newsSection.offsetTop;
+            const offset = -170; // Adjust this value as needed (negative for above the element, positive for below)
+            window.scrollTo({
+                top: offsetTop + offset,
+                behavior: 'smooth'
+            });
         }
     };
+
 
     const truncateSummary = (summary, maxLength) => {
         if (summary.length > maxLength) {
