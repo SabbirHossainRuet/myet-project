@@ -178,12 +178,24 @@
     .more-news-button-container {
         text-align: center;
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .more-news-button {
         padding: 10px 20px;
         background-color: #3498db;
         color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .less-news-button {
+        padding: 10px 20px;
+        background-color: rgb(255, 234, 0);
+        color: black;
         border: none;
         border-radius: 4px;
         cursor: pointer;

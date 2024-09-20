@@ -216,6 +216,15 @@ const NewsAndEvents = () => {
 
     const showMoreNews = () => setItemsToShow(prevCount => prevCount + 4);
 
+    const showLessNews = () => {
+        setItemsToShow(4);
+        // Scroll to the top of the news section
+        const newsSection = document.getElementById('news-events-section');
+        if (newsSection) {
+            newsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const truncateSummary = (summary, maxLength) => {
         if (summary.length > maxLength) {
             return summary.slice(0, maxLength) + '...';
@@ -276,12 +285,19 @@ const NewsAndEvents = () => {
                     ))}
             </div>
 
-            {/* Mobile-specific "More News" button */}
-            {isMobile && itemsToShow < newsData.length && (
+            {/* Mobile-specific "More News" and "Less News" buttons */}
+            {isMobile && (
                 <div className="more-news-button-container">
-                    <button className="more-news-button" onClick={showMoreNews}>
-                        More News
-                    </button>
+                    {itemsToShow < newsData.length && (
+                        <button className="more-news-button" onClick={showMoreNews}>
+                            More News
+                        </button>
+                    )}
+                    {itemsToShow > 4 && (
+                        <button className="less-news-button" onClick={showLessNews}>
+                            Less News
+                        </button>
+                    )}
                 </div>
             )}
 

@@ -449,11 +449,16 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
                             required
                         >
                             <option value="" disabled>Select an option</option>
+                            <option value="Publicity Flyer/Leaflet">Publicity Flyer/Leaflet</option>
+                            <option value="Recommendation">Recommendation</option>
+                            <option value="Google search result">Google search result</option>
+                            <option value="News search result">News search result</option>
+                            <option value="You Tube">You Tube</option>
                             <option value="Facebook">Facebook</option>
-                            <option value="Google Search">Google Search</option>
-                            <option value="Linked In">Linked In</option>
-                            <option value="Twitter">Twitter</option>
-                            <option value="Instagram">Instagram</option>
+                            <option value="Tik Tok">Tik Tok</option>
+                            <option value="Twitter/X">Twitter/X</option>
+                            <option value="Link from Advice Agency/Charity">Link from Advice Agency/Charity</option>
+                            <option value="website">website</option>
                             <option value="Law Society Website">Law Society Website</option>
                             <option value="Other">Other</option>
                         </select>

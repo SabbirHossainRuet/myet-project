@@ -4,7 +4,8 @@
   "info": {
     "singularName": "callback-request",
     "pluralName": "callback-requests",
-    "displayName": "callback-requests"
+    "displayName": "callback-requests",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -52,11 +53,16 @@
     "source": {
       "type": "enumeration",
       "enum": [
+        "Publicity Flyer/Leaflet",
+        "Recommendation",
+        "Google search result",
+        "News search result",
+        "You Tube",
         "Facebook",
-        "Google Search",
-        "Linked In",
-        "Twitter",
-        "Instagram",
+        "Tik Tok",
+        "Twitter/X",
+        "Link from Advice Agency/Charity",
+        "website",
         "Law Society Website",
         "Other"
       ]
