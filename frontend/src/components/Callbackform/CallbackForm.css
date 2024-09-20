@@ -119,3 +119,59 @@
 .callback-form-container-right button[type="submit"] {
     background-color: rgb(30, 136, 179) !important;
 }
+
+.close-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .callback-form-container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        max-height: 80vh;
+    }
+
+    .callback-form-container-right {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 20px;
+        overflow-y: auto;
+    }
+
+    .callback-form-container-left {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .callback-form-container-left img {
+        display: none;
+    }
+
+    .best-time-call span {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    /* Add styles for the close/cross icon */
+    .close-icon {
+        position: absolute;
+        display: block;
+        top: 5px;
+        right: 5px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+        /* Or any color you'd like for the icon */
+        transition: color 0.3s ease;
+    }
+
+    .close-icon:hover {
+        color: #ff0000;
+        /* Color change on hover */
+    }
+
+
+}

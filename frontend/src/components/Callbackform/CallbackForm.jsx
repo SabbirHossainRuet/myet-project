@@ -298,6 +298,9 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
             <div className="callback-form-container-left">
                 <img src={Logo} alt="" onClick={handleTitleClick} style={{ cursor: 'pointer' }} />
                 <h2 className="callback-form-title">{titleText}</h2>
+                <span className="close-icon" onClick={toggleCallbackForm}>
+                    &times;
+                </span>
             </div>
             <div className="callback-form-container-right">
                 <form onSubmit={handleSubmit}>

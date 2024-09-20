@@ -1,4 +1,4 @@
-.clients{
+.clients {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .clients-section-top,
-.clients-section-bottom{
+.clients-section-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,14 +18,21 @@
     gap: 20px;
 }
 
-.clients-section-top .primary-subheading{
+.clients-section-top .primary-subheading {
     font-size: 40px;
     font-weight: bold;
     color: orange;
 }
 
-.primary-text{
+.primary-text {
     font-size: 15px;
     width: 60%;
     text-align: center;
+}
+
+@media (max-width:768px) {
+    .clients {
+        width: 80%;
+    }
+
 }

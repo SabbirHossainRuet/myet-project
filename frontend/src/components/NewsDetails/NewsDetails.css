@@ -126,3 +126,19 @@
 .custom-li {
   margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+  .news-detail {
+    max-width: 100%;
+  }
+
+  .news-detail-content {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .header-title {
+    font-size: 25px;
+  }
+
+}

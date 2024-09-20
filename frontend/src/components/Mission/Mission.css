@@ -156,8 +156,12 @@
 @media (max-width: 768px) {
     .mission-contents {
         width: 100%;
-        top: 70px;
+        top: 25px;
         margin-bottom: 100px;
+    }
+
+    .mission-texts {
+        margin: 0px 5vw;
     }
 
     .mission-texts h2 {
@@ -180,5 +184,9 @@
         gap: 15px;
         font-weight: bold;
         /* Strong, bold text for emphasis */
+    }
+
+    .mission-texts-text {
+        width: max(80vw, 100px);
     }
 }
