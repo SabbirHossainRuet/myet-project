@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { et_list } from '../../assets/assets';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+import './ETGuidesDetails.css';
 
 const ETGuidesDetails = () => {
     const { id } = useParams();
@@ -52,20 +53,22 @@ const ETGuidesDetails = () => {
     }
 
     return (
-        <div className="guide-details">
-            <h1 className="guide-title">{guideData.attributes.subject}</h1>
-            <ReactMarkdown
-                rehypePlugins={[rehypeRaw]}
-                components={{
-                    h1: ({ node, ...props }) => <h1 className="custom-h1" {...props} />,
-                    h2: ({ node, ...props }) => <h2 className="custom-h2" {...props} />,
-                    h3: ({ node, ...props }) => <h3 className="custom-h3" {...props} />,
-                    p: ({ node, ...props }) => <p className="custom-paragraph" {...props} />,
-                    a: ({ node, ...props }) => <a className="custom-link" {...props} />,
-                }}
-            >
-                {guideData.attributes.texts || 'No additional content available'}
-            </ReactMarkdown>
+        <div className="guide-details-container">
+            <div className="guide-details">
+                <h1 className="guide-title">{guideData.attributes.subject}</h1>
+                <ReactMarkdown
+                    rehypePlugins={[rehypeRaw]}
+                    components={{
+                        h1: ({ node, ...props }) => <h1 className="custom-h1" {...props} />,
+                        h2: ({ node, ...props }) => <h2 className="custom-h2" {...props} />,
+                        h3: ({ node, ...props }) => <h3 className="custom-h3" {...props} />,
+                        p: ({ node, ...props }) => <p className="custom-paragraph" {...props} />,
+                        a: ({ node, ...props }) => <a className="custom-link" {...props} />,
+                    }}
+                >
+                    {guideData.attributes.texts || 'No additional content available'}
+                </ReactMarkdown>
+            </div>
         </div>
     );
 

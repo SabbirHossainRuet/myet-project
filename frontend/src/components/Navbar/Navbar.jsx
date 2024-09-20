@@ -88,12 +88,16 @@ const Navbar = () => {
 
     const iconStyle = { fontSize: '40px' };
     const menuOptions = [
-        { text: "Mission", to: "mission" },
-        { text: "ET1 Guides", to: "et-guides" },
+        { text: "Home", to: "home-section" },
+        { text: "Mission", to: "mission-section" },
+        { text: "Get Started", to: "get-started-section" },
+        { text: "News", to: "news-events-section" },
         { text: "Services", to: "services" },
+        { text: "InfoBriefs", to: "et-guides" },
         { text: "Contact us", to: "contact" },
         { text: "NewsLetter", to: "newsletter" },
-        { text: "Clients", to: "clients" },
+        { text: "Employment Law", to: "employee-services" },
+        { text: "Reviews", to: "clients" },
     ];
 
     // Handle resetting active link when the page reloads
@@ -169,7 +173,7 @@ const Navbar = () => {
                             <ListItem key={item.text} disablePadding onClick={() => {
                                 scroller.scrollTo(item.to, {
                                     duration: 500,
-                                    offset: -100, // Adjust the offset as needed
+                                    offset: -200, // Adjust the offset as needed
                                 });
                                 setOpenMenu(false); // Close the drawer when an item is clicked
                             }}>
