@@ -41,8 +41,8 @@ const Mission = () => {
                         <div className="mission-texts-text">
                             <p>{`We're on a mission to help UK workers take control of their employment disputes.`}</p>
                             <p>{`Getting quality employment law advice is hard and expensive. We're making it easy and affordable.`}</p>
-                            <p>{`We're here to provide support and practical no nonsense advice to everyone`}</p>
-                            <p>{`that's affordable and accessible - no matter what their financial circumstances.`}</p>
+                            <p>{`We're here to provide support and practical advice to everyone`}<br />
+                                {`that's affordable and accessible - no matter what their financial circumstances.`}</p>
                         </div>
                     </div>
                 </div>

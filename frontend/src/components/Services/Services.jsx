@@ -23,7 +23,7 @@ const Services = () => {
     const formatTextWithUnderline = (text) => {
         const underlineStart = '__start__';
         const underlineEnd = '__end__';
-    
+
         // Split the text by the underline start marker
         const parts = text.split(underlineStart).map((part, index) => {
             // Check if the part contains the underline end marker
@@ -43,10 +43,10 @@ const Services = () => {
                 return <React.Fragment key={index}>{part}</React.Fragment>;
             }
         });
-    
+
         return parts;
     };
-    
+
 
     const animateFreeText = (text) => {
         return <span className="typewriter">{text}</span>;
@@ -63,8 +63,16 @@ const Services = () => {
                                 <hr />
                             </div>
 
-                            <p className='price'>
+                            {/* <p className='price'>
                                 {item.price === 0 ? animateFreeText("FREE") : `£${item.price}`}
+                            </p> */}
+
+                            <p className='price'>
+                                {typeof item.price === 'string' && item.price.startsWith('From')
+                                    ? item.price
+                                    : item.price === 0
+                                        ? animateFreeText("FREE")
+                                        : `£${item.price}`}
                             </p>
                             <p className='text'>
                                 {formatTextWithLineBreaks(item.text)}

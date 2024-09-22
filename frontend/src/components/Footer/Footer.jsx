@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <Element name='footer-content'>
         <div className="footer-content">
-          <h3>{`Can't find what you are looking for?`}</h3>
+          <h3>{`Can't find what you're looking for?`}</h3>
           <button className='footer-button'>Email Us</button>
         </div>
       </Element>

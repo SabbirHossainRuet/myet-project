@@ -216,14 +216,14 @@ nav {
   .navbar-left {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
 
   .navbar-left img {
-    margin: 0;
+    margin: 0 30px;
     height: 110px;
-    width: 58%;
+    width: 50%;
   }
 
   .navbar-top .buttons {
@@ -250,6 +250,7 @@ nav {
 
   .navbar-menu-container {
     display: block;
+    margin-right: 20px;
   }
 
   .navbar-top .buttons button {
