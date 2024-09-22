@@ -4,6 +4,13 @@ import { StoreContext } from '../Context/StoreContext'
 
 const Services = () => {
     const { services } = useContext(StoreContext);
+    const { toggleCallbackForm, setShowDateTime, setFormTitle, } = useContext(StoreContext);
+
+    const handleCallbackClick = () => {
+        setShowDateTime(true);
+        setFormTitle('Request A Callback');
+        toggleCallbackForm();
+    };
     const formatTextWithLineBreaks = (text) => {
         return text.split('\n').map((line, index) => (
             <React.Fragment key={index}>
@@ -26,7 +33,7 @@ const Services = () => {
                 return (
                     <React.Fragment key={index}>
                         {/* Underline the part between markers */}
-                        <span style={{ textDecoration: 'underline' }}>{underlinedPart}</span>
+                        <span style={{ textDecoration: 'underline', cursor: 'pointer' }} onClick={handleCallbackClick}>{underlinedPart}</span>
                         {/* Render the remaining part after the underline */}
                         {remainingText}
                     </React.Fragment>
