@@ -4,7 +4,8 @@
   "info": {
     "singularName": "enquiry-request",
     "pluralName": "enquiry-requests",
-    "displayName": "enquiry-requests"
+    "displayName": "enquiry-requests",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -34,11 +35,15 @@
     "source": {
       "type": "enumeration",
       "enum": [
+        "Publicity Flyer/Leaflet",
+        "Recommendation",
+        "Google search result",
+        "News search result",
+        "You Tube",
         "Facebook",
-        "Google Search",
-        "Linked In",
-        "Twitter",
-        "Instagram",
+        "Tik Tok",
+        "Twitter/X",
+        "Link from Advice Agency/Charity",
         "Law Society Website",
         "Other"
       ]

@@ -19,6 +19,12 @@ const Mission = () => {
         setFormTitle('Request A Callback');
         toggleCallbackForm();
     };
+
+    const handleEnquiryClick = () => {
+        setShowDateTime(false);
+        setFormTitle('Make An Enquiry');
+        toggleCallbackForm();
+    };
     return (
         <div className="mission" id="mission">
             <Element name="home-section">
@@ -49,7 +55,13 @@ const Mission = () => {
                             <div className="image-div">
                                 <img src={videoCall} alt="" style={{ height: '37px', width: '37px' }} />
                             </div>
-                            <p>Book a FREE 30 MINUTE Online Appointment <br />(or by Phone).</p>
+                            <p>Book a{' '}
+                                <span
+                                    style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                                    onClick={handleEnquiryClick}
+                                >
+                                    FREE 30 MINUTE
+                                </span>{' '}Online Appointment <br />(or by Phone).</p>
                         </div>
                         <div className="get-started-now-item">
                             <div className="image-div">

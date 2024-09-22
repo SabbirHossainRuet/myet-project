@@ -240,7 +240,7 @@ export const et_list = [
         price: 0,
         description: "What is Constructive Unfair Dismissal?",
         thumbnail: "",
-        pdfUrl: "/ACAS.pdf"
+        pdfUrl: "/CD Leaflet.pdf"
     },
     {
         _id: "4",
@@ -301,7 +301,7 @@ export const services = [
         name: "Option 1",
         price: 0,
         text: "30 Minute Appointment",
-        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a FREE 30 minute appointment using the links."
+        description: "If you'd like to talk to us about your case over Zoom/Teams or by Phone, please book in a __start__FREE 30 minute appointment__end__ using the links."
     },
     {
         _id: "2",

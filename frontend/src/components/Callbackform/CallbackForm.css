@@ -121,7 +121,20 @@
 }
 
 .close-icon {
-    display: none;
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 30px;
+    font-size: 34px;
+    cursor: pointer;
+    color: #333;
+    /* Or any color you'd like for the icon */
+    transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+    color: #ff0000;
+    /* Color change on hover */
 }
 
 @media only screen and (max-width: 768px) {

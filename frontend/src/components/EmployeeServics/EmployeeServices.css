@@ -11,9 +11,9 @@
 
 .employee-bundle {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns by default */
-    gap: 20px; /* Increased gap for better spacing */
-    margin: 10px 0;
+    grid-template-columns: repeat(5, 0.5fr); /* 5 columns by default */
+    gap: 10px; /* Increased gap for better spacing */
+    margin: 10px 200px;
 }
 
 /* Style for each item in the grid */
@@ -28,6 +28,11 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    
+}
+
+.employee-bundle-item .description{
+    text-align: center;
 }
 
 .employee-bundle-item:hover {
@@ -47,6 +52,7 @@
     .employee-bundle {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px; /* 4 columns */
+        margin: 0;
     }
 }
 

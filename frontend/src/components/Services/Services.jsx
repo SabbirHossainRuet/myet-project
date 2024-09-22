@@ -13,6 +13,34 @@ const Services = () => {
         ));
     };
 
+    const formatTextWithUnderline = (text) => {
+        const underlineStart = '__start__';
+        const underlineEnd = '__end__';
+    
+        // Split the text by the underline start marker
+        const parts = text.split(underlineStart).map((part, index) => {
+            // Check if the part contains the underline end marker
+            if (part.includes(underlineEnd)) {
+                // Split at the underline end marker
+                const [underlinedPart, remainingText] = part.split(underlineEnd);
+                return (
+                    <React.Fragment key={index}>
+                        {/* Underline the part between markers */}
+                        <span style={{ textDecoration: 'underline' }}>{underlinedPart}</span>
+                        {/* Render the remaining part after the underline */}
+                        {remainingText}
+                    </React.Fragment>
+                );
+            } else {
+                // If no underline end marker, return the normal part
+                return <React.Fragment key={index}>{part}</React.Fragment>;
+            }
+        });
+    
+        return parts;
+    };
+    
+
     const animateFreeText = (text) => {
         return <span className="typewriter">{text}</span>;
     };
@@ -37,7 +65,7 @@ const Services = () => {
 
                             {/* <button>{item.price === 0 ? "Download" : "Buy"}</button> */}
 
-                            <p className='description'>{item.description}</p>
+                            <p className='description'><span style={{ display: 'inline' }}>{formatTextWithUnderline(item.description)}</span></p>
 
                         </div>
                     ))
