@@ -14,32 +14,61 @@ const ETGuidesDetails = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const localGuide = et_list.find((item) => item._id === id);
-        if (localGuide) {
-            setLocalItem(localGuide);
+        console.log(id);
+        if (id === 'help') {
+            const fetchHelpGuide = async () => {
+                try {
+                    const response = await fetch(`https://cms-2n8x.onrender.com/api/briefs?filters[name][$eq]=help`);
+
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch help guide data');
+                    }
+                    const data = await response.json();
+                    console.log('Fetched Help Guide from Strapi:', data);
+                    setGuideData(data.data[0]);
+                } catch (error) {
+                    setError(error.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            fetchHelpGuide();
         }
 
-        const fetchGuideData = async () => {
-            try {
-                const response = await fetch(`https://cms-2n8x.onrender.com/api/briefs?filters[name][$eq]=${localGuide.name}`);
+        else {
 
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const data = await response.json();
-                console.log('Fetched Data from Strapi:', data);
-                setGuideData(data.data[0]);
-            } catch (error) {
-                setError(error.message);
-            } finally {
-                setLoading(false);
+            const localGuide = et_list.find((item) => item._id === id);
+
+            console.log(localGuide);
+            if (localGuide) {
+                setLocalItem(localGuide);
             }
-        };
 
-        if (localGuide) {
-            fetchGuideData();
+            const fetchGuideData = async () => {
+                try {
+                    const response = await fetch(`https://cms-2n8x.onrender.com/api/briefs?filters[name][$eq]=${localGuide.name}`);
+
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch data');
+                    }
+                    const data = await response.json();
+                    console.log('Fetched Data from Strapi:', data);
+                    setGuideData(data.data[0]);
+                } catch (error) {
+                    setError(error.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            if (localGuide) {
+                fetchGuideData();
+            }
         }
     }, [id]);
+
+
 
     if (loading) {
         return <p>Loading...</p>;
@@ -49,9 +78,10 @@ const ETGuidesDetails = () => {
         return <p>Error: {error}</p>;
     }
 
-    if (!guideData || !localItem) {
+    if (!guideData || (id !== 'help' && !localItem)) {
         return <p>No data found</p>;
     }
+
 
     const navigateToSection = (sectionId, offset = 100) => {
         navigate('/');
@@ -82,6 +112,9 @@ const ETGuidesDetails = () => {
                             h3: ({ node, ...props }) => <h3 className="custom-h3" {...props} />,
                             p: ({ node, ...props }) => <p className="custom-paragraph" {...props} />,
                             a: ({ node, ...props }) => <a className="custom-link" {...props} />,
+                            ul: ({ node, ...props }) => <ul className="custom-ul" {...props} />,
+                            ol: ({ node, ...props }) => <ol className="custom-ol" {...props} />,
+                            li: ({ node, ...props }) => <li className="custom-li" {...props} />,
                         }}
                     >
                         {guideData.attributes.texts || 'No additional content available'}

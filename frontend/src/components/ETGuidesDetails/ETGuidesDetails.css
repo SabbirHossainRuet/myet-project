@@ -30,6 +30,10 @@
     text-decoration: underline;
 }
 
+.custom-ol{
+    margin-left: 100px;
+}
+
 @media (max-width:768px) {
     .guide-details {
         max-width: 100%;

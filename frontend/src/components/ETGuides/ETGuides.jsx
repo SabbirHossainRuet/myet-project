@@ -190,6 +190,12 @@ const ETGuides = () => {
                                     <p className='pointer'>{`>`}</p>
                                 </div>
                             ))}
+                            <div className="row-items-all" onClick={() => handleItemClick("help")}>
+                                <div className="rows-items-name-desc">
+                                    <p className='description'>{`Do you want to help others?`}</p>
+                                </div>
+                                <p className='pointer'>{`>`}</p>
+                            </div>
                         </div>
                     </div>
                     <div className="et-column">
