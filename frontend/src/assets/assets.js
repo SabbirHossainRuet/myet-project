@@ -239,7 +239,7 @@ export const et_list = [
         name: "InfoBrief 3",
         price: 0,
         description: "What is Constructive Unfair Dismissal?",
-        thumbnail: "",
+        thumbnail: "/InfoBriefs/CD thumb.png",
         pdfUrl: "/CD Leaflet.pdf"
     },
     {
