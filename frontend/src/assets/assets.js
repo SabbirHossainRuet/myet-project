@@ -20,6 +20,49 @@ export const images = {
 export const newsData = [
     {
         _id: "1",
+        day: '04',
+        month: 'October',
+        year: '2024',
+        title: 'Solicitor ordered to pay £8,700 to his former firm for late withdrawal of ET claim',
+        introSummary: 'Solicitor, Mr. A, issued Employment Tribunal (ET) proceedings against his ex-firm in Bury, Lancashire for unpaid invoices totalling £5, 240. He claimed the invoices were for unpaid notice, holiday pay and unlawful deduction of wages that were owed to him.',
+        summary: `<p>Solicitor, Mr. A, issued Employment Tribunal (ET) proceedings against his ex-firm in Bury, Lancashire for unpaid invoices totalling £5, 240. He claimed the invoices were for unpaid notice, holiday pay and unlawful deduction of wages that were owed to him.</p><br>In response to the claim, the firm claimed he was not a worker or an employee under the Employment Rights Act 1996, and instead he worked as a self-employed Consultant, and that his claim was also out of time and therefore bound to fail.<br><br>After being forced to withdraw the claim, due to the successful time limit arguments from his ex-firm, the Tribunal ruled that the Solicitor must pay the firm costs of <b>£8,700</b>.<br><br>Mr. A lodged the claim on <b>14 December 2023, and withdrew it on 6 May 2024</b>, two days before a <b>preliminary hearing</b> was scheduled to rule on the time limit issue.<br><br>Mr. A claimed after taking advice on the time limits, he withdrew the claim in order to make a new claim in the County Court, where the time limits are more generous.<br><br>The firm then made an application for costs after it was withdrawn.<br><br>The Tribunal ruled the claim had been withdrawn 2 months later than was reasonable.<br><br>Employment Judge Childe sitting at Manchester Employment Tribunal said it <b>‘would have been obvious’ in March 2024</b>, that the claim was out of time.<br><br>On <b>12 January 2024</b>, the Tribunal wrote to the claimant and said:<br><br><ul style="list-style-type:none"><li>“Employment Judge Slater orders that you write to the Tribunal by 26 January 2024 stating whether you assert that you were an employee as well as a worker and, if not, either withdraw your claim about notice pay or explain why you are not doing so.</li><br><li>The Tribunal only has jurisdiction to consider complaints of breach of contract (which includes complaints about failure to give notice) for employees under the Employment Tribunals Extension of Jurisdiction (England and Wales) Order 1994.</li><br><li>The judge also orders that you explain why your complaints were not presented within the normal time limit.”  </li></ul><br>The claimant wrote to the Tribunal on <b>17 January 2024</b> and said that he believed his claim had been lodged in time because he was informed on 11 July 2023 by the respondent that they were not going to pay his outstanding wages and pay in lieu of notice.<br><br>The claimant also said he was a worker and employee for the purposes of the Employment Rights Act 1996.<br><br>The respondent firm lodged their response on <b>6 February 2024.</b><br><br>In their response, they said:<br><br><ol><li>The claimant was engaged as a self-employed consultant solicitor and therefore not engaged as a worker for the purposes of section 230 Employment Rights Act 1996, was not an employee or worker for the purposes of the Working Time Regulations 1998, nor was he entitled to bring a claim for wrongful dismissal under the extended jurisdiction of the employment tribunal.</li><br><li>The claim was time-barred because “the invoice dated 27 April 2023 was due for payment by 18 May 2023 and the invoice dated 24 May 2023 was due for payment by 14 June 2023. Time expired on 13 September 2023 which was prior to the Claimant contacting ACAS on 9 October 2023. Thus, the early conciliation process did not operate to extend time.”</li></ol><br>The respondent made an application to the Tribunal on <b>12 February 2024</b> that the case be listed for a preliminary hearing to determine whether the case should be struck out on the basis it had no reasonable prospects of success or alternatively whether the claim should be dismissed on the basis it had been lodged out of time and the employment tribunal had no jurisdiction to hear it.<br><br>The case was then subsequently withdrawn by the Claimant.<br><br>The Tribunal was also not satisfied with the evidence produced regarding Mr. A’s income and ability to pay the cost award. Mr. A said he only had an income of £12,000 per year and outgoings of £10,000 per year. The Tribunal found this hard to believe, given Mr. A also owned properties that he rented out, although they were mortgaged to a degree.<br><br>The full costs in the case were awarded by the Tribunal against Mr. A.<br><br>Mr. A who represented himself was given until January 2025 to pay the firm’s costs.<br><br>Email us for the full judgment.`,
+        image: '/News/News0410.jpeg',
+    },
+
+    {
+        _id: "2",
+        day: '01',
+        month: 'October',
+        year: '2024',
+        title: 'New ‘Tips’ law comes into force today',
+        introSummary: 'A new law to ensure 100% of tips go to workers, comes into force on 1st October 2024. From today, it will be illegal for employers to hold onto tips or service charges meant for workers.',
+        summary: `<p>A new law to ensure 100% of tips go to workers, comes into force on 1<sup>st</sup> October 2024. From today, it will be illegal for employers to hold onto tips or service charges meant for workers.</p><br>The <b>Employment (Allocation of Tips) Act 2023</b> <a href="https://www.legislation.gov.uk/ukpga/2023/13/enacted">(here)</a> received Royal Assent in May 2023 and came in to force via secondary legislation on 1 October 2024.<br><br>Workers will also be able to lawfully request a record of their tips, and bring a claim to the Employment Tribunal if they believe they are shortchanged.<br><br><b>New Statutory Code of Practice</b><br><br>Employers must have regard to a <b>Statutory Code of Practice</b> <a href="https://www.gov.uk/government/publications/distributing-tips-fairly-statutory-code-of-practice">(read here)</a> when distributing tips.  Employers must have regard to the code when designing or implementing their tipping or service charge policies and procedures.<br><br>In addition, the government has also issued <b>non-statutory guidance</b> <a href="https://www.gov.uk/government/publications/distributing-tips-fairly-non-statutory-guidance-for-employers/distributing-tips-fairly-non-statutory-guidance-for-employers">(here)</a> which states:<br><br><ul><li>Tips cannot be pooled across different sites or branches.</li><li>Employers must have regard to agency workers when distributing tips.</li><li>Employers are responsible for making clear which roles are covered for the allocation of tips, particularly those involved in providing direct service to customers.</li><li>Staff can complain about tip allocation for up to 12 months after an issue.</li><li>Employers must pass tips to workers by the end of the month following the month in which the tip was left.</li><li>Tips cannot be used to count towards minimum wage pay (this has been the case since 2009).</li></ul><br>Many hospitality workers on low wages rely on tips to make up their wages, so this new law will be welcomed by many hospitality and allied workers.<br><br>Workers in pubs, cafes, restaurants, salons, taxi services and bars will all benefit.<br><br>The Government estimates up to 2 million workers will take home more pay, estimated to be up to £200 million more as a result of the new tipping act.<br><br>Justin Madders, <b>Minister for employment rights</b>, said:<br><br><ul style="list-style-type:none"><li>“This is just the first step of many in protecting workers and placing them at the heart of our economy.</li><li>“We will be introducing further measures on tipping to ensure workers get their fair share of tips.” </li></ul><br><b>Unite</b>, one of the UKs biggest Unions, their <b>General Secretary Sharon Graham</b> said:<br><br><ul style="list-style-type:none"><li>“The new legislation gives workers the tools to fight bad bosses who would unfairly deduct their tips.”</li></ul>`,
+        image: '/News/News2709.jpeg',
+    },
+
+    {
+        _id: "3",
+        day: '27',
+        month: 'September',
+        year: '2024',
+        title: 'Disabled Police officer branded ‘difficult’ by her superiors, wins claim for victimisation',
+        introSummary: 'A police officer who retired on ill health grounds from Lancashire Police was found by the Tribunal to have been unlawfully victimised by her own Force.',
+        summary: `<p>A police officer who retired on ill health grounds from Lancashire Police was found by the Tribunal to have been unlawfully victimised by her own Force.</p><br>Ms. D joined the force in March 2003.<br><br>She was diagnosed with PTSD, anxiety and depression and took time away on a career break from 2010 – 2017, but after returning to work, she was signed off sick until November 2018, due to a domestic abuse incident.<br><br>When she returned to work, the force failed to make reasonable adjustments for her.<br><br>She was not allowed to work from a station closer to home, and the additional driving impacted on her mental health.<br><br>The Police Officer wanted to return to frontline policing, but the force failed to clearly explain to her how that would be managed, and instead engaged in ad hoc processes without any clear HR support.<br><br>The force also ignored a number of recommendations in OH reports.<br><br>A Superintendent in charge of Policing in the Morecambe area made an ill judged comment about her PTSD, being likened to a ‘broken leg’.<br><br>Other senior Police staff, also emailed HR in frustration, unclear what to do and what type of meaningful work to offer the female Police Officer.<br><br>The Tribunal also ruled that the lack of redeployment options were also caused by the failure of her Managers to formally put the officer on ‘adjusted duties’ as required under the force’s Adjusted Duties Policy.<br><br>The Officer raised two grievances in 2020, about her treatment and the working practices she had been subjected to.<br><br>Two weeks after the first grievance, she was put on a Performance Improvement Plan.<br><br>The grievances later counted as ‘protected acts’ under the Equality Act 2010 for which she was successful in her victimisation claim against the force.<br><br>The Tribunal also ruled a Police Superintendent who was tasked with investigating her grievance appeal, after both her grievances were not upheld, had formed a ‘pre- determined view’ of the Claimant.<br><br>The grievance appeal was also rejected by the force.<br><br>The Tribunal found the appeal was unfair, had sought to change the facts, deny what had happened, was inaccurate, was focussed on a damage limitation exercise fearing possible future Tribunal proceedings and attempted to steer things against the Claimant.<br><br>The Tribunal found her treatment amounted to victimisation, failure to make reasonable adjustments and ‘something arising due to her disability’.<br><br>Her claims were upheld and were ‘well founded’ according to the three panel Tribunal.<br><br>Judgment in the case was handed down in August 2024 after a hearing on remedy in April 2024.<br><br>Ms. D was awarded more than £16,000 in compensation.<br><br>Email us for the full judgment. `,
+        image: '/News/News2709.jpeg',
+    },
+    {
+        _id: "4",
+        day: '23',
+        month: 'September',
+        year: '2024',
+        title: 'Teacher at famous Prep School wins £168,000 for disability discrimination and unfair dismissal after ‘closing his eyes’ in class',
+        introSummary: 'A long serving Teacher at a prep school in Central London has won his claim for unfair dismissal and disability discrimination against a prestigious boys prep school.',
+        summary: `<p>A long serving Teacher at a prep school in Central London has won his claim for unfair dismissal and disability discrimination against a prestigious boys prep school.</p><br>Mr. S, took his former employer to an Employment Tribunal, after he was dismissed in 2022. He had worked for the school since 2006.<br><br>Mr. S’s appraisals for the two years prior to his dismissal were described by the School and Tribunal as ‘glowing’.<br><br>Mr. S suffered from anxiety and depression, which he claimed was made worse by the unsupportive school environment.<br><br>In 2021 and 2022, he had a number of days sickness linked to his poor mental health.<br><br>He claimed he wasn’t supported and his personal circumstances, linked to his disability, were not properly considered.<br><br>The School claimed that he fell asleep in classes and his sickness absences could no longer be supported in order for them to maintain a ‘functioning school’.<br><br>The School put forward 5 reasons for his dismissal, but the Tribunal found these to be weak.<br><br>The School claimed his unpredictable temperament, his failure to reliably report his absence by 7.30am when he was sick, his overly strict classroom management style from 2017-2109 (at odds with the glowing appraisals and not investigated at the time), falling asleep in class and his absence record in 2021 and 2022 led to his dismissal for capability.<br><br>The Tribunal also found, the concerns the school had were not supported by any formal approach, warnings or formal performance improvement plan.<br><br>Mr. S was also invited to an ‘informal’ investigatory meeting with little advance notice and was not told that dismissal was a serious consideration.<br><br>The School scheduled a capability hearing for Mr. S in July 2022, but insisted of only a work place colleague or Trade Union official attending with him as a companion. The Tribunal found this restriction and limitation to be unfair.<br><br>Mr. S instead wanted to take a friend, which the Tribunal found was reasonable as a his choice of companion.<br><br>The Tribunal stated:<br><br><ul style="list-style-type:none"><li><i>“No reasonable employer would have refused to allow the claimant to bring a friend to the Appeal hearing. The respondent knew the claimant was suffering from extreme anxiety. The 3rd OH report had said he should be able to bring a representative. While the respondent may have read that to mean a trade union representative or work colleague would be sufficient, the claimant explained at the Appeal hearing that he had been unable to find someone. Ms Gajjar had failed to engage with his written request prior to the Appeal hearing to bring a friend and at the hearing itself, Ms Francis just moved on.</i></li></ul><br>The Tribunal ruled that he had been denied a fair process and he was not given the opportunity to fully present his case.<br><br>The tribunal found that the claimant’s dismissal was therefore unfair and was for a reason arising from his disability of anxiety and depression.<br><br>Despite trying to support the Claimant, having obtained three OH reports, the school failed to make reasonable adjustments to the dismissal process.<br><br>The failure to postpone the capability hearing at least one more time and the failure to allow him to take a friend to the appeal were also failures to make reasonable adjustments.<br><br>The Notting Hill school is one of the most prestigious prep schools in the capital.<br><br>Famous past pupils include Princes Harry and William and David Beckham’s boys.<br><br>Fees at the School start at around £27,000 annually per pupil.<br><br>Email us if you would like a copy of the full judgment.`,
+        image: '/News/News2309.jpg',
+    },
+
+    {
+        _id: "5",
         day: '19',
         month: 'September',
         year: '2024',
@@ -29,7 +72,7 @@ export const newsData = [
         image: '/News/News1909.jpg',
     },
     {
-        _id: "2",
+        _id: "6",
         day: '18',
         month: 'September',
         year: '2024',
@@ -39,7 +82,7 @@ export const newsData = [
         image: '/News/News1809.png',
     },
     {
-        _id: "3",
+        _id: "7",
         day: '16',
         month: 'September',
         year: '2024',
@@ -50,7 +93,7 @@ export const newsData = [
     },
 
     {
-        _id: "4",
+        _id: "8",
         day: '11',
         month: 'September',
         year: '2024',
@@ -61,7 +104,7 @@ export const newsData = [
     },
 
     {
-        _id: "5",
+        _id: "9",
         day: '06',
         month: 'September',
         year: '2024',
@@ -72,7 +115,7 @@ export const newsData = [
     },
 
     {
-        _id: "6",
+        _id: "10",
         day: '02',
         month: 'September',
         year: '2024',
@@ -82,7 +125,7 @@ export const newsData = [
         image: '/News/News0209.jpg',
     },
     {
-        _id: "7",
+        _id: "11",
         day: '30',
         month: 'August',
         year: '2024',
@@ -92,7 +135,7 @@ export const newsData = [
         image: '/News/News3008.jpg',
     },
     {
-        _id: "8",
+        _id: "12",
         day: '24',
         month: 'August',
         year: '2024',
@@ -103,7 +146,7 @@ export const newsData = [
     },
 
     {
-        _id: "9",
+        _id: "13",
         day: '17',
         month: 'July',
         year: '2024',
@@ -114,7 +157,7 @@ export const newsData = [
     },
 
     {
-        _id: "10",
+        _id: "14",
         day: '26',
         month: 'June',
         year: '2024',
@@ -125,7 +168,7 @@ export const newsData = [
     },
 
     {
-        _id: "11",
+        _id: "15",
         day: '20',
         month: 'May',
         year: '2024',
@@ -136,7 +179,7 @@ export const newsData = [
     },
 
     {
-        _id: "12",
+        _id: "16",
         day: '15',
         month: 'April',
         year: '2024',
@@ -147,7 +190,7 @@ export const newsData = [
     },
 
     {
-        _id: "13",
+        _id: "17",
         day: '12',
         month: 'March',
         year: '2024',
@@ -158,7 +201,7 @@ export const newsData = [
     },
 
     {
-        _id: "14",
+        _id: "18",
         day: '04',
         month: 'February',
         year: '2024',
@@ -169,7 +212,7 @@ export const newsData = [
     },
 
     {
-        _id: "15",
+        _id: "19",
         day: '20',
         month: 'January',
         year: '2024',
@@ -180,7 +223,7 @@ export const newsData = [
     },
 
     {
-        _id: "16",
+        _id: "20",
         day: '04',
         month: 'January',
         year: '2024',
