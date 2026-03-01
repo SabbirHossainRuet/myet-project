@@ -194,7 +194,7 @@
 //
 //
 
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { StoreContext } from "../Context/StoreContext";
 import Logo from "../../assets/logo.png";
 import './CallbackForm.css';
@@ -474,4 +474,3 @@ const CallbackForm = ({ handleTitleClick, titleText }) => {
 };
 
 export default CallbackForm;
-
